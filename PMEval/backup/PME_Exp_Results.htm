@@ -1,0 +1,298 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Fast algorithm for Walsh Hadamard transform on sliding windows</title>
+<!--mstheme--><link rel="stylesheet" href="blit1111-106.css">
+<meta name="Microsoft Theme" content="blitz 1111">
+</head>
+
+<body>
+
+                  <H1 align="center"><font face="Arial">Performance Evaluation 
+					of Pattern Matching Algorithms</font></H1>
+					<p style="vertical-align:middle" align="left">
+								<span lang="en-us">&nbsp;&nbsp; </span></p>
+					<p style="vertical-align:middle" align="left">
+								<span lang="en-us">&nbsp;&nbsp; </span></p>
+					<p style="vertical-align:middle" align="center">
+								<img border="0" src="PME_Exp_Results_files/image003.gif" width="97" height="140"><span lang="en-us">
+								</span>
+								<img border="0" src="PME_Exp_Results_files/image006.png" width="119" height="139"><span lang="en-us">
+								</span>
+								<img border="0" src="PME_Exp_Results_files/image008.png" width="117" height="141"><span lang="en-us">
+								</span>
+								<img border="0" src="PME_Exp_Results_files/image004.png" width="126" height="141"><span lang="en-us">
+								</span>
+								<img border="0" src="PME_Exp_Results_files/image001.gif" width="120" height="141"></p>
+					<p style="vertical-align:middle" align="left">
+								<span lang="en-us">&nbsp; </span></p>
+					<p style="vertical-align:middle" align="left">
+								<span lang="en-us">List of the datasets used 
+								for comparison:</span></p>
+					<table border="1" width="319" id="table1" height="377">
+						<!-- MSTableType="nolayout" --><tr>
+							<td width="89">Dataset</td>
+							<td width="100">Image size</td>
+							<td width="108">Pattern size</td>
+						</tr>
+						<tr>
+							<td width="89">S1-1</td>
+							<td width="100">160x120</td>
+							<td width="108">16x16</td>
+						</tr>
+						<tr>
+							<td width="89">S2-1</td>
+							<td width="100">320x240</td>
+							<td width="108">16x16</td>
+						</tr>
+						<tr>
+							<td width="89">S2-2</td>
+							<td width="100">320x240</td>
+							<td width="108">32x32</td>
+						</tr>
+						<tr>
+							<td width="89">S3-1</td>
+							<td width="100">640x480</td>
+							<td width="108">16x16</td>
+						</tr>
+						<tr>
+							<td width="89">S3-2</td>
+							<td width="100">640x480</td>
+							<td width="108">32x32</td>
+						</tr>
+						<tr>
+							<td width="89">S3-3</td>
+							<td width="100">640x480</td>
+							<td width="108">64x64</td>
+						</tr>
+						<tr>
+							<td width="89">S4-1</td>
+							<td width="100">1280x960</td>
+							<td width="108">16x16</td>
+						</tr>
+						<tr>
+							<td width="89">S4-2</td>
+							<td width="100">1280x960</td>
+							<td width="108">32x32</td>
+						</tr>
+						<tr>
+							<td width="89">S4-3</td>
+							<td width="100">1280x960</td>
+							<td width="108">64x64</td>
+						</tr>
+						<tr>
+							<td width="89">S4-4</td>
+							<td width="100">1280x960</td>
+							<td width="108">128x128</td>
+						</tr>
+						<tr>
+							<td width="89">S5-1</td>
+							<td width="100">2560x1920</td>
+							<td width="108">16x16</td>
+						</tr>
+						<tr>
+							<td width="89">S5-2</td>
+							<td width="100">2560x1920</td>
+							<td width="108">32x32</td>
+						</tr>
+						<tr>
+							<td width="89">S5-3</td>
+							<td width="100">2560x1920</td>
+							<td width="108">64x64</td>
+						</tr>
+						<tr>
+							<td width="89">S5-4</td>
+							<td width="100">2560x1920</td>
+							<td width="108">128x128</td>
+						</tr>
+					</table>
+					<p><span lang="en-us">List of algorithms:</span></p>
+					<table border="1" width="606" id="table2" height="313">
+						<!-- MSTableType="nolayout" --><tr>
+							<td width="174" align="center" height="16">
+							<span lang="en-us">Denotation</span></td>
+							<td width="416" align="center" height="16">
+							<span lang="en-us">Paper</span></td>
+						</tr>
+						<tr>
+							<td width="174" height="39"><span lang="en-us">LRP<sub>sld</sub></span><font size="2"><span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW"><br>
+							(Our new<span lang="en-us"> </span>implementation)</span></font></td>
+							<td width="416" rowspan="3" height="111">
+							<span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW">
+							<font size="2">M. G. Alkhansari. A fast 
+							globally optimal algorithm for template
+							matching using low-resolution pruning. </font>
+							</span>
+							<font size="2">
+							<span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW">
+							TIP</span></font><span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW"><font size="2">, 
+							10(4):526<span lang="en-us">-</span>533, Apr 2001.</font></span></td>
+						</tr>
+						<tr>
+							<td width="174" height="39"><span lang="en-us">LRP<sub>can<br>
+							</sub></span><font size="2">
+							<span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW">
+							(Our new<span lang="en-us"> </span>implementation)</span></font></td>
+						</tr>
+						<tr>
+							<td width="174" height="39"><span lang="en-us">LRP<sub>hier<br>
+							</sub></span><font size="2">
+							<span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW">
+							(Our new<span lang="en-us"> </span>implementation)</span></font></td>
+						</tr>
+						<tr>
+							<td width="174" height="45"><span lang="en-us">IDA</span></td>
+							<td width="416" height="45">
+							<p ALIGN="LEFT">
+							<font face="Times New Roman" size="2">
+							<a href="http://www.vision.deis.unibo.it/fede/">
+							F. Tombari</a>,<a href="http://www.vision.deis.unibo.it/smatt/">S. 
+							Mattoccia</a>, 
+							and Luigi Di Stefano, Full search-equivalent pattern 
+							matching with incremental dissimilarity 
+							approximations<span lang="en-us">.</span> TPAMI., vol. 31, no. 1, pp. 
+							129</font><span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW"><font size="2"><span lang="en-us">-</span></font></span><font face="Times New Roman" size="2">141, Jan. 2009.</font></td>
+						</tr>
+						<tr>
+							<td width="174" height="30"><span lang="en-us">PWHT</span></td>
+							<td width="416" height="30">
+							<p ALIGN="LEFT">
+							<font face="Times New Roman" size="2">Y. Hel-Or and
+							H. Hel-Or. 
+							Real time pattern matching using
+							projection kernels. TPAMI, 27(9):1430</font><span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW"><font size="2"><span lang="en-us">-</span></font></span><font face="Times New Roman" size="2">1445,
+							Sept. 2005.</font></td>
+						</tr>
+						<tr>
+							<td width="174" height="30">
+							<font size="3">PGCK</font></td>
+							<td width="416" height="30">
+							<p ALIGN="LEFT">
+							<font face="Times New Roman" size="2">G. Ben-Artz,
+							<a href="http://cs.haifa.ac.il/hagit/">
+							H. Hel-Or</a>, 
+							and
+							<a href="http://vision.arc.nasa.gov/personnel/helor/helor.html">
+							Y. Hel-Or</a>. The Gray-code filter
+							kernels. TPAMI, 29(3):382</font><span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW"><font size="2"><span lang="en-us">-</span></font></span><font face="Times New Roman" size="2">393, Mar. 2007.</font></td>
+						</tr>
+						<tr>
+							<td width="174" height="28">
+							<span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW">
+							<font size="3">FWHT</font></span></td>
+							<td width="416" height="28">
+							<p ALIGN="LEFT">
+							<font face="Times New Roman" size="2">
+							<a href="http://www.ee.cuhk.edu.hk/~wlouyang/">Wanli 
+							Ouyang</a> and 
+							<a href="http://www.ee.cuhk.edu.hk/~wkcham/">
+							Wai-Kuen Cham</a>. 
+							Fast algorithm for Walsh Hadamard transform on 
+							sliding windows. TPAMI, 
+							32(1):165</font><span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW"><font size="2"><span lang="en-us">-</span></font></span><font face="Times New Roman" size="2">171, Jan. 2010.
+							[<a href="http://www.ee.cuhk.edu.hk/~wlouyang/Papers/Manu_FWHT.pdf">Full 
+								text</a> *] [<a href="http://www.ee.cuhk.edu.hk/~wlouyang/PPT/FWHT8.ppt">Powerpoint</a>]
+								</font></td>
+						</tr>
+						<tr>
+							<td width="174" height="9"><font size="3">
+							<span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW">
+							FFT</span></font></td>
+							<td width="416" height="9">
+							<p ALIGN="LEFT">
+							<font face="Times New Roman" size="2">J.P. Lewis, 
+							Fast template matching. in Vision Interface 95, 
+							Quebec City, Canada, May 15</font><span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW"><font size="2"><span lang="en-us">-</span></font></span><font face="Times New Roman" size="2">19 1995, pp. 120</font><span style="mso-fareast-font-family: 新細明體; mso-hansi-font-family: Arial; layout-flow: vertical; mso-fareast-language: ZH-TW"><font size="2"><span lang="en-us">-</span></font></span><font face="Times New Roman" size="2">123. 
+							[Source code on
+							<a href="http://sourceforge.net/projects/opencvlibrary">
+							OpenCV</a>] </font></td>
+							</tr>
+					</table>
+					<p style="vertical-align:middle" align="left">
+								<b><font face="Arial" size="6">Selected 
+								experimental results:</font></b></p>
+					<p style="vertical-align:middle" align="left">
+								<span lang="en-us">
+								<font face="Arial" size="4" color="#FFFF00">
+								The experimental results are measured as 
+								speed-ups over the FS algorithm in terms of 
+								execution time. As an example, the speed-up of 
+								IDA over FS in execution time is measured as the 
+								execution time required by FS divided by that 
+								required by IDA. </font><b>
+								<font face="Arial" size="5" color="#FFFF00">
+								The larger the speed-up, the faster the 
+								algorithm</font></b><font face="Arial" size="4" color="#FFFF00">.</font></span></p>
+					<p style="vertical-align:middle" align="left">
+								<span lang="en-us"><b>
+								<font face="Arial" size="4">
+								<a href="Dataset/1.JPG"><font color="#FFFF00">A demo image showing an 
+								image under different levels of distortions</font></a></font></b></span></p>
+					<p style="vertical-align:middle" align="left">
+								<font face="Arial" size="4">Speed-ups in 
+								execution time for images with Gaussian noise 
+								when SSD is used. <br>
+								``I: 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120-T: 
+								16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16'' 
+								corresponds to image size 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120 
+								and pattern size 16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16<span lang="en-us">.<br>
+								G(1) =&gt; G(4) larger noise</span></font></p>
+					<div v:shape="_x0000_s1026" class="O">
+						<div style="mso-char-wrap:1;mso-kinsoku-overflow:1">
+							<div id="content" sizcache="0" sizset="0">
+								<div id="bodyContent" sizcache="0" sizset="0">
+									<p>
+									<img border="0" src="Dataset/ExpNoiseSSD.png" width="1178" height="707"><p style="vertical-align:middle" align="left">
+								<font face="Arial" size="4">Speed-ups in 
+								execution time for blurred images when SSD is 
+								used.<br>
+								``I: 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120-T: 
+								16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16'' 
+								corresponds to image size 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120 
+								and pattern size 16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16<span lang="en-us">.<br>
+								B(1) =&gt; B(5) more blur</span></font></p><p>
+									<img border="0" src="Dataset/ExpBlurSSD.png" width="1178" height="707"><p>
+									<font face="Arial" size="4">Speed-ups in 
+									execution time for JPEG compressed images 
+									when SSD is used.<br>
+									``I: 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120-T: 
+									16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16'' 
+									corresponds to image size 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120 
+									and pattern size 16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16<span lang="en-us">.</span></font><p>
+									<font face="Arial" size="4">
+									<span lang="en-us">J(1) =&gt; J(5) more 
+									artifacts caused by compression</span></font><p>
+									<img border="0" src="Dataset/ExpJPEGSSD.png" width="1178" height="707"><p>
+									<font face="Arial" size="4">Speed-ups in 
+									execution time for images with Gaussian 
+									noise when S<span lang="en-us">A</span>D is 
+									used. <br>
+									``I: 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120-T: 
+									16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16'' 
+									corresponds to image size 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120 
+									and pattern size 16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16<span lang="en-us">.</span></font><p>
+									<img border="0" src="Dataset/ExpNoiseSAD.png" width="1178" height="707"><p>
+									<font face="Arial" size="4">Speed-ups in 
+									execution time for blurred images when SAD 
+									is used.<br>
+									``I: 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120-T: 
+									16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16'' 
+									corresponds to image size 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120 
+									and pattern size 16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16<span lang="en-us">.</span></font><p>
+									<img border="0" src="Dataset/ExpBlurSAD.png" width="1178" height="707"><p>
+									<font face="Arial" size="4">Speed-ups in 
+									execution time for JPEG compressed images 
+									when SAD is used.<br>
+									``I: 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120-T: 
+									16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16'' 
+									corresponds to image size 160</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">120 
+									and pattern size 16</font><span lang="EN-US" style="font-family: Times New Roman"><font size="4">x</font></span><font face="Arial" size="4">16<span lang="en-us">.</span></font><p>
+									<img border="0" src="Dataset/ExpJPEGSAD.png" width="1178" height="707"></div>
+							</div></div>
+					</div>
+					
+</body>
+
+</html>

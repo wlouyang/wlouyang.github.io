@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://twitter.github.com/bootstrap/javascript.html#popovers -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Multimedia Laboratory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Multimedia Laboratory">
+        <meta name="author" content="Multimedia Laboratory">
+        
+        <meta name="keywords" content="Multimedia Laboratory, Face recognition, Face alignment, Face detection and tracking, Human detection, Video Surveillance, Video Processing, Image search and recognition, Machine learning" />
+        
+        <!-- Le styles -->
+        <link href="../../css/bootstrap.css" rel="stylesheet">
+        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../../css/docs.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+        <link href="../../css/mmlab.css" rel="stylesheet">
+        
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" type="image/ico" href="../favicon.ico" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+        
+		<!--<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">-->
+        
+        <!--<script src="http://vjs.zencdn.net/c/video.js"></script>-->
+        
+        <!-- Google Analytics -->
+        <!-- <script type="text/javascript">
+            
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-22940424-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+        </script> -->
+    </head>
+    
+    
+    
+    <body data-spy="scroll" data-target="#navbar" data-twttr-rendered="true">
+        
+        <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="../index.html#">MMLAB</a>
+                    <div class="nav-collapse">
+                <ul class="nav">
+                    <li><a href="../../index.html"><strong>Home</strong></a></li>
+<!--                    <li><a href="../../join_us.html"><strong>Join Us</strong></a></li>
+                    <li><a href="../../people.html"><strong>People</strong></a></li>
+                    <li><a href="../../publications.html"><strong>Publications</strong></a></li>
+                    <li><a href="../../projects.html"><strong>Projects</strong></a></li>
+                    <li><a href="../../datasets.html"><strong>Datasets</strong></a></li>
+                    <li><a href="../../activities.html"><strong>Lab Activities</strong></a></li>
+                    <li><a href="http://137.189.97.22:4097/labwiki/Guidance"><strong>Intranet <i class="icon-lock icon-white"></i></strong></a></li>
+					<li><a data-toggle="modal" href="../../index.html#contactModal"><strong>Contact Us</strong></a></li>  -->
+                </ul>
+            </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Multimedia Laboratory</h1>
+  </div>
+</header>
+        
+        
+        
+        <div class="container">
+            <div class="tooltip-demo">
+        <section>
+                <h1>Crafting GBD-Net for Object Detection <small></small></h1>
+        </section>
+        <section>
+                <h2>This webpage provides details on our submission to the ILSVRC 2016 Challenge <small></small></h2>
+            <ul> <li><p>ILSVRC 2016 Object Detection Challenge (Team: CUImage): <a href="http://image-net.org/challenges/LSVRC/2016/results#det">Rank #1 in both provided training data track and additional training data track.</a></p></li></ul>
+
+            <ul> <li><p>ILSVRC 2016 Object Detection from Video Challenge (Team: CUVideo): <a href="http://image-net.org/challenges/LSVRC/2016/results#vid">Rank #1 in Object detection/tracking from video with provided training data track, Rank #2 in Object detection from video with provided training data track.</a></p></li></ul>
+            
+        </section>
+
+		<!-- Put your overview diagram or representative image here, preferably a bigger image 
+		Put your image into folder ./images inside your project_name folder (rename the folder with your project's name, without space!)
+        ================================================== -->
+        <section id="overview_diagram">
+          <div class="row-fluid">
+            <div class="thumbnail">
+                <img src="./images/overview.jpg" alt="">
+            </div>
+          </div>
+        </section>
+		
+		 <!-- Content
+        ================================================== -->
+
+        <section>
+ 
+
+			<h2>Abstract <small></small></h2>
+            <p>
+			The visual cues from multiple support regions of different sizes and resolutions are complementary in classifying a candidate box in object detection. How to effectively integrate local and contextual visual cues from these regions has become a fundamental problem in object detection.  In this paper, we proposal a gated bi-directional CNN (GBD-Net) to pass messages among features from different support regions during both feature learning and feature extraction. Such message passing can be implemented through convolution in two directions and can be conducted in various layers. Therefore, local and contextual visual patterns can validate the existence of each other by learning their nonlinear relationships and their close interactions are modeled in a much more complex way. It is also shown that message passing is not always helpful but dependent on individual samples. Gated functions are further introduced to control message transmission and their on-or-offs are controlled by extra visual evidence from the input sample. The effectiveness of GBD-Net is shown through experiments on three object detection datasets, ImageNet, Pascal VOC2007 and Microsoft COCO. This paper shows the details of our approach in wining the ImageNet object detection challenge of 2016, with source code provided online.
+			</p>
+			
+		</section>
+
+		<section>
+				<h2>Contribution Highlights <small></small></h2>
+			<ul>
+             <li>A new deep learning pipeline for object detection. It effectively integrates region proposal, feature representation learning, context modeling, and model averaging into the detection system. Detailed component-wise analysis is provided through extensive experimental evaluation. This paper also investigates the influence of CNN structures for the large-scale object detection task under the same setting. The details on our submission in winning the ImageNet Object Detection Challenge is provided in this paper, with source code provided online.</li>
+
+             <li> A bi-directional network structure is proposed to pass messages among features from multiple support regions of different resolutions. With this design, local patterns pass detailed visual messages to larger patterns and large patterns passes contextual visual messages in the opposite direction. Therefore, local and contextual features cooperate with each other in improving detection accuracy. It shows that message passing can be implemented through convolution.</li>
+
+             <li> We propose to control message passing with gate functions. With the designed gate functions, message from a found pattern is transmitted when it is useful in some samples, but is blocked for others.</li>
+				
+			</ul>
+			
+		</section>
+
+
+		
+		
+		<section>
+			<h2>Images <small></small></h2>
+			<!-- Put other representative images here -->
+			<!-- Again, please put the images in to ./images -->
+            <div class="row-fluid">
+				<div class="span3">
+					<img src="./images/motivation.jpg" width="300" alt="">
+				</div>
+				<div class="span9">
+					<strong>Illustrate the motivation of passing messages among features from supporting regions of different resolutions, and  controlling message passing according different image instances: </strong>
+					<p>Blue windows indicate the ground truth bounding boxes. Red windows are candidate boxes. It is hard to classify candidate boxes which cover parts of objects because of similar local visual cues in (a) and ignorance on the occlusion status in (b). Local details of rabbit ears are useful for recognizing the rabbit head in (c). The contextual human head help to find that the rabbit ear worn on human head should not be used to validate the existence of the rabbit head in (d).</p>
+				</div>
+			</div>
+			
+			<p></p> <!-- this is to separate different rows of figures -->
+
+			<div class="row-fluid">
+                <div class="span3">
+                    <img src="./images/overview.jpg" width="300" alt="">
+                </div>
+                <div class="span9">
+                    <strong>Overview of our framework: </strong>
+                    <p>The network takes an image as input and produces feature maps. The roi-pooling is done on  feature maps to obtain features with different resolutions and support regions, denoted by -0.2, 0.2, 0.8 and 1.7. Red arrows denote our gated bi-directional structure for passing messages among features. Gate functions G are defined for controlling the message passing rate. Then all features h^3_i for i = 1, 2, 3, 4 go through multiple CNN layers with shared parameters to obtain the final features that are used to predict the class y. Parameters on black arrows are shared across branches, while parameters on red arrows are not shared.</p>
+                </div>
+            </div>
+
+            <p></p> <!-- this is to separate different rows of figures -->
+
+            <div class="row-fluid">
+                <div class="span3">
+                    <img src="./images/net_separate.jpg" width="300" alt="">
+                </div>
+                <div class="span9">
+                    <strong>Exemplar implementation of our model: </strong>
+                    <p>The gated bi-directional network, dedicated as GBD-Net, is placed between Inception (4d) and Inception (4e). Inception (4e),(5a) and (5b) are shared among all branches.</p>
+                </div>
+            </div>
+            
+
+            <p></p> <!-- this is to separate different rows of figures -->
+            
+            <div class="row-fluid">
+                <div class="span3">
+                    <img src="./images/multi_inputs.jpg" width="300" alt="">
+                </div>
+                <div class="span9">
+                    <strong>Illustration of using roi-pooling to obtain CNN features with different resolutions and support regions: </strong>
+                    <p>The red rectangle in the left image is a candidate box. The right four image patches show the supporting regions for {b^p}.</p>
+                </div>
+            </div>
+
+            <p></p> <!-- this is to separate different rows of figures -->
+            
+            <div class="row-fluid">
+                <div class="span3">
+                    <img src="./images/bi_direction_net.jpg" width="300" alt="">
+                </div>
+                <div class="span9">
+                    <strong>Details of our bi-directional structure: </strong>
+                    <p>$\otimes$ denotes convolution. The input of this structure is the features {h^0_i} of multiple resolutions and contextual regions. Then bi-directional connections among these features are used for passing messages across resolutions/contexts. The output h^3_{i} are updated features for different resolutions/contexts after message passing.</p>
+                </div>
+            </div>
+
+            <p></p> <!-- this is to separate different rows of figures -->
+            
+            <div class="row-fluid">
+                <div class="span3">
+                    <img src="./images/gate.jpg" width="300" alt="">
+                </div>
+                <div class="span9">
+                    <strong>Illustration of the bi-directional structure with gate functions: </strong>
+                    <p>The $\otimes$ represents the convolution and the switch button represents the gate function.</p>
+                </div>
+            </div>
+
+            <p></p> <!-- this is to separate different rows of figures -->
+            
+            <div class="row-fluid">
+                <div class="span3">
+                    <img src="./images/ResNet269.jpg" width="300" alt="">
+                </div>
+                <div class="span9">
+                    <strong>Architectures for the baseline ResNet-269: </strong>
+                    <p> Building blocks are the identity mapping blocks, with the numbers of blocks stacked. Downsampling is performed by conv3_1, conv4\_1, and conv5\_1 with a stride of 2.</p>
+                </div>
+            </div>
+
+            <p></p> <!-- this is to separate different rows of figures -->
+            
+            <div class="row-fluid">
+                <div class="span3">
+                    <img src="./images/modified_gbd_net.jpg" width="300" alt="">
+                </div>
+                <div class="span9">
+                    <strong>Details of our modified bi-directional structure: </strong>
+                    <p> Compared with the original stucture, an identity mapping layer is added from h_*^0 to h_*^3.  The convolution from [h_*^1, h_*^2]$ to  h_*^3 is changed into max-pooling.</p>
+                </div>
+            </div>
+			
+		</section>
+		
+		<section>	
+			<h2>Codes <small></small></h2>
+			<p>
+			Please find our code <a href="https://github.com/craftGBD/craftGBD">here</a>.
+			</p>
+		</section>
+
+		<section>
+                <h2>Citation <small></small></h2>
+            <p>
+            If you use our codes or dataset, please cite the following papers:
+            </p>
+            <ul>
+            <li> Xingyu Zeng, Wanli Ouyang, Bin Yang, Junjie Yan, Xiaogang Wang. "Gated Bi-directional CNN for Object Detection", European Conference on Computer Vision(ECCV). Springer International Publishing, 2016.
+            <li> Zeng, X., Ouyang, W., Yan, J., Li, H., Xiao, T., Wang, K., ... & Zhou, H. (2016). Crafting GBD-Net for Object Detection. arXiv preprint arXiv:1610.02579.
+            </li>
+            </ul>
+        </section>
+		  
+		  
+
+
+	
+		  
+                
+<!-- Footer ================================================== -->
+<footer class="footer">
+    <div class="container">
+        <p class="pull-right">
+			Share This Page <br />
+			<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+			<!-- Place this tag where you want the +1 button to render. -->
+			<div class="g-plusone" data-size="medium"></div>
+
+			<div id="fb-root"></div>
+        </p>
+        <p>&copy 2013 <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory</a></p>
+        <p><a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong 香港中文大学</a></p>
+        
+		<!-- Modal -->
+		<div id="creditModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="creditModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					  <h3 id="creditModalLabel">Site Credits</h3>
+					</div>
+					<div class="modal-body">
+						<p>This site was built using <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, a front-end framework for web development. Thanks to the following site developers and all lab members that contribute their suggestions and information</p>
+						<ul>
+						<li><a href="#">Bing Xu</a></li>
+						<li><a href="http://www.ee.cuhk.edu.hk/~wlouyang/">Wanli Ouyang</a></li>
+						<li><a href="#">Ping Luo</a></li>
+						<li><a href="http://personal.ie.cuhk.edu.hk/~ccloy/">Chen Change Loy</a></li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+					  <button class="btn" data-dismiss="modal">Close</button>
+					</div>
+		</div>		
+		<p><a data-toggle="modal" href="index.html#creditModal">Site Credits</a></p>
+        
+		<!-- Modal -->
+					<div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					  <h3 id="contactModalLabel">Contact Us</h3>
+					</div>
+					<div class="modal-body">
+							<address>
+								Multimedia Lab <br />
+								Department of Information Engineering <br />
+								The Chinese University of Hong Kong <br />
+								Shatin, New Territories, Hong Kong SAR
+							</address>
+
+							<p>
+								<i class="icon-play-circle"></i> Email: 
+								mmlab at ie cuhk edu hk
+							</p>
+							<p>
+								<i class="icon-play-circle"></i> Phone:
+								(852) 2609-8206 
+							</p>
+							<p>
+								<i class="icon-play-circle"></i> Fax: 
+								(852) 2603-5032
+							</p>
+							
+							<p>
+							<br />
+							<small>
+							<a href="http://www.cuhk.edu.hk/english/university/visitors.html">Getting to the main campus</a> <br />
+							<a href="http://www.cuhk.edu.hk/english/campus/cuhk-campus-map.html">Campus map</a>
+							</small>
+							</p>
+					</div>
+					<div class="modal-footer">
+					  <button class="btn" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+    </div>
+</footer>
+
+</div> <!-- /tooltip-demo -->
+</div> <!-- /container -->
+
+
+        
+<!-- Le javascript
+        ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script type="text/javascript" src="../js/widgets.js"></script>-->
+<script src="../../js/jquery.js"></script>
+<!--<script src="../../js/prettify.js"></script>-->
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<!--<script src="../../js/bootstrap-dropdown.js"></script>-->
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<!--<script src="../../js/bootstrap-tab.js"></script>-->
+<script src="../../js/bootstrap-tooltip.js"></script>
+<!--<script src="../../js/bootstrap-popover.js"></script>-->
+<!--<script src="../../js/bootstrap-button.js"></script>-->
+<!--<script src="../../js/bootstrap-collapse.js"></script>-->
+<script src="../../js/bootstrap-carousel.js"></script>
+<!--<script src="../../js/bootstrap-typeahead.js"></script>-->
+<script src="../../js/bootstrap-affix.js"></script>
+<script src="../../js/application.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+        
+        
+        
+        
+        
+        
+</body></html>

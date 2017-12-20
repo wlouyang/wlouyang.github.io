@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv="Content-Language" content="zh-cn"><meta http-equiv="Content-Type" content="text/html; charset=GB2312"><title>Performance Evaluation of Pattern Matching Algorithms</title><link rel="stylesheet" href="blit1111-106.css">
+<!--mstheme--><link rel="stylesheet" href="blit1111-106.css">
+<meta name="Microsoft Theme" content="blitz 1111"><meta content="Wanli Ouyang, Federico Tombari" name="author"></head><body>
+
+                  <font size="4"></font>
+					<table style="width: 80%; height: 90%; text-align: left; margin-left: auto; margin-right: auto;" border="1" cellpadding="1" cellspacing="1"><tbody><tr><td><h1 style="font-family: Helvetica,Arial,sans-serif; color: rgb(0, 0, 153);" align="center"><br>
+</h1>
+      <h1 style="font-family: Helvetica,Arial,sans-serif; color: rgb(0, 0, 153);" align="center">Performance Evaluation 
+					of Pattern Matching Algorithms</h1>
+
+					<p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; text-align: center;"><span lang="en-us"><span style="font-weight: bold;"><big>
+Wanli Ouyang&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Federico
+Tombari&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Stefano
+Mattoccia&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Luigi Di
+Stefano&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Wai-Kuen Cham&nbsp; </big></span><big>&nbsp;</big> </span></p>
+					<p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif;" align="center">
+								<img src="PME_Exp_Results_files/image003.gif" border="0" height="140" width="97"><span lang="en-us"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span><span lang="en-us"> &nbsp; &nbsp;<img style="width: 100px; height: 141px;" alt="" src="PME_Exp_Results_files/image009.jpg"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; </span>
+								<img src="PME_Exp_Results_files/image007.jpg" border="0" height="140" width="110"><span lang="en-us">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+								</span>
+								<img src="PME_Exp_Results_files/image005.jpg" border="0" height="141" width="104"><span lang="en-us">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+								</span>
+								<img src="PME_Exp_Results_files/image001.gif" border="0" height="141" width="120"></p><big style="color: rgb(0, 0, 153);"><big></big></big><p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; text-align: left;"><big style="color: rgb(0, 0, 153);"><big><span style="font-weight: bold;"><br>
+</span></big></big></p>
+      <p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; text-align: left;"><big style="color: rgb(0, 0, 153);"><big><span style="font-weight: bold;">INTRODUCTION</span></big></big></p>
+<p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><font size="4">This
+page presents a performance evaluation of Full-Search (FS) - equivalent
+pattern matching algorithm. The results presented on this webpage are
+relative to the following paper:</font></p>
+      <p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; font-weight: bold;" align="left">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <big style="color: rgb(0, 0, 153);"><span style="font-weight: normal;">[1] Wanli Ouyang, Federico Tombari, Stefano 
+								Mattoccia, Luigi Di Stefano and Wai-Kuen Cham, 
+								</span><br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; "Performance Evaluation of Full Search 
+								Equivalent Pattern Matching Algorithms
+								"<span style="font-weight: normal;">&nbsp;&nbsp;&nbsp; <br>
+      </span><i style="font-weight: normal;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; IEEE 
+								Trans. Pattern <span lang="en-us">Analysis</span>
+								<span lang="en-us">and machine</span> </i><i style="font-weight: normal;">Intelligence(TPAMI)</i><span style="font-weight: normal;">, 
+								Minor revision.</span></big>
+								</p>
+<p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><font size="4">Pattern matching relates to the problem of matching 
+								a given pattern within a given image. </font><big>Full search-equivalent pattern matching algorithms 
+								accelerate the pattern matching process and, at 
+								the same time, yield exactly the same result as 
+								the full search/exhaustive search.</big></p><p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><small><span lang="en-us"><font size="5"><small>A&nbsp;pattern matching <span style="font-weight: bold;">DEMO</span> is available <a href="Demo.html">here</a>.</small></font></span></small></p><p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><big>The algorithms included in our evaluation are the following ones:</big></p><div style="font-family: Helvetica,Arial,sans-serif;" v:shape="_x0000_s1026" class="O">
+						<div style=""><ul style="list-style-type: circle;"><li><big>
+							<span style="">
+							<font size="3"><big><span style="font-weight: bold;">LRP:&nbsp;</span> [2] M. G. Alkhansari. A fast 
+							globally optimal algorithm for template </big></font>
+							</span>
+							<span style="font-size: 12pt;"><big>
+							matching using low-resolution pruning.</big> </span>
+							<font size="3"><big>
+							<span style="">
+							TIP</span></big></font><span style="font-size: 12pt;">, 
+							<big>10(4):526<span lang="en-us">-</span>533, Apr 2001.</big></span></big></li></ul></div>
+						<div style=""><ul><li><big>
+							<font style="font-weight: bold;" size="3"><big>PWHT<span style="">:</span></big></font><span style="font-size: 12pt;"><span style="font-weight: bold;">
+							[3]&nbsp;</span><big><a href="http://vision.arc.nasa.gov/personnel/helor/helor.html">
+							Y. Hel-Or</a> and
+							<a href="http://cs.haifa.ac.il/hagit/">H. Hel-Or</a>. 
+							Real time pattern matching using projection kernels. TPAMI, 27(9): 1430-1445, Sept. 2005. </big></span></big></li></ul></div><div style=""><ul><li><big><font style="font-weight: bold;" size="3"><big>PGCK<span style="">:</span></big></font><span style="font-size: 12pt;">
+							</span>
+							<span style="">
+							<font size="3"><big>[4] G. Ben-Artz, </big></font>
+							<a href="http://cs.haifa.ac.il/hagit/">
+							<font size="3"><big>H. Hel-Or</big></font></a></span><big><span style="font-size: 10pt;"><span style="font-size: 12pt;">, 
+							<big>and
+							<a href="http://vision.arc.nasa.gov/personnel/helor/helor.html">
+							Y. Hel-Or</a>. The Gray-code filter kernels. TPAMI, 29(3):382-393. Mar. 2007.&nbsp;</big></span></span><big><span style="font-size: 12pt;"></span></big></big></big></li></ul><big>
+							</big></div>
+						<div style=""><ul><li><big>
+							<font style="font-weight: bold;" size="3"><big>
+							<span style="">
+							IDA: </span></big></font><font size="3"><big><span style="">[5]</span></big></font><span style="font-size: 12pt;">&nbsp;</span><span style=""><a href="http://www.vision.deis.unibo.it/fede/"><font size="3"><big>Federico Tombari</big></font></a></span><span style="font-size: 10pt;"><span style="font-size: 12pt;">,</span><a href="http://www.vision.deis.unibo.it/smatt/"><font size="3"><big><span style=""></span></big></font><font size="3"><big><span style="">Stefano Mattoccia</span></big></font></a><font size="3"><big><span style="">, 
+							and Luigi Di Stefano</span></big></font><span style="font-size: 12pt;">.<big> 
+							Full search equivalent pattern matching with incremental dissimilarity approximatinos. TPAMI, 31(1): 129-141. Jan. 2009.</big></span></span><big><span style="font-size: 12pt;"></span></big></big></li></ul></div>
+						<div style="">
+							<ul><li><big><span style="font-weight: bold;">
+							<font size="3"><big>FWHT: </big></font></span><font size="3"><big>[6]</big></font><span style="font-size: 12pt;"><span style="font-weight: bold;">
+							</span><big><a href="http://www.ee.cuhk.edu.hk/%7Ewlouyang/">Wanli 
+							Ouyang</a> and</big> </span><span style="">
+							<a href="http://www.ee.cuhk.edu.hk/%7Ewkcham/">
+							<font size="3"><big>Wai-Kuen Cham</big></font></a></span><span style="font-size: 10pt;"><span style="font-size: 12pt;">.<big> 
+							Fast algorithm for Walsh Hadamard transform on sliding windows. TPAMI, 32(1):165-171. Jan. 2010</big></span><big><font size="3"><big><big><span style=""></span></big></big></font><span style="font-size: 12pt;"></span></big></span><big><span style="font-size: 12pt;" lang="en-us"></span></big><span style="font-size: 10pt;"><span style="font-size: 12pt;"></span><font size="3"><big><span style=""></span></big></font><span style="font-size: 12pt;">&nbsp;
+							</span></span><span style="font-size: 12pt; font-weight: bold;">
+								<span lang="en-us">[<a href="http://www.ee.cuhk.edu.hk/%7Ewlouyang/FWHT.htm">Webpage</a>]
+							</span>[<a href="http://www.ee.cuhk.edu.hk/%7Ewlouyang/Papers/Manu_FWHT.pdf">Full 
+								text</a><sup> *</sup>] <span lang="en-us">[<a href="http://www.ee.cuhk.edu.hk/%7Ewlouyang/PPT/FWHT8.ppt">Powerpoint</a>]</span></span></big></li></ul><ul><li><big><span lang="en-us"><span style="font-weight: bold;">FFT:</span> [7] 
+							J.P. Lewis, Fast template matching. in Vision 
+							Interface 95, Quebec City, Canada, May 15</span><span style="font-size: 12pt;" lang="en-us">-</span><span lang="en-us">19 1995, 
+							pp. 120</span><span style="font-size: 12pt;" lang="en-us">-</span></big><big>123. [Source code on
+							<a href="http://sourceforge.net/projects/opencvlibrary">
+							OpenCV</a>]</big></li></ul></div>
+					</div>
+					
+<p style="margin-top: 6px; margin-bottom: 6px; margin-left: 58px; text-indent: -20px; font-family: Helvetica,Arial,sans-serif;">
+<font color="#808080"><big><span style="color: rgb(49, 49, 49);" lang="en-us"><font size="1"><big>* Personal use of these 
+materials is&nbsp;permitted. However, permission to reprint/republish this material 
+for advertising or promotional purposes or for creating new collective works for 
+resale or redistribution to servers or lists, or to reuse any copyrighted 
+component of this work in other works must be obtained from IEEE.</big></font></span></big><font size="1">
+</font></font></p>
+					
+								<span lang="en-us"><b>
+								</b></span><p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; font-weight: bold; color: rgb(0, 0, 153);" align="left"><small><span lang="en-us"><font size="6"><small></small></font></span></small></p><p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; font-weight: bold; color: rgb(0, 0, 153);" align="left"><small><span lang="en-us"><font size="6"><small>DATASET</small></font></span></small></p>
+					<ul style="font-family: Helvetica,Arial,sans-serif;"><li><span lang="en-us">
+								<font size="4">
+								<a href="Dataset/Template.zip">Templates/Patterns</a></font></span></li></ul><ul style="font-family: Helvetica,Arial,sans-serif;"><li><a href="Dataset/Image_lowres.zip"><span lang="en-us"><font size="4">Image without noises f</font></span><font size="4">or 
+								sizes 160x120 320x240 640x480</font></a><span lang="en-us"></span><b><span lang="en-us"><font size="4"> 
+								</font></span></b><span lang="en-us"><font size="4">with source code for applying different kinds of artificial noise to images (10MB)</font></span></li></ul><ul style="font-family: Helvetica,Arial,sans-serif;"><li><a href="Dataset/Image_HighRes.zip"><font size="4"><span lang="en-us">Image without noises f</span>or 
+								sizes </font>
+								<font size="4"><span lang="en-us">1280x960 and 
+								2560x1920</span></font></a><span lang="en-us"><b><font size="4"> 
+								</font></b><font size="4">(120MB) </font><font size="4">Currently not available because of size 
+								issue. We will provide it online later.</font></span></li></ul>
+					
+					
+					<p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif; color: rgb(51, 102, 102);" align="left">
+								<span lang="en-us"><b>
+								<font size="4">
+								<a href="Dataset/1.JPG">A demo image showing an 
+								image under different levels of distortions</a></font></b></span></p>
+					<p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif;" align="left">
+								<span lang="en-us"><big>Datasets are from:</big><br>
+								</span>
+								<span style="font-size: 14pt;" lang="EN-US"><a href="http://people.csail.mit.edu/torralba/images">
+								http://people.csail.mit.edu/torralba/images</a></span><br>
+								<span style="font-size: 14pt;" lang="EN-US"><a href="http://zulu.ssc.nasa.gov/mrsid">
+								http://zulu.ssc.nasa.gov/mrsid</a> <br>
+								<a href="http://www.data-compression.info/corpora/lukascorpus">
+								www.data-compression.info/corpora/lukascorpus</a>
+								</span></p><p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif;" align="left"><big>
+								<span lang="en-us">Details about the&nbsp;dataset used 
+								for comparison:</span></big></p>
+					<big></big><table style="font-family: Helvetica,Arial,sans-serif; width: 319px; height: 397px; text-align: left; margin-left: auto; margin-right: auto;" id="table1" border="1">
+						<tbody><tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>Dataset</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>Image size</big></td>
+							<td style="width: 108px; font-family: Helvetica,Arial,sans-serif;"><big>Pattern size</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S1-1</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>160x120</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>16x16</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S2-1</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>320x240</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>16x16</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S2-2</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>320x240</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>32x32</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S3-1</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>640x480</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>16x16</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S3-2</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>640x480</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>32x32</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S3-3</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>640x480</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>64x64</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S4-1</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>1280x960</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>16x16</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S4-2</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>1280x960</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>32x32</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S4-3</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>1280x960</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>64x64</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S4-4</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>1280x960</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>128x128</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S5-1</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>2560x1920</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>16x16</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S5-2</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>2560x1920</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>32x32</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S5-3</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>2560x1920</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>64x64</big></td>
+						</tr>
+						<tr>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="89"><big>S5-4</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="100"><big>2560x1920</big></td>
+							<td style="font-family: Helvetica,Arial,sans-serif;" width="108"><big>128x128</big></td>
+						</tr>
+					</tbody></table>
+      <p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif;" align="left"><small><span lang="en-us"><small><font style="color: black;" size="6"><small><small>Please cite appropriately this webpage and [1] if you use this dataset for research or scientific purposes. </small></small></font></small><b><font style="color: rgb(0, 0, 153);" size="6"><small><br>
+      </small></font></b></span></small></p>
+      <p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif;" align="left"><small><span lang="en-us"><b><font style="color: rgb(0, 0, 153);" size="6"><small><br>
+      </small></font></b></span></small></p>
+      <p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif;" align="left"><small><span lang="en-us"><b><font style="color: rgb(0, 0, 153);" size="6"><small>
+		<a href="PME_Exp_Results.htm">SELECTED EXP. RESULTS</a></small></font></b></span></small></p>
+<p style="vertical-align: middle; font-family: Helvetica,Arial,sans-serif;" align="left"><small><span lang="en-us"><b><font style="color: rgb(0, 0, 153);" size="6"><small></small></font></b></span></small></p>
+					<p style="font-family: Helvetica,Arial,sans-serif;"><small><span lang="en-us"><b><font style="color: rgb(0, 0, 153);" size="6"><small><br>
+</small></font></b></span></small></p>
+      <p style="font-family: Helvetica,Arial,sans-serif;"><small><span lang="en-us"><b><font style="color: rgb(0, 0, 153);" size="6"><small>SOFTWARE</small></font></b></span></small></p>
+<p style="font-family: Helvetica,Arial,sans-serif;"><small><span lang="en-us"></span></small><big><span lang="en-us">It
+is possible to download the source code used for our evaluation. The
+code is in C. We used Visual studio 6.0 for compilation and
+linking.&nbsp;</span>Once<span lang="en-us"> compiled, this code can 
+								be directly run on the dataset provided. The source code can be downloaded from here:&nbsp; <br>
+</span></big></p>
+      <p style="font-family: Helvetica,Arial,sans-serif;"><big><span lang="en-us">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  </span><a href="Dataset/PME_code.zip">Source code in C</a></big></p>
+
+					
+					<p style="font-family: Helvetica,Arial,sans-serif;"><small>
+								<font color="#ff0000" size="6"><small>
+								<span lang="en-us"><small style="font-weight: bold;">DISCLAIMER:</small> </span></small></font></small><br></p>
+      <p style="font-family: Helvetica,Arial,sans-serif;"><big><span lang="en-us">The code provided for our evaluation includes parts of code written by the authors who 
+								developed the original algorithms being evaluated. </span></big><big>The distributed code and&nbsp;materials are 
+								protected by proprietary rights and, in 
+								particular, by copyright.</big></p>
+<p style="font-family: Helvetica,Arial,sans-serif;"><big>For research purposes: these proprietary rights are freely 
+								licensed for use and copy. Please cite their papers [2-7] and [1] appropriately if you use the provided code. <br>
+</big></p><p style="font-family: Helvetica,Arial,sans-serif;"><big>
+								For commercial purposes: please refer directly to the authors who developed the 
+								algorithms and papers.</big>
+								</p>
+					<p><big>
+								　</big></p></td></tr></tbody></table><br><br><br><br></body></html>

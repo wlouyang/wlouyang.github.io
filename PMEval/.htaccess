@@ -1,0 +1,8 @@
+AuthUserFile /img/sun/wlouyang/www_docs/PMEval/.htpasswd
+AuthGroupFile /dev/null
+AuthName ivp.ee.cuhk.edu.hk
+AuthType Basic
+
+<Limit GET POST CONNECT>
+require valid-user
+</Limit>

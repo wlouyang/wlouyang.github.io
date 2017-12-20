@@ -1,0 +1,4 @@
+reasonable Ours_CaltehcTrain 	 0.637801
+occ=none Ours_CaltehcTrain 	 0.616390
+occ=partial Ours_CaltehcTrain 	 0.806233
+occ=heavy Ours_CaltehcTrain 	 0.930196

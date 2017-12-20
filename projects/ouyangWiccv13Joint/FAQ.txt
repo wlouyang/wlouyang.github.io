@@ -1,0 +1,43 @@
+1, How did you get your data from Caltech Pedestrian Detection Benchmark? What is their corresponding relations?
+
+Ans: We have trained one linear-svm to scan all caltech dataset images and extracted a lot of bounding boxes together their corresponding svm scores (See Section.4 in our paper). Those boxes will form the mat files we provided.
+
+The code to transform image to mat files is very simple. There are three kinds of mat files. 
+
+Suppose we have n images(in the Caltech Train data, n = 4250)
+
+a, CaltechTestAllimBoxesBeforeNmsRsz3.mat
+
+1*n cells with each cell for one image,
+
+AllimBoxesBeforeNmsRsz{i}{j}.im is the image patch of the jth bounding box in the ith image.
+AllimBoxesBeforeNmsRsz{i}{j}.score is cascade score of the jth bounding box in the ith image.
+
+b, CaltechTestAllimBoxesBeforeNmsRszLabel3.mat
+
+n*1 cells with each cell for one image
+
+Labels{i}(j) is the label of the jth bounding box in the ith image.
+
+If the jth bounding box is positive, Labels{i}(j)=1;
+if the jth bounding box is negative, Labels{i}(j)=-1;
+
+c, CaltechTestAllimBoxesBeforeNmsRszBox3.mat
+
+1*n cells with each cell for one image.
+
+Allpartboxes{i} is m*5 matrix with each row [x1 y1 x2 y2 score].
+
+2, How to define the part filters?
+
+We use 20 part filters and their corresponding positions are defined in cnnsetup3.m. 
+
+We use four variables in cnnsetup3.m to define those positions, StartRow, EndRow, StartCol & EndCol. Those variables are 1*20 vectors, meaning 20 parts. Each column is one part filter.
+
+You can find those part filters in Figure 3(a) in our paper (http://www.ee.cuhk.edu.hk/~xgwang/papers/ouyangWiccv13.pdf).
+
+We suppose the whole pedestrian to be 15*5 size. Thus the ranage of StartRow & EndRow is [1,15], the range of StartCol & EndCol is [1,5]. 
+
+For example, the first part filter (Row 1-3, Col 1-3) is the left-top head-shoulder part; the second part filter (Row 1-3, Col 3-5) is the right-top head-should part.
+
+If you want to define your own part filters, you need to modify those four variables.

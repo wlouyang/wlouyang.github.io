@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://twitter.github.com/bootstrap/javascript.html#popovers -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Multimedia Laboratory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Multimedia Laboratory">
+        <meta name="author" content="Multimedia Laboratory">
+        
+        <meta name="keywords" content="Multimedia Laboratory, Face recognition, Face alignment, Face detection and tracking, Human detection, Video Surveillance, Video Processing, Image search and recognition, Machine learning" />
+        
+        <!-- Le styles -->
+        <link href="../../css/bootstrap.css" rel="stylesheet">
+        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../../css/docs.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+        <link href="../../css/mmlab.css" rel="stylesheet">
+        
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" type="image/ico" href="../favicon.ico" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+        
+		<!--<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">-->
+        
+        <!--<script src="http://vjs.zencdn.net/c/video.js"></script>-->
+        
+        <!-- Google Analytics -->
+        <!-- <script type="text/javascript">
+            
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-22940424-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+        </script> -->
+    </head>
+    
+    
+    
+    <body data-spy="scroll" data-target="#navbar" data-twttr-rendered="true">
+        
+       
+        
+        <!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <p class="lead"> DeepID-Net  Arxiv Address</p>
+  </div>
+</header>
+        
+        
+        <div class="container">
+            <div class="tooltip-demo">
+
+		<!-- Put your overview diagram or representative image here, preferably a bigger image 
+		Put your image into folder ./images inside your project_name folder (rename the folder with your project's name, without space!)
+        ================================================== -->
+        <section id="overview_diagram">
+          <div class="row-fluid">
+            <div class="thumbnail">
+                <img src="./images/overview_DeepID.png" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section id="DeepID_diagram">
+          <div class="row-fluid">
+            <div class="thumbnail">
+                <img src="./images/DeepID-Net.png" alt="">
+            </div>
+          </div>
+        </section>
+		
+		 <!-- Content
+        ================================================== -->
+        <section>
+ 
+
+			<h2>Introduction <small></small></h2>
+            <p>
+            The work uses ImageNet classification training set (1000 classes) to pre-train features, and fine tunes features on ImageNet detection training set (200 classes). This detection work is based on deep CNN with proposed new deformation layers, feature pre-training strategy, sub-region pooling and model combination. The effectiveness of learning deformation models of object parts has been proved in object detection by many existing non-deep-learning detectors, e.g. [a]. However, it is missed in current deep learning models. In deep CNN models, max pooling and average pooling are useful in handling deformation but cannot learn the deformation penalty and geometric model of object parts. We design the deformation layer for deep models so that the deformation penalty of objects can be learned by deep models. The deformation layer was first proposed in our recently published work [b], which showed significant improvement in pedestrian detection. In this submission, we extend it to general object detection on ImageNet. In [b], the deformation layer was only applied to a single level corresponding to body parts, while in this work the deformation layer was applied to every convolutional layer to capture geometric deformation at all the levels. In [b], it was assumed that a pedestrian only has one instance of a body part, so each part filter only has one optimal response in a detection window. In this work, it is assumed that an object has multiple instances of body part (e.g. a building has many windows), so each part filter is allowed to have multiple response peaks in a detection window. This new model is more suitable for general object detection. 
+            </p>
+            <p>
+The whole detection pipeline is much more complex than [b]. In addition to the above improvement, we also added several new components in the pipeline, including feature pre-training on the ImageNet classification dataset (objective function is the image classification task), feature fine-tuning on the ImageNet detection dataset (objective function is the object detection task), a proposed new sub-region pooling step, contextual modeling (which uses the whole image prediction scores over 1000 classes as contextual features to combine with features extracted from a detection window with deep CNN), SVM classification by using the extracted features. We also adopted bounding box regression [c]. 
+            </p>
+A new sub-region pooling strategy is proposed. It divides the detection window into sub-regions, and applies max-pooling or average pooling across feature vectors extracted from different sub-regions. It improves the performance and also increases the model diversity. 
+            </p>
+            <p>
+
+Different from the state-of-the-art deep learning detection framework [c], which pretrain the net on ImageNet classification data (1000 classes), We proposed a new strategy of doing pre-training on the ImageNet classification data (1000 classes), such that the pre-trained features are much more effective on the detection task and with better discriminative power on object localization. 
+            </p>
+            <p>
+By changing the configuration of each component of the detection pipeline, multiple models with large diversity are generated. Multiple models are automatically selected and combined to generate the final detection result. 
+We have submitted the results of five different approaches. The first two results report the best performance to be achieved with a single model. Their difference is whether using contextual features from image classification or not. The remaining three results report the best performance to be achieved with model combination. Their differences are using contextual modeling or not, and whether using validation 2 dataset from ImageNet as part of training or not. 
+
+			</p>			
+		</section>
+
+		<section>
+				<h2>Contribution Highlights <small></small></h2>
+			<ul>
+				<li>  Region rejection. Save feature extraction by about 10 times, slightly improve map (~1%). </li>
+				<li>  A new <b> pretraining scheme </b> for generic object detection.  </li>
+				<li> A unified deep model for <b> jointly learning feature extraction, a part deformation model, classification</b>. With the deep model, these components interact with each other in the learning process, which <b> allows each component to maximize its strength when cooperating with others </b>.</li>
+				<li> We enrich the operation in deep models by incorporating the <b> generalized deformation layer </b> into the convolutional neural networks (CNN). With this layer, various deformation handling approaches can be applied to our deep model.</li>
+				<li> The features are learned from pixels through <b> interaction with deformation models </b>. Such interaction helps to learn more discriminative features.			</li>
+				<li>  Hinge loss. Save feature computation time and lightly improve map. </li>
+				<li>  A new <b> model averaging investigation </b> for deep models. Different model, training scheme with high diversity </li>
+				<li>  Multi-stage Deep-id Net. </li>
+				<li> A new <b> model averaging investigation </b> for deep models. </li>
+			</ul>
+			
+		</section>
+
+
+		<section>
+				<h2>Slides <small></small></h2>
+            <p>
+			<li>Slides on the ImageNet 2014 Chanllenge.
+				<a href=".\material\CUHK DeepID-Net6.ppsx"><span class="label_download"> ppsx</span></a>  
+			</p>
+		</section>
+		
+		
+		<section>
+				<h2>Citation <small></small></h2>
+            <p>
+			</p>
+			<ul>
+				<li>W. Ouyang and X. Wang.  Joint Deep Learning for Pedestrian Detection. In ICCV, 2013.
+				<a href="http://www.ee.cuhk.edu.hk/~xgwang/papers/ouyangWiccv13.pdf"><span class="label_download">PDF</span></a>  
+								
+				<li>W. Ouyang, et al.  DeepID-Net: multi-stage and deformable deep convolutional neural networks for object detection. In arXiv:1409.3505.
+				<a href="http://arxiv.org/pdf/1409.3505v1"><span class="label_download">PDF</span></a>  
+				</li>
+			</ul>
+		</section>
+
+		<section>
+				<h2>Code (Available soon) <small></small></h2>
+			<ul>
+				<p>
+					Code on Google Drive (available soon)
+				</p>
+				
+		</section>
+		
+	
+		</section>
+		
+		
+
+		
+		  
+		  
+
+
+	
+		  
+                
+<!-- Footer ================================================== -->
+<footer class="footer">
+    <div class="container">
+        <p class="pull-right">
+			Share This Page <br />
+			<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+			<!-- Place this tag where you want the +1 button to render. -->
+			<div class="g-plusone" data-size="medium"></div>
+
+			<div id="fb-root"></div>
+        </p>
+        <p>&copy 2013 <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory</a></p>
+        <p><a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong 香港中文大学</a></p>
+        
+		<!-- Modal -->
+		<div id="creditModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="creditModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					  <h3 id="creditModalLabel">Site Credits</h3>
+					</div>
+					<div class="modal-body">
+						<p>This site was built using <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, a front-end framework for web development. Thanks to the following site developers and all lab members that contribute their suggestions and information</p>
+						<ul>
+						<li><a href="#">Bing Xu</a></li>
+						<li><a href="http://www.ee.cuhk.edu.hk/~wlouyang/">Wanli Ouyang</a></li>
+						<li><a href="#">Ping Luo</a></li>
+						<li><a href="http://personal.ie.cuhk.edu.hk/~ccloy/">Chen Change Loy</a></li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+					  <button class="btn" data-dismiss="modal">Close</button>
+					</div>
+		</div>		
+		<p><a data-toggle="modal" href="index.html#creditModal">Site Credits</a></p>
+        
+		<!-- Modal -->
+					<div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					  <h3 id="contactModalLabel">Contact Us</h3>
+					</div>
+					<div class="modal-body">
+							<address>
+								Multimedia Lab <br />
+								Department of Information Engineering <br />
+								The Chinese University of Hong Kong <br />
+								Shatin, New Territories, Hong Kong SAR
+							</address>
+
+							<p>
+								<i class="icon-play-circle"></i> Email: 
+								mmlab at ie cuhk edu hk
+							</p>
+							<p>
+								<i class="icon-play-circle"></i> Phone:
+								(852) 2609-8206 
+							</p>
+							<p>
+								<i class="icon-play-circle"></i> Fax: 
+								(852) 2603-5032
+							</p>
+							
+							<p>
+							<br />
+							<small>
+							<a href="http://www.cuhk.edu.hk/english/university/visitors.html">Getting to the main campus</a> <br />
+							<a href="http://www.cuhk.edu.hk/english/campus/cuhk-campus-map.html">Campus map</a>
+							</small>
+							</p>
+					</div>
+					<div class="modal-footer">
+					  <button class="btn" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+    </div>
+</footer>
+
+</div> <!-- /tooltip-demo -->
+</div> <!-- /container -->
+
+
+        
+<!-- Le javascript
+        ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script type="text/javascript" src="./js/widgets.js"></script>-->
+<script src="../../js/jquery.js"></script>
+<!--<script src="../../js/prettify.js"></script>-->
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<!--<script src="../../js/bootstrap-dropdown.js"></script>-->
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<!--<script src="../../js/bootstrap-tab.js"></script>-->
+<script src="../../js/bootstrap-tooltip.js"></script>
+<!--<script src="../../js/bootstrap-popover.js"></script>-->
+<!--<script src="../../js/bootstrap-button.js"></script>-->
+<!--<script src="../../js/bootstrap-collapse.js"></script>-->
+<script src="../../js/bootstrap-carousel.js"></script>
+<!--<script src="../../js/bootstrap-typeahead.js"></script>-->
+<script src="../../js/bootstrap-affix.js"></script>
+<script src="../../js/application.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+        
+        
+        
+        
+        
+        
+</body></html>

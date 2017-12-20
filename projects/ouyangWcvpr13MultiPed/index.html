@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://twitter.github.com/bootstrap/javascript.html#popovers -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Multimedia Laboratory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Multimedia Laboratory">
+        <meta name="author" content="Multimedia Laboratory">
+        
+        <meta name="keywords" content="Multimedia Laboratory, Face recognition, Face alignment, Face detection and tracking, Human detection, Video Surveillance, Video Processing, Image search and recognition, Machine learning" />
+        
+        <!-- Le styles -->
+        <link href="../../css/bootstrap.css" rel="stylesheet">
+        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../../css/docs.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+        <link href="../../css/mmlab.css" rel="stylesheet">
+        
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" type="image/ico" href="../favicon.ico" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+        
+		<!--<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">-->
+        
+        <!--<script src="http://vjs.zencdn.net/c/video.js"></script>-->
+        
+        <!-- Google Analytics -->
+        <!-- <script type="text/javascript">
+            
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-22940424-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+        </script> -->
+    </head>
+    
+    
+    
+    <body data-spy="scroll" data-target="#navbar" data-twttr-rendered="true">
+        
+        
+        
+        <!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <p class="lead">Single-Pedestrian Detection aided by Multi-pedestrian Detection</p>
+  </div>
+</header>
+        
+        
+        <div class="container">
+            <div class="tooltip-demo">
+
+		<!-- Put your overview diagram or representative image here, preferably a bigger image 
+		Put your image into folder ./images inside your project_name folder (rename the folder with your project's name, without space!)
+        ================================================== -->
+        <section id="overview_diagram">
+          <div class="row-fluid">
+            <div class="thumbnail">
+                <img src="./images/overview.jpg" alt="">
+            </div>
+          </div>
+        </section>
+		
+		 <!-- Content
+        ================================================== -->
+        <section>
+ 
+
+			<h2>Introduction <small></small></h2>
+            <p>
+			Pedestrian detection is challenging when multiple pedestrians are close in space. Firstly, a single-pedestrian detector tends to combine the visual cues from different pedestrians as the evidence of seeing a pedestrian and thus the detection result will drift. As a result, nearby pedestrian-existingwindows with lower detection scores will be eliminated by nonmaximum suppression (NMS).Secondly, when a pedestrian is occluded by another nearby pedestrian, its detection score may be too low to be detected.
+			</p>
+			
+			<p>
+			On the other hand, the existence of multiple nearby pedestrians forms some unique patterns which do not appear on isolated pedestrians. They can be used as extra visual cues to refine the detection result of single pedestrians.
+			</p>
+			<p>The motivations of this paper are two-folds:
+			</p>
+			<p>
+			<ul>
+			<li>
+			It is recognized by sociologists that nearby pedestrians walk in groups and show particular spatial patterns.
+			</li>
+			<li>
+			From the viewpoint of computer vision, these 3D spatial patterns of nearby pedestrians can be translated into unique 2D visual patterns resulting from the perspective projection of 3D pedestrians to 2D image. These unique 2D visual patterns are easy to detect and are helpful for estimating the configuration of multiple pedestrians.
+			</li>
+			</p>
+		</section>
+
+		<section>
+				<h2>Contribution Highlights <small></small></h2>
+			<ul>
+				<li><b>A multi-pedestrian detector is learned with a mixture of deformable part-basedmodels to effectively capture the unique visual patterns appearing in multiple nearby pedestrians.</b> The training data is labeled as usual, i.e. a bounding box for each pedestrian. The spatial configuration patterns of multiple nearby pedestrians are learned and clustered into mixture component.</li>
+				<li>In the multi-pedestrian detector, each single pedestrian is specifically designed as a part, called <b>pedestrian-part</b>.</li>
+				<li><b>A new probabilistic framework is proposed to model the configuration relationship between results of multi-pedestrian detection and 1-pedestrian detection.</b> With this framework, multi-pedestrian detection results are used to refine 1-pedestrian detection results.</li>
+			</ul>
+			
+		</section>
+
+		<section>
+				<h2>Demo <small></small></h2>
+      <p>
+			Comparison of our approach (left) with the deformable part based model in [a] (right) on the ETH dataset.
+			</p>
+			<iframe width="560" height="315" src="//www.youtube.com/embed/0JTg93ur52A" frameborder="0" allowfullscreen></iframe>
+		</section>
+
+		<section>
+				<h2>Citation <small></small></h2>
+            <p>
+			If you use our codes or dataset, please cite the following papers:
+			</p>
+			<ul>
+				<li>W. Ouyang and X. Wang. Single-pedestrian detection aided by multi-pedestrian detection. In CVPR, 2013.
+				<a href=".\material\Ouyang2013MultiPed.pdf"><span class="label_download">PDF</span></a>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+				<h2>Dataset <small></small></h2>
+			<ul>
+				<li> 
+				<a href=".\material\INRIA_ovlpPos.mat"><span class="label_download">Extended INRIA Label</span></a>
+				</li>
+				<li> 
+				<a href=".\material\INRIA_ovlpPos_SC1_DR2.mat"><span class="label_download">Extended INRIA Label divided into 9 clusters</span></a>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+				<h2>Code (Matlab code on Wnidows OS) <small></small></h2>
+			<ul>
+				<li> 
+				<a href="https://docs.google.com/file/d/0B0wgp0jLKthhLVJzYnJRd3lJN0U/edit?usp=sharingt"><span class="label_download">Matlab Code (20KB)</span></a>
+				</li>
+				<li> 
+				<a href="https://docs.google.com/file/d/0B0wgp0jLKthhLThRMzNOUlpFY1U/edit?usp=sharing"><span class="label_download">Evaluation code, detection results and annotations (126MB)</span></a>
+				</li>
+				<li> 
+				<a href="https://docs.google.com/file/d/0B0wgp0jLKthhbWExcEZrZFFQbVU/edit?usp=sharing"><span class="label_download">Intemediate data required to run the code (about 1GB)</span></a>
+				</li>
+				<li> 
+				<a href="./material/model.rar"><span class="label_download">The 2-ped DPM model trained on the Extended INRIA Label(about 1MB)</span></a>
+				</li>
+				<p>
+			  For users who cannot download from Google Drive:
+				<li> 
+				<a href="http://pan.baidu.com/s/1sjq9yyT"><span class="label_download">Code and dataset on Baidu)</span></a>
+				</li>
+			</p>
+			</ul>
+			
+					The files are on the GoogleDocs. 
+					To Run the code: 
+        <li> 
+					1. Put all of the documents into the same folder and decompress them. Suppose the root folder is "root", then you should have three folders "root/VerC1", "root/eval", and "root/Params". 
+				</li>
+        <li> 
+					2. Run "main.m" in the folder "root/VerC1" to obtain the results.
+				</li>
+        <li> 
+					Note: The intermediate data for 1-ped detectors are mainly obtained from the results on <a href="http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/"><span class="label_download"> Piotr Dollár's webpage</span></a>
+				</li>
+				
+		</section>
+
+		
+		<section>
+			<h2>Images <small></small></h2>
+			<!-- Put other representative images here -->
+			<!-- Again, please put the images in to ./images -->
+            <div class="row-fluid">
+				<div class="span3">
+					<a href="./images/VisualPatterns.jpg"><img src="./images/VisualPatterns.jpg" width="300" alt=""></a>
+				</div>
+				<div class="span9">
+					<strong>Visual Patterns: </strong>
+					<p>Visual patterns learned from training data with the HOG feature (first column) and examples detected from testing data (remaining columns). In the first row, pedestrians walk side by side. In the second row, pedestrians on the left are occluded by pedestrians on the right.</p>
+				</div>
+			</div>
+			
+			<p></p> <!-- this is to separate different rows of figures -->
+			
+			<div class="row-fluid">
+				<div class="span3">
+					<a href="./images/refine1PedUsing2Ped.jpg"><img src="./images/refine1PedUsing2Ped.jpg" width="300" alt=""></a>
+				</div>
+				<div class="span9">
+					<strong>Refine 1-pedestrian Detection Using 2-pedestrian Detection: </strong>
+					<p>Use 2-pedestrian detection result to refine 1-pedestrian detection. The detection scores of 1-pedestrian, 2-pedestrians and pedestrian-parts are integrated as the evidence to 1-pedestrian configuration z1. This evidence is added to the result obtained with the 1-pedestrian detector. Examples in the left column are obtained at 1FPPI on the ETH dataset</p>
+				</div>
+			</div>
+
+			<p></p> <!-- this is to separate different rows of figures -->
+			
+			<div class="row-fluid">
+				<div class="span3">
+					<a href="./images/examples2PedDetector.jpg"><img src="./images/examples2PedDetector.jpg" width="300" alt=""></a>
+				</div>
+				<div class="span9">
+					<strong>Examples of 2-pdestrian detectors: </strong>
+					<p>(a) Examples of 2-Pedestrian detectors learned for different clusters, <br> (b) pedestrian-part filter and the single-pedestrian root filter. (1a): root filter; (2a): three part filters found from root filter; (3a): pedestrian-part filters; (4a): examples detected by the detectors in the same rows. Red rectangles are 2-pedestrian detection results. Blue rectangles indicate pedestrian-part locations.</p>
+				</div>
+			</div>
+			
+			<p></p> <!-- this is to separate different rows of figures -->
+
+			<div class="row-fluid">
+				<div class="span3">
+					<a href="./images/improvement.jpg"><img src="./images/improvement.jpg" width="300" alt=""></a>
+				</div>
+				<div class="span9">
+					<strong>Examples of 2-pdestrian detectors: </strong>
+					<p>Miss rate improvement of the framework for each of the state-of-the-art 1-pedestrian detectors on Caltech-Test (left), TUDBrussels (middle) and ETH (right). X-axis denotes the miss rate improvement.</p>
+				</div>
+			</div>
+			
+			<p></p> <!-- this is to separate different rows of figures -->
+
+			<div class="row-fluid">
+				<div class="span3">
+					<a href="./images/rocCaltechTestTUDETH.jpg"><img src="./images/rocCaltechTestTUDETH.jpg" width="300" alt=""></a>
+				</div>
+				<div class="span9">
+					<strong>ROC Curves on CaltechTest, TUD, ETH: </strong>
+					<p>Detection results of existing approaches (top) and integrating them with our framework (bottom) on the datasets Caltech-Test (a), TUD-Brussels (b) and ETH (c). The results of integrating existing approaches with our framework are denoted by ’+Our’. For example, the result of integrating HOG with our framework is denoted by HOG+Our.</p>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section>
+<!--				<h2>Note <small></small></h2> --->
+					There is a paper [a] that has similar idea as ours, though different in detailed consideration. We almost simultaneously consider using multi-pedestrian detector for handling occlusion as a good idea!
+				<p>
+					[a] S. Tang, M. Andriluka, and B. Schiele. Detection and tracking of occluded people. In BMVC, Surrey, UK, 2012.
+				</p>
+<!--				<p>
+					[b] S. Rujikietgumjorn and R. T. Collins. Optimized Pedestrian Detection for Multiple and Occluded People. In CVPR, 2013.
+				</p> -->
+		</section>
+
+		
+		  
+		  
+
+
+	
+		  
+                
+<!-- Footer ================================================== -->
+<footer class="footer">
+    <div class="container">
+        <p class="pull-right">
+			Share This Page <br />
+			<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+			<!-- Place this tag where you want the +1 button to render. -->
+			<div class="g-plusone" data-size="medium"></div>
+
+			<div id="fb-root"></div>
+        </p>
+        <p>&copy 2013 <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory</a></p>
+        <p><a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong 香港中文大学</a></p>
+        
+		<!-- Modal -->
+		<div id="creditModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="creditModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					  <h3 id="creditModalLabel">Site Credits</h3>
+					</div>
+					<div class="modal-body">
+						<p>This site was built using <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, a front-end framework for web development. Thanks to the following site developers and all lab members that contribute their suggestions and information</p>
+						<ul>
+						<li><a href="#">Bing Xu</a></li>
+						<li><a href="http://www.ee.cuhk.edu.hk/~wlouyang/">Wanli Ouyang</a></li>
+						<li><a href="#">Ping Luo</a></li>
+						<li><a href="http://personal.ie.cuhk.edu.hk/~ccloy/">Chen Change Loy</a></li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+					  <button class="btn" data-dismiss="modal">Close</button>
+					</div>
+		</div>		
+		<p><a data-toggle="modal" href="index.html#creditModal">Site Credits</a></p>
+        
+		<!-- Modal -->
+					<div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					  <h3 id="contactModalLabel">Contact Us</h3>
+					</div>
+					<div class="modal-body">
+							<address>
+								Multimedia Lab <br />
+								Department of Information Engineering <br />
+								The Chinese University of Hong Kong <br />
+								Shatin, New Territories, Hong Kong SAR
+							</address>
+
+							<p>
+								<i class="icon-play-circle"></i> Email: 
+								mmlab at ie cuhk edu hk
+							</p>
+							<p>
+								<i class="icon-play-circle"></i> Phone:
+								(852) 2609-8206 
+							</p>
+							<p>
+								<i class="icon-play-circle"></i> Fax: 
+								(852) 2603-5032
+							</p>
+							
+							<p>
+							<br />
+							<small>
+							<a href="http://www.cuhk.edu.hk/english/university/visitors.html">Getting to the main campus</a> <br />
+							<a href="http://www.cuhk.edu.hk/english/campus/cuhk-campus-map.html">Campus map</a>
+							</small>
+							</p>
+					</div>
+					<div class="modal-footer">
+					  <button class="btn" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+    </div>
+</footer>
+
+</div> <!-- /tooltip-demo -->
+</div> <!-- /container -->
+
+
+        
+<!-- Le javascript
+        ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script type="text/javascript" src="./js/widgets.js"></script>-->
+<script src="../../js/jquery.js"></script>
+<!--<script src="../../js/prettify.js"></script>-->
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<!--<script src="../../js/bootstrap-dropdown.js"></script>-->
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<!--<script src="../../js/bootstrap-tab.js"></script>-->
+<script src="../../js/bootstrap-tooltip.js"></script>
+<!--<script src="../../js/bootstrap-popover.js"></script>-->
+<!--<script src="../../js/bootstrap-button.js"></script>-->
+<!--<script src="../../js/bootstrap-collapse.js"></script>-->
+<script src="../../js/bootstrap-carousel.js"></script>
+<!--<script src="../../js/bootstrap-typeahead.js"></script>-->
+<script src="../../js/bootstrap-affix.js"></script>
+<script src="../../js/application.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+        
+        
+        
+        
+        
+        
+</body></html>

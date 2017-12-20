@@ -1,0 +1,206 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./WWWCrowdDataset_files/jemdoc.css" type="text/css">
+<link rel="shortcut icon" href="./jshao_files/s_ico.ico">
+<title>Project Page</title>
+
+<style type="text/css">
+BODY {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 100% "Times New Roman", Times, serif; BACKGROUND: #ffffff; COLOR: #000; PADDING-TOP: 0px
+}
+.oneColFixCtr #container {
+	BORDER-BOTTOM: #000000 1px ;
+	TEXT-ALIGN: left;
+	BORDER-LEFT: #000000 1px ;
+	MARGIN: 0px auto;
+	WIDTH: 1000px;
+	BACKGROUND: #ffffff;
+	BORDER-TOP: #000000 1px ;
+	BORDER-RIGHT: #000000 1px 
+}
+.oneColFixCtr #mainContent {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; PADDING-TOP: 0px
+}
+.style3 {
+	FONT-SIZE: small
+}
+.style5 {
+	FONT-SIZE: large; FONT-WEIGHT: bold
+}
+.style6 {
+	FONT-SIZE: large
+}
+.style7 {
+	TEXT-DECORATION: none
+}
+.style8 {
+	COLOR: #000000
+}
+.style9 {
+	COLOR: #000080
+}
+.style10 {
+	MARGIN-TOP: 5pt; MARGIN-BOTTOM: 5pt; FONT-SIZE: medium
+}
+.style11 {
+	MARGIN-TOP: 5pt; TEXT-INDENT: 15px; MARGIN-BOTTOM: 5pt; FONT-SIZE: medium
+}
+.style12 {
+	MARGIN-LEFT: 12pt; FONT-SIZE: medium; MARGIN-RIGHT: 12pt}
+.code {
+	FONT-FAMILY: "Courier New", Courier, monospace; FONT-SIZE: 15px
+}
+.codeline {
+	MARGIN-TOP: 5pt; TEXT-INDENT: 15px; FONT-FAMILY: "Courier New", Courier, monospace; MARGIN-BOTTOM: 5pt; FONT-SIZE: 15px
+}
+.DivCode {
+	BORDER-BOTTOM: #333 1px dashed; BORDER-LEFT: #333 1px dashed; WIDTH: 800px; BACKGROUND: #ffd; MARGIN-LEFT: 10pt; FONT-SIZE: medium; BORDER-TOP: #333 1px dashed; BORDER-RIGHT: #333 1px dashed
+}
+.auto-style5 {
+	MARGIN-TOP: 3pt; MARGIN-BOTTOM: 3pt; FONT-SIZE: 100%
+}
+.STYLE15 {FONT-SIZE: large; FONT-WEIGHT: bold; color: #FF0000; }
+#motion_channel {
+  padding-right: 0px;
+  padding-left: 20px;
+  float: right;
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+</style>
+
+<meta name="GENERATOR" content="MSHTML 8.00.7601.17744"></head>
+<body class="oneColFixCtr">
+<div id="container">
+<div style="MARGIN-BOTTOM: 0pt" id="mainContent">
+  <h1 style="MARGIN-TOP: 20pt" align="center"><a style="COLOR: #000; TEXT-DECORATION: none">Learning Deep Representation with Large-scale Attributes</a></h1>
+
+  <p style="MARGIN-TOP: 20pt" class="style6" align="center"><span class="style8"><a href="http://www.ee.cuhk.edu.hk/~wlouyang/">Wanli Ouyang</a>, </span> <span class="style6" style="MARGIN-TOP: 20pt"><a href="http://www.hli2020.weebly.com/">Hongyang Li</a></span>,  <span class="style6" style="MARGIN-TOP: 20pt"><a href="http://www.ee.cuhk.edu.hk/~xyzeng/" target="_blank">Xingyu Zeng</a></span>, and <span class="style6" style="MARGIN-TOP: 20pt"><a href="http://www.ee.cuhk.edu.hk/~xgwang/" target="_blank">Xiaogang Wang</a></span></p>
+<p style="MARGIN-TOP: 5pt; margin-bottom: 5pt;" class="style3" align="center">
+<!-- <sup>1</sup>
+ -->Department of Electronic Engineering, The Chinese University of Hong Kong. </p>
+
+
+
+<p style="MARGIN-TOP: 5pt; margin-bottom: 5pt;" class="style3" align="center">&nbsp;</p>
+</div>
+
+
+<div class="style12">
+  <h2>News  </h2>
+  <p align="left">
+  	January 2016: <tab id=t1>The attribute dataset for our ICCV 2015 work is released. <br>
+  	September 2015: <tab to=t1>We will unveil the project page completely around early December, 2015.
+  </p>
+  <p align="center">&nbsp;</p>
+<div align="center"></div>
+<div></div>
+</div>
+
+
+
+<div class="style12">
+  <h2>Introduction  </h2>
+  <p align="left">Learning strong feature representations from large scale
+supervision has achieved remarkable success in computer
+vision as the emergence of deep learning techniques. It is
+driven by big visual data with rich annotations. This paper
+contributes a large-scale object attribute database that
+contains rich attribute annotations (over 300 attributes) for about 180k samples and 499 object classes. Based on the ImageNet
+object detection dataset, it annotates the rotation,
+viewpoint, object part location, part occlusion, part existence,
+common attributes, and class-specific attributes.
+Then we use this dataset to train deep representations and
+extensively evaluate how these attributes are useful on the
+general object detection task. In order to make better use
+of the attribute annotations, a deep learning scheme is proposed
+by modeling the relationship of attributes and hierarchically
+clustering them into semantically meaningful mixture
+types. Experimental results show that the attributes are
+helpful in learning better features and improving the object
+detection accuracy by 2.6% in mAP on the ILSVRC 2014
+object detection dataset and 2.4% in mAP on PASCAL VOC
+2007 object detection dataset. Such improvement is well
+generalized across datasets.</p>
+  <p align="center">&nbsp;</p>
+<div align="center"></div>
+<div></div>
+</div>
+
+
+
+<div class="style12">
+<!-- <p style="MARGIN-TOP: 5pt; margin-bottom: 5pt;" class="style3" align="center">&nbsp;</p> -->
+<h2>ImageNet Attribute Dataset</h2>
+<p>The ImageNet attribute dataset is designed and annotated for generic objects. It spans 499 object classes and has 180k samples with rich annotations
+including rotation, viewpoint, object part location,
+part occlusion, part existence, 10 common attributes, and
+314 class specific attributes. Images selected from the ILSVRC object detection dataset are widely used for fine-tuning deep models in object detection. The following figure gives a quick view of the attribute dataset.<br><br>
+
+<b>Downloads</b><br/><br> 
+
+
+<a href="https://www.dropbox.com/s/qmz6cn9xy6b1rv3/dataset_release.zip?dl=0">  1. Download the dataset</a>, which  includes: <br>
+1) an introduction to the dataset (.pptx); 2) training annotation (.mat); 3) validation annotation (.mat).
+(the original image is just the ilsvrc14 detection set)<br><br>
+
+<a href="https://www.dropbox.com/s/yg8o5jmomfmt6sc/Paper-ID-387_supp.zip?dl=0">  2. Download the supplementary documents (two pdf files) </a>.<br>
+They describe in full detail on how we define each attribute in each class. The documents should be used in conjunction with the annotation files.
+
+<!--
+1. <a href="https://www.dropbox.com/s/osu8l2sg4muve1k/Intro_to_Attribute_Dataset_release.pptx?dl=0">An introduction</a>: a quick tour of the Attribute Dataset. <br>
+2. <a href="https://www.dropbox.com/s/j2wr467wxmmm501/train_release_Jan_5.zip?dl=0">Annotation data for training set</a>: matlab files of the 200 classes. <br>
+3. <a href="https://www.dropbox.com/s/568ij8btj6xoefx/validation_release_Jan_5.zip?dl=0">Annotatoin data for validation set</a>: refers to the val_1 2013 in ImageNet object detection.
+-->
+
+<br><br>
+Note that our dataset is released under the <a href="https://github.com/BVLC/caffe/blob/master/LICENSE">BSD 2-Clause license</a>. Please use the dataset for research purpose only.
+</p>
+&nbsp;
+<p align="center"><img src="./dataset.png" width="850"></p>
+<p style="MARGIN-TOP: 5pt; margin-bottom: 5pt;" class="style3" align="center">&nbsp;</p>
+
+<p align="center">&nbsp;</p>
+<div align="center"></div>
+<div></div>
+</div>
+
+<div class="style12">
+<h2>Experimental Results </h2>
+<!-- <p align="center"><iframe width="640" height="450" src="./WWWcrowd_files/MZycSB4BALY.html" frameborder="0" allowfullscreen=""> -->
+
+<p> We use the ImageNet 2014 training data and val1 data
+as the training data and the val2 data for evaluating the performance
+if not specified. The split of val1 and val2 is the
+same as that in because it was downloaded from the authors’
+web. The attribute annotations are not required at the
+testing stage because they are only used for supervising feature
+learning. We only evaluate the performance on object
+detection instead of attribute prediction because the aim of
+this work is to study how rich attribute annotation can help
+feature learning in detection. </p> 
+
+Some highlight results are shown below. For more details, please check the paper.
+<p align="center"><img src="./table_3.png" width="400"></p>
+<p style="MARGIN-TOP: 5pt; margin-bottom: 5pt;" class="style3" align="center">&nbsp;</p>
+
+<p align="center"><img src="./fig_6.png" width="400"></p>
+<p style="MARGIN-TOP: 5pt; margin-bottom: 5pt;" class="style3" align="center">&nbsp;</p>
+
+
+<div class="style12">
+<!-- <p style="MARGIN-TOP: 5pt; margin-bottom: 5pt;" class="style3" align="center">&nbsp;</p> -->
+<h2>Contact</h2>
+<p>For inquiries, please contact Wanli Ouyang via wlouyang@ee.cuhk.edu.hk.
+<br><br>
+<I>Last updated: Jan. 5th, 2016.</I>
+</p>
+&nbsp;
+<p align="center">&nbsp;</p>
+<div align="center"></div>
+<div></div>
+</div>
+
+</div></div>
+<div><object id="ClCache" click="sendMsg" host="" width="0" height="0"></object></div></body></html>

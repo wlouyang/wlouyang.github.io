@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://twitter.github.com/bootstrap/javascript.html#popovers -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Multimedia Laboratory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Multimedia Laboratory">
+        <meta name="author" content="Multimedia Laboratory">
+        
+        <meta name="keywords" content="Multimedia Laboratory, Face recognition, Face alignment, Face detection and tracking, Human detection, Video Surveillance, Video Processing, Image search and recognition, Machine learning" />
+        
+        <!-- Le styles -->
+        <link href="../../css/bootstrap.css" rel="stylesheet">
+        <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../../css/docs.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+        <link href="../../css/mmlab.css" rel="stylesheet">
+        
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" type="image/ico" href="../favicon.ico" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+        
+		<!--<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">-->
+        
+        <!--<script src="http://vjs.zencdn.net/c/video.js"></script>-->
+        
+        <!-- Google Analytics -->
+        <!-- <script type="text/javascript">
+            
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-22940424-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+        </script> -->
+    </head>
+    
+    
+    
+    <body data-spy="scroll" data-target="#navbar" data-twttr-rendered="true">
+        
+        <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="../index.html#">MMLAB</a>
+                    <div class="nav-collapse">
+                <ul class="nav">
+                    <li><a href="../../index.html"><strong>Home</strong></a></li>
+                    <li><a href="../../join_us.html"><strong>Join Us</strong></a></li>
+                    <li><a href="../../people.html"><strong>People</strong></a></li>
+                    <li><a href="../../publications.html"><strong>Publications</strong></a></li>
+                    <li><a href="../../projects.html"><strong>Projects</strong></a></li>
+                    <li><a href="../../datasets.html"><strong>Datasets</strong></a></li>
+                    <li><a href="../../activities.html"><strong>Lab Activities</strong></a></li>
+                    <li><a href="http://137.189.97.22:4097/labwiki/Guidance"><strong>Intranet <i class="icon-lock icon-white"></i></strong></a></li>
+					<li><a data-toggle="modal" href="../../index.html#contactModal"><strong>Contact Us</strong></a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Multimedia Laboratory</h1>
+    <p class="lead">DeepID-Net: Deformable Deep Convolutional Neural Networks for Object Detection
+</p>
+  </div>
+</header>
+        
+        
+        <div class="container">
+            <div class="tooltip-demo">
+
+		<!-- Put your overview diagram or representative image here, preferably a bigger image 
+		Put your image into folder ./images inside your project_name folder (rename the folder with your project's name, without space!)
+        ================================================== -->
+        <section id="overview_diagram">
+          <div class="row-fluid">
+            <div class="thumbnail">
+                <img src="./images/overview.jpg" alt="">
+            </div>
+          </div>
+        </section>
+		
+		 <!-- Content
+        ================================================== -->
+        <section>
+ 
+
+			<h2>Introduction <small></small></h2>
+            <p>
+			We propose deformable deep convolutional neural networks for generic object detection. This new deep learning object detection framework has innovations in multiple aspects. In the proposed new deep architecture, a new deformation constrained pooling (def-pooling) layer models the deformation of object parts with geometric constraint and penalty. A new pre-training strategy is proposed to learn feature representations more suitable for the object detection task and with good generalization capability. By changing the net structures, training strategies, adding and removing some key components in the detection pipeline, a set of models with large diversity are obtained, which significantly improves the effectiveness of model averaging. The proposed approach improves the mean averaged precision obtained by RCNN, which was the state-ofthe-art, from 31% to 50.3% on the ILSVRC2014 detection test set. It also outperforms the winner of ILSVRC2014, GoogLeNet, by 6.1%. Detailed component-wise analysis is also provided through extensive experimental evaluation, which provide a global view for people to understand the deep learning object detection pipeline
+			</p>
+		
+ 		</section>
+
+		<section>
+				<h2>Contribution Highlights <small></small></h2>
+			<ul>
+				<li>A new deep learning framework for object detection. It effectively integrates feature representation learning, part deformation learning, context modeling, model averaging, and bounding box location refinement into the detection system. Detailed component-wise analysis is provided through extensive experimental evaluation. This paper is also the first to investigate the influence of CNN structures for the large-scale object detection task under the same setting. By changing the configuration of this framework, multiple detectors with large diversity are generated, which leads to more effective model averaging.</li>
+				<li>A new scheme for pretraining the deep CNN model. We propose to pretrain the deep model on the ImageNet image classification and localization dataset with 1000-class object-level annotations instead of with image-level annotations, which are commonly used in existing deep learning object detection [14, 44]. Then the deep model is fine-tuned on the ImageNet/PASCAL-VOC object detection dataset with 200/20 classes, which are the targeting object classes in the two datasets.</li>
+				<li>A new deformation constrained pooling (def-pooling) layer, which enriches the deep model by learning the deformation of object parts at any information abstraction levels. The def-pooling layer can be used for replacing the max-pooling layer and learning the deformation properties of parts. </li>
+			</ul>
+			
+		</section>
+
+		<section>
+				<h2>Citation <small></small></h2>
+            <p>
+			If you use our codes or dataset, please cite the following papers:
+			</p>
+			<ul>
+				<li>Ouyang, Wanli, et al. "Deepid-net: Deformable deep convolutional neural networks for object detection." CVPR. 2015. 
+				<a href=".\material\1412.5661v2.pdf"><span class="label_download">PDF</span></a>
+				</li>
+			</ul>
+		</section>
+		
+		<section>
+			<h2>Images <small></small></h2>
+			<!-- Put other representative images here -->
+			<!-- Again, please put the images in to ./images -->
+            <div class="row-fluid">
+				<div class="span3">
+					<img src="./images/overview.jpg" width="300" alt="">
+				</div>
+				<div class="span9">
+					<strong>The motivation of this paper in new pretraining scheme: </strong>
+					<p> (a) and jointly learning feature representation and deformable object parts shared by multiple object classes at different semantic levels (b). In (a), a model pretrained on image-level annotation is more robust to size and location change while a model pretrained on object-level annotation is better in representing objects with tight bounding boxes. In (b), when ipod rotates, its circular pattern moves horizontally at the bottom of the bounding box. Therefore, the circular patterns have smaller penalty moving horizontally but higher penalty moving vertically. The curvature part of the circular pattern are often at the bottom right positions of the circular pattern.</p>
+				</div>
+			</div>
+			
+			<p></p> <!-- this is to separate different rows of figures -->
+			
+			<div class="row-fluid">
+				<div class="span3">
+					<img src="./images/pipeline.jpg" width="300" alt="">
+				</div>
+				<div class="span9">
+					<strong>Overview of our approach: </strong>
+					<p>Texts in red highlight the steps that are not present in RCNN</p>
+				</div>
+			</div>
+
+            <div class="row-fluid">
+                <div class="span3">
+                    <img src="./images/architecture.jpg" width="300" alt="">
+                </div>
+                <div class="span9">
+                    <strong>Architecture of DeepID-Net: </strong>
+                    <p>(a) baseline deep model, which is ZF in our best-performing singlemodel detector; (b) layers of part filters with variable sizes and defpooling layers; (c) deep model to obtain 1000-class image classification scores. The 1000-class image classification scores are used to refine the 200-class bounding box classification scores.</p>
+                </div>
+            </div>
+			<p></p> <!-- this is to separate different rows of figures -->
+            
+
+
+            <div class="row-fluid">
+                <div class="span3">
+                    <img src="./images/Models.JPG" width="300" alt="">
+                </div>
+                <div class="span9">
+                    <strong>Models used </strong>
+                    <p> The 10 models used for model averaging selection. The selected models are highlighted in red. The result of mAP is on val2 without bounding box regression and context. For net design, D-Def(O) denotes our DeepID-Net that uses def-pooling layers using Overfeat as baseline structure, D-Def(G) denotes DeepID-Net that uses def-pooling layers using GoogLeNet as baseline structure, G-net denotes GoogLeNet. For pretraining, image denotes the image-centric pretraining scheme of RCNN,  object denotes the object centric Scheme 1 in Section \ref{Sec:Prtrain}. For loss of net, h denotes hinge loss, s denotes softmax loss. Bounding box rejection is used for all models. Selective search and edgeboxes are used for proposing regions.</p>
+                </div>
+            </div>
+			<p></p> <!-- this is to separate different rows of figures -->
+            
+		</section>
+		
+		<section>	
+			<h2>Models</h2>
+			<p>
+                <table style="width:100%" border= "2">
+  <tr>
+    <td>Net Structure</td> 
+    <td>Pre-training Scheme</td>
+    <td>Pretrained Model (on ImageNet Cls data)</td>
+    <td>Finetuned Model (on ImageNet Det data)</td>
+  </tr>
+  <tr>
+    <td>AlexNet</td> 
+    <td>Image-level Annotations</td>
+    <td><a href="https://www.dropbox.com/sh/7o1ahzqpo5dd6d7/AAACUe785ZQX8oRNdDNWNtwYa?dl=0"><span class="label_download">Download</span></a></td>
+    <td><a href="https://www.dropbox.com/sh/ur1lp4nl5nh9jev/AABIGt0o7S__bdEpnQCmLUnta?dl=0"><span class="label_download">Download</span></a></td>
+  </tr>
+  <tr>
+    <td>AlexNet</td> 
+    <td>Object-level Annotations</td>
+    <td><a href="https://www.dropbox.com/sh/lborw3h71g5314p/AADM9sFeved11hWADhlxAavSa?dl=0"><span class="label_download">Download</span></a></td>
+    <td><a href="https://www.dropbox.com/sh/embaxxcv22u6b16/AABzoJ7khJVecJnddXz8wK_oa?dl=0"><span class="label_download">Download</span></a></td>
+  </tr>
+  <tr>
+    <td>Clarifai</td> 
+    <td>Image-level Annotations</td>
+    <td><a href="https://www.dropbox.com/sh/upnbol79q3a8x21/AABkmmztGxorOE98qpEWF06La?dl=0"><span class="label_download">Download</span></a></td>
+    <td><a href="https://www.dropbox.com/sh/zz8b3q4l0qcpinw/AADUUZcfaMdPmJu4VGoa5jQ8a?dl=0"><span class="label_download">Download</span></a></td>
+  </tr>
+  <tr>
+    <td>Clarifai</td> 
+    <td>Object-level Annotations</td>
+    <td><a href="https://www.dropbox.com/sh/1wrabxguuv3h0m2/AAAVajKI7hOc6C2dJPZ63OjZa?dl=0"><span class="label_download">Download</span></a></td>
+    <td><a href="https://www.dropbox.com/sh/k09g0aqkef7j8ce/AADUgR1ogBEbV1PnxIKYTjgIa?dl=0"><span class="label_download">Download</span></a></td>
+  </tr>
+  <tr>
+    <td>Overfeat</td> 
+    <td>Image-level Annotations</td>
+    <td><a href="https://www.dropbox.com/sh/w1yksp4mqcon0l1/AAC_zeoWh5Yoe3VBo3JmugAxa?dl=0"><span class="label_download">Download</span></a></td>
+    <td><a href="https://www.dropbox.com/sh/69aq9y5ot6jw2ph/AAAWVoKJkxMGOgPCYuYpaRAva?dl=0"><span class="label_download">Download</span></a></td>
+  </tr>
+  <tr>
+    <td>Overfeat</td> 
+    <td>Object-level Annotations</td>
+    <td><a href="https://www.dropbox.com/sh/p9xcn3pe51ts8l6/AAA3mk78bwTzW73ovvtXZx2ta?dl=0"><span class="label_download">Download</span></a></td>
+    <td><a href="https://www.dropbox.com/sh/ulix3xq6ygdb37i/AADxEUx5ITc_QoRy5cfRSDfxa?dl=0"><span class="label_download">Download</span></a></td>
+  </tr>
+  <tr>
+    <td>GoogleNet</td> 
+    <td>Image-level Annotations</td>
+    <td><a href="https://www.dropbox.com/sh/zy9gw6rvn7q005s/AAB7CFrLn2go4wZ8sZwkZYD8a?dl=0"><span class="label_download">Download</span></a></td>
+    <td><a href="https://www.dropbox.com/sh/ym8edf6u9auk0hf/AAALPKtxeEshHcTIYdlKrzFGa?dl=0"><span class="label_download">Download</span></a></td>
+  </tr>
+  <tr>
+    <td>GoogleNet</td> 
+    <td>Object-level Annotations</td>
+    <td><a href="https://www.dropbox.com/sh/v8nfk7mb7zvmub0/AADJ7UOtsuh08sMZGTVScneSa?dl=0"><span class="label_download">Download</span></a></td>
+    <td><a href="https://www.dropbox.com/sh/4dq2t2q4tbl61um/AAAS3ozoAetRON3VnThDXqK7a?dl=0"><span class="label_download">Download</span></a></td>
+  </tr>
+</table>
+			
+			</p>
+		</section>
+
+        <section>   
+            <h2>Object detection demo code</h2>
+            <p>
+            <ul>
+                <li><a href="https://www.dropbox.com/sh/388m8ct2j7cbhj8/AABHThjDYElI2PrmnXJA708Xa?dl=0"><span class="label_download">Demo Code Download</span></a></li>
+            </ul>
+            </p>
+        </section>
+
+        <section>   
+            <h2>Slides on the ImageNet 2014 Chanllenge</h2>
+            <p>
+            <ul>
+                <li><a href="http://www.ee.cuhk.edu.hk/~wlouyang/projects/imagenetDeepId/material/CUHK%20DeepID-Net6.ppsx"><span class="label_download">ppsx</span></a></li>
+            </ul>
+            </p>
+        </section>		
+  
+  <!-- add more rows here if you have more demo videos -->
+</ul>
+			
+			
+			
+          </section>
+
+
+	
+		  
+                
+<!-- Footer ================================================== -->
+<footer class="footer">
+    <div class="container">
+        <p class="pull-right">
+			Share This Page <br />
+			<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+			<!-- Place this tag where you want the +1 button to render. -->
+			<div class="g-plusone" data-size="medium"></div>
+
+			<div id="fb-root"></div>
+        </p>
+        <p>&copy 2013 <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory</a></p>
+        <p><a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong 香港中文大学</a></p>
+        
+		<!-- Modal -->
+		<div id="creditModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="creditModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					  <h3 id="creditModalLabel">Site Credits</h3>
+					</div>
+					<div class="modal-body">
+						<p>This site was built using <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, a front-end framework for web development. Thanks to the following site developers and all lab members that contribute their suggestions and information</p>
+						<ul>
+						<li><a href="#">Bing Xu</a></li>
+						<li><a href="http://www.ee.cuhk.edu.hk/~wlouyang/">Wanli Ouyang</a></li>
+						<li><a href="#">Ping Luo</a></li>
+						<li><a href="http://personal.ie.cuhk.edu.hk/~ccloy/">Chen Change Loy</a></li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+					  <button class="btn" data-dismiss="modal">Close</button>
+					</div>
+		</div>		
+		<p><a data-toggle="modal" href="index.html#creditModal">Site Credits</a></p>
+        
+		<!-- Modal -->
+					<div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					  <h3 id="contactModalLabel">Contact Us</h3>
+					</div>
+					<div class="modal-body">
+							<address>
+								Multimedia Lab <br />
+								Department of Information Engineering <br />
+								The Chinese University of Hong Kong <br />
+								Shatin, New Territories, Hong Kong SAR
+							</address>
+
+							<p>
+								<i class="icon-play-circle"></i> Email: 
+								mmlab at ie cuhk edu hk
+							</p>
+							<p>
+								<i class="icon-play-circle"></i> Phone:
+								(852) 2609-8206 
+							</p>
+							<p>
+								<i class="icon-play-circle"></i> Fax: 
+								(852) 2603-5032
+							</p>
+							
+							<p>
+							<br />
+							<small>
+							<a href="http://www.cuhk.edu.hk/english/university/visitors.html">Getting to the main campus</a> <br />
+							<a href="http://www.cuhk.edu.hk/english/campus/cuhk-campus-map.html">Campus map</a>
+							</small>
+							</p>
+					</div>
+					<div class="modal-footer">
+					  <button class="btn" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+    </div>
+</footer>
+
+</div> <!-- /tooltip-demo -->
+</div> <!-- /container -->
+
+
+        
+<!-- Le javascript
+        ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script type="text/javascript" src="../js/widgets.js"></script>-->
+<script src="../../js/jquery.js"></script>
+<!--<script src="../../js/prettify.js"></script>-->
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<!--<script src="../../js/bootstrap-dropdown.js"></script>-->
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<!--<script src="../../js/bootstrap-tab.js"></script>-->
+<script src="../../js/bootstrap-tooltip.js"></script>
+<!--<script src="../../js/bootstrap-popover.js"></script>-->
+<!--<script src="../../js/bootstrap-button.js"></script>-->
+<!--<script src="../../js/bootstrap-collapse.js"></script>-->
+<script src="../../js/bootstrap-carousel.js"></script>
+<!--<script src="../../js/bootstrap-typeahead.js"></script>-->
+<script src="../../js/bootstrap-affix.js"></script>
+<script src="../../js/application.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+        
+        
+        
+        
+        
+        
+</body></html>
