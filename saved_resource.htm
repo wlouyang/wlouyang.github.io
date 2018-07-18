@@ -397,6 +397,58 @@ DIV.b-mobile {
                   
                   <table border="0" cellspacing="0" cellpadding="5" width="900">
                     <tbody>
+										
+
+                    <tr class="pub_tr_2">
+                      <td width="20px" class="pub_td_number">  </td>
+                      <td width="304px" style="text-align: center"> <img style="width: 336Px;" alt="Wanli" src="imgs/ZoomNet.jpg" width="336px" height="300px"> </td>
+                      <td width="500px" style="vertical-align: middle" class="pub_td_text"> 
+                      	Hongyang Li, Yu Liu, <strong>Wanli Ouyang</strong>, Xiaogang Wang, "Zoom out-and-in network with map attention decision for region proposal and object detection," <em>International Journal of Computer Vision, (IJCV)</em>, Accepted Jun., 2018.                
+                        [<a style="CURSOR: pointer" class="aLink" title="Show/Hide Abstract" onclick="JavaScript:menu(&#39;divAbstract2018_IJCV1&#39;)">Abstract</a>]
+                        [<a style="CURSOR: pointer" class="aLink" title="Show/Hide BibTeX" onclick="JavaScript:menu(&#39;divBibTex2018_IJCV1&#39;)">BibTeX</a>]
+												[<a class="aLink" href="https://arxiv.org/abs/1709.04347" target="_blank">Full Text</a>]
+                        <br>
+                        <div id="divAbstract2018_IJCV1" class="pub_div_abstract"><br><b>Abstract:</b> 
+<!--                        <div id="divAbstract2018_IJCV1" class="pub_div_abstract"> <br><b>Abstract:</b>  -->
+In this paper, we propose a zoom-out-and-in network
+for generating object proposals. A key observation is
+that it is difficult to classify anchors of different sizes with
+the same set of features. Anchors of different sizes should
+be placed accordingly based on different depth within a network:
+smaller boxes on high-resolution layers with a smaller
+stride while larger boxes on low-resolution counterparts with
+a larger stride. Inspired by the conv/deconv structure, we
+fully leverage the low-level local details and high-level regional
+semantics from two feature map streams, which are
+complimentary to each other, to identify the objectness in an
+image. A map attention decision (MAD) unit is further proposed
+to aggressively search for neuron activations among
+two streams and attend the most contributive ones on the feature
+learning of the final loss. The unit serves as a decisionmaker
+to adaptively activate maps along certain channels
+with the solely purpose of optimizing the overall training
+loss. One advantage of MAD is that the learned weights enforced
+on each feature channel is predicted on-the-fly based
+on the input context, which is more suitable than the fixed
+enforcement of a convolutional kernel. Experimental results
+on three datasets, including PASCAL VOC 2007, ImageNet
+DET, MS COCO, demonstrate the effectiveness of our proposed
+algorithm over other state-of-the-arts, in terms of average
+recall (AR) for region proposal and average precision
+(AP) for object detection.
+                        </div>
+                        <div id="divBibTex2018_IJCV1" class="pub_div_abstract"><br><b>BibTeX entry:</b><br><code>
+@article{li2017zoom,
+  title={Zoom out-and-in network with map attention decision for region proposal and object detection},
+  author={Li, Hongyang and Liu, Yu and Ouyang, Wanli and Wang, Xiaogang},
+  journal={International Journal of Computer Vision},
+  year={2017},
+  publisher={Springer}
+}
+<br>}
+			  </code></div>
+                      </td></tr>  										
+										
                     <tr class="pub_tr_2">
                       <td width="20px" class="pub_td_number">  </td>
                       <td width="304px" style="text-align: center"> <img style="width: 336Px;" alt="Wanli" src="imgs/TPAMI18_Depth.jpg" width="336px" height="180px"> </td>
@@ -468,7 +520,7 @@ benchmarks demonstrate the effectiveness of our proposed MOT
 framework
                         </div>
                         <div id="divBibTex2018_CSVT1" class="pub_div_abstract"><br><b>BibTeX entry:</b><br><code>
-@article{ouyang2018Deep,
+@article{zhou2018Deep,
   title={Deep Continuous Conditional Random Fields with Asymmetric Inter-object Constraints for Online Multi-object Tracking},
   author={Hui Zhou and Wanli Ouyang and Jian Cheng and Xiaogang Wang and Hongsheng Li},
   journal={IEEE TSCVT},
@@ -524,7 +576,7 @@ Hongsheng Li and Quanquan Li and Junjie Yan and Xiaogang Wang},
                       <td width="500px" style="vertical-align: middle" class="pub_td_text"> 
                       	<strong>Wanli Ouyang</strong>, Hui Zhou, Hongsheng Li, Quanquan Li, Junjie Yan, Xiaogang Wang,
                       "Jointly learning deep features, deformable parts, occlusion and classification for pedestrian detection," 
-                      <em>IEEE Trans. Pattern Anal. Mach. Intell. (PAMI)</em>, accepted, 2017.
+                      <em>IEEE Trans. Pattern Anal. Mach. Intell. (PAMI)</em>, 40(8):1874-1887, 2018.
                         [<a style="CURSOR: pointer" class="aLink" title="Show/Hide Abstract" onclick="JavaScript:menu(&#39;divAbstract2017_PAMI1&#39;)">Abstract</a>]
                         [<a style="CURSOR: pointer" class="aLink" title="Show/Hide BibTeX" onclick="JavaScript:menu(&#39;divBibTex2017_PAMI1&#39;)">BibTeX</a>]
 												[<a class="aLink" href="http://www.ee.cuhk.edu.hk/~wlouyang/Papers/Ouyang2017JoingCNNPed.pdf" target="_blank">Full Text</a>]
@@ -537,7 +589,7 @@ Feature extraction, deformation handling, occlusion handling, and classification
 detection. Existing methods learn or design these components either individually or sequentially. The interaction among these
 components is not yet well explored. This paper proposes that they should be jointly learned in order to maximize their strengths
 through cooperation. We formulate these four components into a joint deep learning framework and propose a new deep network
-architecture ( Code available on www.ee.cuhk.edu.hk/∼wlouyang/projects/ouyangWiccv13Joint/index.html). By establishing automatic,
+architecture ( Code available on www.ee.cuhk.edu.hk/~wlouyang/projects/ouyangWiccv13Joint/index.html). By establishing automatic,
 mutual interaction among components, the deep model has average miss rate 8.57%/11.71% on the Caltech benchmark dataset with
 new/original annotations.
 
@@ -549,8 +601,8 @@ occlusion and classification for pedestrian detection},
   author={Wanli Ouyang and Hui Zhou and 
 Hongsheng Li and Quanquan Li and Junjie Yan and Xiaogang Wang},
   journal={IEEE Trans. Pattern Anal. Mach. Intell},
-  pages={},
-  year={2017},
+  pages={1874-1887},
+  year={2018},
   publisher={IEEE}
 }
 <br>}
@@ -823,7 +875,7 @@ Experimental results on three public datasets (Caltech, ETH and Daimler) and a n
                       <td width="304px" style="text-align: center"> <img style="width: 336Px;" alt="Wanli" src="two_pedestrian.PNG" width="336px" height="205px"> </td>
                       <td width="500px" style="vertical-align: middle" class="pub_td_text"> <strong>Wanli Ouyang</strong>, Xingyu Zeng and Xiaogang Wang, 
                       "Single-Pedestrian Detection Aided by Two-Pedestrian Detection," 
-                      <em>IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI)</em>, accepted, 2015.
+                      <em>IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI)</em>, 37(9), 1875-1889, 2015.
                         [<a style="CURSOR: pointer" class="aLink" title="Show/Hide Abstract" onclick="JavaScript:menu(&#39;divAbstract2015_tpami&#39;)">Abstract</a>]
                         [<a style="CURSOR: pointer" class="aLink" title="Show/Hide BibTeX" onclick="JavaScript:menu(&#39;divBibTex2013_tip&#39;)">BibTeX</a>]
 												[<a class="aLink" href="http://www.ee.cuhk.edu.hk/~wlouyang/Papers/tpami15-ouyang_xgWang_xyZeng.pdf" target="_blank">  Full Text</a>]
@@ -845,11 +897,16 @@ average miss rate is reduced from 37 to 32 percent on the Caltech-Test dataset, 
 and from 43 to 38 percent on the ETH dataset.
                         </div>
                         <div id="divBibTex2013_tip" class="pub_div_abstract"><br><b>BibTeX entry:</b><br><code>
-@article{ouyangsingle,
-  <br>title={Single-Pedestrian Detection Aided by 2-Pedestrian Detection},
-  <br>author={Ouyang, Wanli and Zeng, Xingyu and Wang, Xiaogang},
-  <br>publisher={IEEE Trans. Pattern Anal. Mach. Intell.}
-<br>}
+@article{ouyang2015single,
+  title={Single-Pedestrian Detection Aided by Two-Pedestrian Detection},
+  author={Ouyang, Wanli and Zeng, Xingyu and Wang, Xiaogang},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={37},
+  number={9},
+  pages={1875--1889},
+  year={2015},
+  publisher={IEEE}
+}
 			  </code></div>
                       </td></tr>   
                       
@@ -1075,49 +1132,81 @@ and from 43 to 38 percent on the ETH dataset.
 <!--========================Conference Papers ========================-->                      	
                   <h1>Conference Papers</h1>
                   <table border="0" cellspacing="0" cellpadding="5" width="900">
-                    <tbody>
-                    	
-
+                    <tbody>     
                  <tr class="pub_tr_2">
-								
                       <td width="20px" class="pub_td_number"> </td>
-                   <td width="304px" style="vertical-align: middle"> <img alt="OHT_Complexity" border="0" src="./imgs/OFF.jpg" width="304px" height="200" >
-                      <td class="pub_td_text" width="500px" style="vertical-align: middle"> <br>
+                   <td width="304px" style="vertical-align: middle"> <img alt="OHT_Complexity" border="0" src="./imgs/QuantizeMimic.jpg" width="304px" height="200" >
+                      <td class="pub_td_text" width="500px" style="vertical-align: middle"> 
+Yi Wei, Xinyu Pan, Hongwei Qin, Junjie Yan, <strong>Wanli Ouyang</strong>, "Quantization
+Mimic: Towards Very Tiny CNN for Object Detection". <em>Proc. ECCV</em>, 2018.
+                        <br>
+                        <br>
+Guo Lu, Wanli Ouyang, Dong Xu, <strong>Wanli Ouyang</strong>, Zhiyong Gao, Ming-Ting
+Sun, "Deep Kalman Filtering Network for Video Compression Artifact Reduction". <em>Proc. ECCV</em>, 2018.
+                        <br>
+											  <br>
+Di Chen, Shanshan Zhang, <strong>Wanli Ouyang</strong>, Jian Yang, Ying Tai, "Person Search
+via A Mask-guided Two-stream CNN Model". <em>Proc. ECCV</em>, 2018.
+                        <br>
+											  <br>
+Dongang Wang, <strong>Wanli Ouyang</strong>, Wen Li, Dong Xu, "Dividing and Aggregating
+Network for Multi-view Action Recognition", <em>Proc. ECCV</em>, 2018.
+                        <br>
+											  <br>
+Yikang Li, <strong>Wanli Ouyang</strong>, Bolei Zhou, Yanwen Cui, Jianping Shi, Chao Zhang,
+Xiaogang Wang. "Factorizable Net: An Efficient Subgraph-based Framework for
+Scene Graph Generation" <em>Proc. ECCV</em>, 2018.
+                        <br>																				
+											  <br>
+Hongyang Li, Bo Dai, <strong>Wanli Ouyang</strong>, Xiaoyang Guo, Xiaogang Wang. "Neural
+Network Encapsulation ", <em>Proc. ECCV</em>, 2018.
+                        <br>																				
+								      </td>
+									</tr>       
+									
+											
+                  <tr class="pub_tr_2">
+                     <td width="20px" class="pub_td_number"> </td>
+                   <td width="304px" style="vertical-align: middle"> <img alt="OHT_Complexity" border="0" src="./imgs/OFF.jpg" width="304px" height="200" ></td>
+                      <td class="pub_td_text" width="500px" style="vertical-align: middle">  
+											
                       	Xuanyi Dong, Yan Yan, <strong>Wanli Ouyang </strong>, Yi Yang. "Style Aggregated Network for Facial Landmark Detection", <em>Proc. CVPR</em>, 2018.
-                        [<a class="aLink" title="Download Full Text" href="https://arxiv.org/pdf/1803.04108" target="_blank">Full Text</a>]
+                        [<a class="aLink" title="Download Full Text" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Dong_Style_Aggregated_Network_CVPR_2018_paper.pdf" target="_blank">Full Text</a>]
                         <br>
                         <br>
                       	Yikang Li, Nan Duan, Bolei Zhou, Xiao Chu, <strong>Wanli Ouyang</strong>, Xiaogang Wang. "Visual Question Generation as Dual Task of Visual Question Answering", <em>Proc. CVPR</em>, 2018 (spotlight).
-                        [<a class="aLink" title="Download Full Text" href="https://arxiv.org/pdf/1709.07192" target="_blank">Full Text</a>]
+                        [<a class="aLink" title="Download Full Text" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_Visual_Question_Generation_CVPR_2018_paper.pdf" target="_blank">Full Text</a>]
                         <br>
                         <br>
-                      	Jing Xu, Rui Zhao, Feng Zhu, Huaming Wang, <strong>Wanli Ouyang</strong>. "Attention-aware Compositional Network for Person Re-Identification", <em>Proc. CVPR</em>, 2018.
+                      	Jing Xu, Rui Zhao, Feng Zhu, Huaming Wang, <strong>Wanli Ouyang</strong>. "Attention-aware Compositional Network for Person Re-Identification", <em>Proc. CVPR</em>, 2018. [<a class="aLink" title="Download Full Text" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_Attention-Aware_Compositional_Network_CVPR_2018_paper.pdf" target="_blank">Full Text</a>]
                         <br>
                         <br>
                       	Yu Wu, Yutian Lin, Xuanyi Dong, Yan Yan, <strong>Wanli Ouyang</strong>, Yi Yang. "Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning", <em>Proc. CVPR</em>, 2018.
-                        [<a class="aLink" title="Download Full Text" href="https://yu-wu.net/pdf/CVPR2018_Exploit-Unknown-Gradually.pdf" target="_blank">Full Text</a>]
+                        [<a class="aLink" title="Download Full Text" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Wu_Exploit_the_Unknown_CVPR_2018_paper.pdf" target="_blank">Full Text</a>]
                         <br>
                         <br>
                       	Wei Yang, <strong>Wanli Ouyang</strong>, Xiaolong Wang, Xiaogang Wang. "3D Human Pose Estimation in the Wild by Adversarial Learning", <em>Proc. CVPR</em>, 2018.
-                        [<a class="aLink" title="Download Full Text" href="https://arxiv.org/pdf/1803.09722" target="_blank">Full Text</a>]
+                        [<a class="aLink" title="Download Full Text" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Yang_3D_Human_Pose_CVPR_2018_paper.pdf" target="_blank">Full Text</a>]
                         [<a class="aLink" title="Watch Video on Youtube" href="https://youtu.be/LAxVl4zQT-A" target="_blank">Video</a>]
-																								<br>
+												<br>
                         <br>
-                      	Weichen Zhang, <strong>Wanli Ouyang</strong>, Dong Xu, Wen Li. "Collaborative and Adversarial Network for Unsupervised domain adaptation", <em>Proc. CVPR</em>, 2018. (Spotlight)
+                      	Weichen Zhang, <strong>Wanli Ouyang</strong>, Dong Xu, Wen Li. "Collaborative and Adversarial Network for Unsupervised domain adaptation", <em>Proc. CVPR</em>, 2018. (Spotlight) [<a class="aLink" title="Download Full Text" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_Collaborative_and_Adversarial_CVPR_2018_paper.pdf" target="_blank">Full Text</a>]
                         <br>
                         <br>
                       	Shuyang Sun, Zhanghui Kuang, Lu Sheng, <strong>Wanli Ouyang</strong>, Wei Zhang. "Optical Flow Guided Feature: A Motion Representation for Video Action Recognition", <em>Proc. CVPR</em>, 2018.
-                        [<a class="aLink" title="Download Full Text" href="https://arxiv.org/pdf/1711.11152" target="_blank">Full Text</a>]                        <br>
+                        [<a class="aLink" title="Download Full Text" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Sun_Optical_Flow_Guided_CVPR_2018_paper.pdf" target="_blank">Full Text</a>]                        
+												<br>
                         <br>
                       	Dan Xu, <strong>Wanli Ouyang</strong>, Xiaogang Wang, Nicu Sebe. "PAD-Net: Multi-Tasks Guided Prediciton-and-Distillation Network for Simultaneous Depth Estimation and Scene Parsing", <em>Proc. CVPR</em>, 2018.
-												[<a class="aLink" title="Download Full Text" href="https://arxiv.org/abs/1805.04409" target="_blank">Full Text</a>] 
+												[<a class="aLink" title="Download Full Text" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_PAD-Net_Multi-Tasks_Guided_CVPR_2018_paper.pdf" target="_blank">Full Text</a>] 
                         <br>
                         <br>
-                      	Chunfeng Song, Yan Huang, Liang Wang, <strong>Wanli Ouyang</strong>. "Mask-guided Contrastive Attention Model for Person Re-Identification ", <em>Proc. CVPR</em>, 2018.
+                      	Chunfeng Song, Yan Huang, Liang Wang, <strong>Wanli Ouyang</strong>. "Mask-guided Contrastive Attention Model for Person Re-Identification ", <em>Proc. CVPR</em>, 2018. [<a class="aLink" title="Download Full Text" href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Song_Mask-Guided_Contrastive_Attention_CVPR_2018_paper.pdf" target="_blank">Full Text</a>] 
                         <br>
                         <br>
-                      	Lingbo Liu, HongjunWang, Guanbin Li, <strong>Wanli Ouyang</strong>, Liang Lin, "Crowd Counting using Deep Recurrent Spatial-Aware Network", <em>Proc. IJCAI</em>, 2018.
-								</tr>       
+                      	Lingbo Liu, HongjunWang, Guanbin Li, <strong>Wanli Ouyang</strong>, Liang Lin, "Crowd Counting using Deep Recurrent Spatial-Aware Network", <em>Proc. IJCAI</em>, 2018. [<a class="aLink" title="Download Full Text" href="https://www.ijcai.org/proceedings/2018/0118.pdf" target="_blank">Full Text</a>] 
+								    </td>       
+                 </tr>       
 
 
 
