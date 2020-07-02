@@ -1,4 +1,15 @@
 {
-  "apple": "20",
-  "orange": "30"
+  "journals":[
+    {
+      "title": "Progressive Cross-stream Cooperation in Spatial and Temporal Domain for Action Localization",
+      "image": "https://wlouyang.github.io/imgs/progressive_cross-stream_cooperation_in_spatial_and_temporal_domain_for_action_localization.png",
+      "authors": "Rui Su, Dong Xu, Luping Zhou, and Ouyang Wanli",
+      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, May, 2020"
+    }, {
+      "title": "An End-to-End Learning Framework for Video Compression",
+      "image": "https://wlouyang.github.io/imgs/An_End-to-End%20Learning_Framework_for_Video_Compression.png",
+      "authors": "Guo Lu, Xiaoyun Zhang, W. Ouyang, Li Chen, Zhiyong Gao, Dong Xu",
+      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Apr, 2020"
+    }
+  ]
 }
