@@ -1406,7 +1406,8 @@ CRFs for Contour Prediction", <em>Proc. NIPS</em>, 2017.
       .replace("AUTHORS", pubitem.authors)
       .replace("TITLE", pubitem.title)
       .replace("JOURNAL", pubitem.journal)
-      .replace("IMAGE", pubitem.image);
+      .replace("IMAGE", pubitem.image)
+      .replace(`<img style="width: 336Px;" alt="Wanli" src="" width="336px" height="200px">`, "");
 
       return obj.content.firstElementChild;
     }
