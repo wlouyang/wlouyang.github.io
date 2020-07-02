@@ -10,6 +10,179 @@
       "image": "https://wlouyang.github.io/imgs/An_End-to-End%20Learning_Framework_for_Video_Compression.png",
       "authors": "Guo Lu, Xiaoyun Zhang, W. Ouyang, Li Chen, Zhiyong Gao, Dong Xu",
       "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Apr, 2020"
+    }, {
+      "title": "Image Captioning with End-to-end Attribute Detection and Subsequent Attributes Prediction",
+      "image": "https://wlouyang.github.io/imgs/Image_Captioning_with_End-to-end_Attribute_Detection_and_Subsequent_Attributes_Prediction.png",
+      "authors": "Yiqing Huang, Jiansheng Chen, W. Ouyang, Weitao Wan, Youze Xue",
+      "journal": "IEEE Trans. Image Process. (TIP) , accepted, Jan, 2020"
+    }, {
+      "title": "Person Search by Separated Modeling and A Mask-Guided Two-Stream CNN Model",
+      "image": "https://wlouyang.github.io/imgs/Person_Search_by_Separated_Modeling_and_A_Mask-Guided_Two-Stream_CNN_Model.png",
+      "authors": "D. Chen, S. Zhang, W. Ouyang, J. Yang, Y. Tai",
+      "journal": "Image Process. (TIP) , 29: 4669-4682, 2020"
+    }, {
+      "title": "Person Search by Separated Modeling and A Mask-Guided Two-Stream CNN Model",
+      "image": "https://wlouyang.github.io/imgs/Self-Paced_Collaborative_and_Adversarial_Network_for_Unsupervised_Domain_Adaptation.png",
+      "authors": "D. Chen, S. Zhang, W. Ouyang, J. Yang, Y. Tai",
+      "journal": "IEEE Trans. Image Process. (TIP) , 29: 4669-4682, 2020"
+    }, {
+      "title": "Self-Paced Collaborative and Adversarial Network for Unsupervised Domain Adaptation",
+      "image": "https://wlouyang.github.io/imgs/Self-Paced_Collaborative_and_Adversarial_Network_for_Unsupervised_Domain_Adaptation.png",
+      "authors": "Weichen Zhang, Dong Xu, Wanli Ouyang, W. Li",
+      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Sept. 2019"
+    }, {
+      "title": "Deep learning for generic object detection: A survey",
+      "image": "https://wlouyang.github.io/imgs/Det_Survey_2019.JPG",
+      "authors": "Liu, Li, Wanli Ouyang, Xiaogang Wang, Paul Fieguth, Jie Chen, Xinwang Liu, and Matti Pietikäinen",
+      "journal": "IJCV, accepted, Sept. 2019"
+    }, {
+      "title": "Deep Non-local Kalman Network for Video Compression Artifact Reduction",
+      "image": "https://wlouyang.github.io/imgs/DeepNonLocal.png",
+      "authors": "Guo Lu, Xiaoyun Zhang, Wanli Ouyang, Dong Xu, Li Chen, and Zhiyong Gao",
+      "journal": "TIP, accepted, Sept. 2019"
+    }, {
+      "title": "Contextualized Spatial-Temporal Network for Taxi Origin-Destination Demand Prediction",
+      "image": "https://wlouyang.github.io/imgs/ContextualSpatial.png",
+      "authors": "Lingbo Liu, Zhilin Qiu, Guanbin Li, Qing Wang, Wanli Ouyang, Liang Lin",
+      "journal": "IEEE Transactions on Intelligent Transportation Systems (TITS), accepted Apr., 2019"
+    }, {
+      "title": "Zoom out-and-in network with map attention decision for region proposal and object detection",
+      "image": "https://wlouyang.github.io/imgs/ZoomNet.jpg",
+      "authors": "Hongyang Li, Yu Liu, Wanli Ouyang, Xiaogang Wang",
+      "journal": "International Journal of Computer Vision, (IJCV), Accepted Jun., 2018"
+    }, {
+      "title": "Monocular Depth Estimation using Multi-Scale Continuous CRFs as Sequential Deep Networks",
+      "image": "https://wlouyang.github.io/imgs/TPAMI18_Depth.jpg",
+      "authors": "Dan Xu, Elisa Ricci, Wanli Ouyang, Xiaogang Wang, Nicu Sebe",
+      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), Accepted Apr., 2018"
+    }, {
+      "title": "Deep Continuous Conditional Random Fields with Asymmetric Inter-object Constraints for Online Multi-object Tracking",
+      "image": "https://wlouyang.github.io/imgs/DCCRF.jpg",
+      "authors": "Hui Zhou, Wanli Ouyang, Jian Cheng, Xiaogang Wang, and Hongsheng Li",
+      "journal": "IEEE Trans. Circuits and System for Video Technology (CSVT), Accepted Apr., 2018"
+    }, {
+      "title": "Jointly learning deep features, deformable parts, occlusion and classification for pedestrian detection",
+      "image": "https://wlouyang.github.io/imgs/PedCNN_TPAMI.jpg",
+      "authors": "Wanli Ouyang, Hui Zhou, Hongsheng Li, Quanquan Li, Junjie Yan, Xiaogang Wang",
+      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), 40(8):1874-1887, 2018"
+    }, {
+      "title": "Crafting GBD-Net for Object Detection",
+      "image": "https://wlouyang.github.io/imgs/GBD_TPAMI.jpg",
+      "authors": "Xingyu Zeng (equal contribution), Wanli Ouyang (equal contribution), Junjie Yan, Hongsheng Li, Tong Xiao, Kun Wang, Yu Liu, Yucong Zhou, Bin Yang, Zhe Wang, Hui Zhou, Xiaogang Wang",
+      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2017"
+    }, {
+      "title": "T-CNN: Tubelets with Convolutional Neural Networks for Object Detection from Videos",
+      "image": "https://wlouyang.github.io/imgs/TCNN.png",
+      "authors": "K. Kang, H. Li, J. Yan, X. Zeng, B. Yang, T. Xiao, C. Zhang, Z. Wang, R. Wang, X. Wang, W. Ouyang",
+      "journal": "IEEE Transactions on Circuits and Systems for Video Technology (CSVT), accepted, 2017"
+    }, {
+      "title": "DeepID-Net: Object Detection with Deformable Part Based Convolutional Neural Networks",
+      "image": "",
+      "authors": "Wanli Ouyang, Xingyu Zeng, Xiaogang Wang, et al",
+      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2016"
+    }, {
+      "title": "Fast Full-Search Equivalent Pattern Matching Using Asymmetric Haar Wavelet Packets",
+      "image": "https://wlouyang.github.io/imgs/FastFull.png",
+      "authors": "Wanli Ouyang, Tianle Zhao, Wai-Kuen Cham, Liying Wei",
+      "journal": "IEEE Trans. Circuits and System for Video Technology (CSVT), accepted, 2016"
+    }, {
+      "title": "Learning Mutual Visibility Relationship for Pedestrian Detection with a Deep Model",
+      "image": "",
+      "authors": "Wanli Ouyang, Xingyu Zeng and Xiaogang Wang",
+      "journal": "International Journal of Computer Vision (IJCV), accepted, 2016"
+    }, {
+      "title": "Person Re-identification by saliency Learning",
+      "image": "",
+      "authors": "Rui Zhao, Wanli Ouyang and Xiaogang Wang",
+      "journal": "IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI), accepted, 2016"
+    }, {
+      "title": "Partial Occlusion Handling in Pedestrian Detection with a Deep Model",
+      "image": "",
+      "authors": "Wanli Ouyang, Xingyu Zeng and Xiaogang Wang",
+      "journal": "IEEE Trans. Circuits and System for Video Technology (TCSVT), accepted, 2015"
+    }, {
+      "title": "Single-Pedestrian Detection Aided by Two-Pedestrian Detection",
+      "image": "",
+      "authors": "Wanli Ouyang, Xingyu Zeng and Xiaogang Wang",
+      "journal": "IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI), 37(9), 1875-1889, 2015"
+    }, {
+      "title": "Segmented Gray-Code Kernels for Fast Pattern Matching",
+      "image": "https://wlouyang.github.io/mainpa1.jpg",
+      "authors": "Wanli Ouyang, Renqi Zhang and Wai-Kuen Cham",
+      "journal": "IEEE Trans. Image Processing(TIP), 22(4):1512-1525, Apr. 2013"
+    }, {
+      "title": "Performance Evaluation of Full Search Equivalent Pattern Matching Algorithms",
+      "image": "",
+      "authors": "Wanli Ouyang, Federico Tombari, Stefano Mattoccia, Luigi Di Stefano and Wai-Kuen Cham",
+      "journal": "IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI), 34(1):127 - 143, Jan. 2012"
+    }, {
+      "title": "Adaptive Low Resolution Pruning for Fast Full-Search Equivalent Pattern Matching",
+      "image": "",
+      "authors": "F. Tombari, Wanli Ouyang, L. Di Stefano, W.K. Cham",
+      "journal": "Pattern Recognition Letters (JPRL), 32(15), pp 2119-2127, November 2011"
+    }, {
+      "title": "Fast algorithm for Walsh Hadamard transform on sliding windows",
+      "image": "",
+      "authors": "Wanli Ouyang and Wai-Kuen Cham",
+      "journal": "IEEE Trans. Pattern Analysis and machine Intelligence (TPAMI), 32(1):165-171, Jan. 2010"
+    }, {
+      "title": "Improved Boundary Equilibrium Generative Adversarial Networks",
+      "image": "",
+      "authors": "Y. Li, N. Xiao, W. Ouyang",
+      "journal": "IEEE Access, Accepted, Jan., 2018"
+    }, {
+      "title": "Improved Generative Adversarial Networks with Reconstruction Loss",
+      "image": "https://wlouyang.github.io/imgs/ImprovedGenerative.png",
+      "authors": "Y. Li, N. Xiao, W. Ouyang",
+      "journal": "Neurocomputing, Accepted, Oct., 2018"
+    }, {
+      "title": "Part-Aligned Pose-Guided Recurrent Network for Action Recognition",
+      "image": "https://wlouyang.github.io/imgs/PartAligned.png",
+      "authors": "L. Huang, Y. Huang, Wanli Ouyang, L. Wang",
+      "journal": "Pattern Recognition (PR), accepted Mar., 2019"
+    }, {
+      "title": "Perceptual Image Enhancement by Relativistic Discriminant Learning With Cross-Scale Aggregated Representation",
+      "image": "https://wlouyang.github.io/imgs/PerceptualImage.png",
+      "authors": "Yukai Shi, Jinghui Qin, Pengxu Wei, Wanli Ouyang, Liang Lin",
+      "journal": "IEEE Access, accepted Mar., 2019"
+    }, {
+      "title": "Show, Tell and Summarize: Dense Video Captioning Using Visual Cue Aided Sentence Summarization",
+      "image": "https://wlouyang.github.io/imgs/ShowTell.png",
+      "authors": "Zhiwang Zhang, Dong Xu, Wanli Ouyang, Chuanqi Tan",
+      "journal": "IEEE Trans. Circuits Syst. Video Technol. (CSVT), accepted Aug., 2019"
+    }
+  ],
+
+  "conferences":[
+    {
+      "main_image": "https://wlouyang.github.io/imgs/ecoNAS.jpg",
+      "papers":[
+        {
+          "title": "EcoNAS: Finding Proxies for Economical Neural Architecture Search",
+          "authors": "Dongzhan Zhou, Xinchi Zhou, Wenwei Zhang, Chen Change Loy, Shuai Yi, Xuesen Zhang, Wanli Ouyang",
+          "conference": "Proc. CVPR, 2020"
+        }, {
+          "title": "Unifying Spatial-Temporal Graph Convolutions with Disentangled Multi-Scale Aggregators for Skeleton-Based Action Recognition",
+          "authors": "Ziyu Liu, Hongwen Zhang, Zhenghao Chen, Zhiyong Wang, W. Ouyang",
+          "conference": "CVPR, 2020, accepted (Oral)"
+        }, {
+          "title": "Multi-Dimensional Pruning: A Uniﬁed Framework for Model Compression",
+          "authors": "Jinyang Guo, W. Ouyang, Dong Xu",
+          "conference": "CVPR, 2020, accepted (Oral)"
+        }, {
+          "title": "Improving One-shot NAS by Suppressing the Posterior Fading",
+          "authors": "Xiang Li, Chen Lin, Chuming Li, Ming SUn, Wei Wu, Junjie Yan, W. Ouyang",
+          "conference": "CVPR, 2020, accepted"
+        }, {
+          "title": "Equalization Loss for Long-Tailed Object Recognition",
+          "authors": "Jingru Tan, Changbao Wang, Buyu Li, Quanquan Li, W. Ouyang, Changqing Yin, Junjie Yan",
+          "conference": "CVPR, 2020, accepted"
+        }, {
+          "title": "3D Human Mesh Regression with Dense Correspondence",
+          "authors": "Wang Zeng, Wei Yang, W. Ouyang, Ping Luo, Wentao Liu, Xiaogang Wang",
+          "conference": "CVPR, 2020, accepted"
+        }
+      ]
     }
   ]
 }
