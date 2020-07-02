@@ -155,7 +155,9 @@
 
   "conferences":[
     {
-      "main_image": "https://wlouyang.github.io/imgs/ecoNAS.jpg",
+      "main_images": [
+        "https://wlouyang.github.io/imgs/ecoNAS.jpg"
+      ],
       "papers":[
         {
           "title": "EcoNAS: Finding Proxies for Economical Neural Architecture Search",
@@ -181,6 +183,153 @@
           "title": "3D Human Mesh Regression with Dense Correspondence",
           "authors": "Wang Zeng, Wei Yang, W. Ouyang, Ping Luo, Wentao Liu, Xiaogang Wang",
           "conference": "CVPR, 2020, accepted"
+        }
+      ]
+    }, {
+      "main_images": [],
+      "papers":[
+        {
+          "title": "Channel Pruning Guided by Classiﬁcation Loss and Feature Importance",
+          "authors": "Jinyang Guo, Wanli Ouyang, Dong Xu",
+          "conference": "Proc. AAAI, 2020"
+        }, {
+          "title": "Relational Prototypical Network for Weakly Supervised Temporal Action Localization",
+          "authors": "Linjiang Huang, Yan Huang, Wanli Ouyang, Liang Wang",
+          "conference": "Proc. AAAI, 2020, (Oral)"
+        }, {
+          "title": "Part-Level Graph Convolutional Network for Skeleton-Based Action Recognition",
+          "authors": "Linjiang Huang, Yan Huang, Wanli Ouyang, Liang Wang",
+          "conference": "Proc. AAAI, 2020, (Oral)"
+        }, {
+          "title": "Hierarchical Online Instance Matching for Person Search",
+          "authors": "Di Chen, Shanshan Zhang, Wanli Ouyang, Jian Yang, Bernt Schiele",
+          "conference": "Proc. AAAI, 2020, accepted (Oral)"
+        }, {
+          "title": "DASOT: A Uniﬁed Framework Integrating Data Association and Single Object Tracking for Online Multi-Object Tracking",
+          "authors": "Qi Chu, Wanli Ouyang, Bin Liu, Feng Zhu, Nenghai Yu",
+          "conference": "Proc. AAAI, 2020, accepted"
+        }
+      ]
+    }, {
+      "main_images": [
+        "https://wlouyang.github.io/imgs/GradNet.png",
+        "https://wlouyang.github.io/imgs/CrowdCounting.png"
+      ],
+      "papers":[
+        {
+          "title": "GradNet: Gradient-Guided Network for Visual Object Tracking",
+          "authors": "Peixia Li, Boyu Chen, W. Ouyang, Dong Wang, Xiaoyun Yang, Huchuan Lu",
+          "conference": "Proc. ICCV, 2019. (Oral)"
+        }, {
+          "title": "TRB: A Novel Triplet Representation for Understanding 2D Human Body",
+          "authors": "Haodong Duan, Kwan-Yee Lin, Sheng Jin, Wentao Liu, Chen Qian, W. Ouyang",
+          "conference": "Proc. ICCV, 2019. (Oral)"
+        }, {
+          "title": "Crowd Counting with Deep Structured Scale Integration Network",
+          "authors": "Lingbo Liu, Zhilin Qiu , Guanbin Li, Shufan Liu, W. Ouyang, Liang Lin",
+          "conference": "Proc. ICCV, 2019"
+        }, {
+          "title": "Unsupervised Collaborative Learning of Keyframe Detection and Visual Odometry towards Monocular Deep SLAM",
+          "authors": "Lu Sheng, Dan Xu, W. Ouyang, Xiaogang Wang",
+          "conference": "Proc. ICCV, 2019"
+        }, {
+          "title": "Online Hyper-parameter Learning for Auto-Augmentation Strategy",
+          "authors": "Chen Lin, Minghao Guo, Chuming Li, Xin Yuan, Wei Wu, Junjie Yan, Dahua Lin, W. Ouyang",
+          "conference": "Proc. ICCV, 2019"
+        }, {
+          "title": "Accurate Monocular Object Detection via Color-Embedded 3D Reconstruction for Autonomous Driving",
+          "authors": "Xinzhu Ma, Zhihui Wang, Haojie Li, Pengbo Zhang, W. Ouyang, Xin Fan",
+          "conference": "Proc. ICCV, 2019"
+        }, {
+          "title": "LAP-Net: Level-Aware Progressive Network for Image Dehazing",
+          "authors": "Yunan Li, Qiguang Miao, W. Ouyang, Zhenxin Ma, Huijuan Fang, Chao Dong, Yining Quan",
+          "conference": "Proc. ICCV, 2019"
+        }, {
+          "title": "AM-LFS: AutoML for Loss Function Search",
+          "authors": "Chuming Li, Xin Yuan, Chen Lin, Minghao Guo, Wei Wu, Junjie Yan, W. Ouyang",
+          "conference": "Proc. ICCV, 2019"
+        }, {
+          "title": "Structured Modeling of Joint Deep Feature and Prediction Reﬁnement for Salient Object Detection",
+          "authors": "Yingyue Xu, Dan Xu, Xiaopeng Hong, W. Ouyang, Rongrong Ji, Min Xu, Guoying Zhao",
+          "conference": "Proc. ICCV, 2019"
+        }
+      ]
+    }, {
+      "main_images": [
+        "https://wlouyang.github.io/imgs/DaNet.png",
+        "https://wlouyang.github.io/imgs/IntersectGAN.png"
+      ],
+      "papers":[
+        {
+          "title": "DaNet: Decomposeand-aggregate Network for 3D Human Shape and Pose Estimation",
+          "authors": "H. Zhang, Jie Cao, Guo Lu, W. Ouyang, Zhenan Sun",
+          "conference": "Proc. ACM Multimedia, 2019"
+        }, {
+          "title": "IntersectGAN: Learning Domain Intersection for Generating Images with Multiple Attributes",
+          "authors": "Z. Yao, B. Zhang, Z. Wang W. Ouyang, D. Xu, D. Feng",
+          "conference": "Proc. ACM Multimedia, 2019"
+        }
+      ]
+    }, {
+      "main_images": [
+        "https://wlouyang.github.io/imgs/DVC.JPG",
+        "https://wlouyang.github.io/imgs/HybridTaskCascade.JPG"
+      ],
+      "papers":[
+        {
+          "title": "DVC: An End-to-end Deep Video Compression Framework",
+          "authors": "Guo Lu, Wanli Ouyang, Dong Xu, Chunlei Cai, Xiaoyun Zhang, Zhiyong Gao",
+          "conference": "Proc. CVPR, 2019, Accepted. (Oral)"
+        }, {
+          "title": "Kai Chen, Jiangmiao Pang, Jiaqi Wang, Yu Xiong, Xiaoxiao Li, Shuyang Sun, Wansen Feng, Ziwei Liu, Jianping Shi, Wanli Ouyang,Chen Change Loy, Dahua Lin",
+          "authors": "Hybrid Task Cascade for Instance Segmentation",
+          "conference": "Proc. CVPR, 2019, Accepted"
+        }, {
+          "title": "GS3D: An Efficient 3D Object Detection Framework for Autonomous Driving",
+          "authors": "Buyu Li, Wanli Ouyang, Lu Sheng, et. al.",
+          "conference": "Proc. CVPR, 2019, Accepted"
+        }, {
+          "title": "Libra R-CNN: Balanced Learning for Object Detection",
+          "authors": "Jiangmiao Pang, Kai. Chen, Jianping Shi, Wanli Ouyang, et. al.",
+          "conference": "Proc. CVPR, 2019, Accepted"
+        }, {
+          "title": "Box-driven Class-wise Region Masking and Filling Rate Guided Loss for Weakly Supervised Semantic Segmentation",
+          "authors": "Chunfeng Song, Yan Huang, Wanli Ouyang, Liang Wang",
+          "conference": "Proc. CVPR, 2019, Accepted"
+        }, {
+          "title": "Multi-person Articulated Tracking with Spatial and Temporal Embeddings",
+          "authors": "Sheng Jin, Wentao Liu, Wanli Ouyang, Chen Qian",
+          "conference": "Proc. CVPR, 2019, Accepted"
+        }, {
+          "title": "Improving Action Localization by Progressive Cross-stream Cooperation",
+          "authors": "Rui Su, Wanli Ouyang, Luping Zhou, Dong Xu",
+          "conference": "Proc. CVPR, 2019, Accepted"
+        }, {
+          "title": "SR-LSTM: State Refinement for LSTM towards Pedestrian Trajectory Prediction",
+          "authors": "Pu Zhang, Wanli Ouyang, Pengfei Zhang, Jianru Xue, Nanning Zheng",
+          "conference": "Proc. CVPR, 2019, Accepted"
+        }
+      ]
+    }, {
+      "main_images": [
+        "https://wlouyang.github.io/imgs/Intertwiner.JPG"
+      ],
+      "papers":[
+        {
+          "title": "Feature Intertwiner for Object Detection",
+          "authors": "Li, Hongyang, Bo Dai, Shaoshuai Shi, Wanli Ouyang, and Xiaogang Wang",
+          "conference": "ICLR, 2019"
+        }
+      ]
+    }, {
+      "main_images": [
+        "https://wlouyang.github.io/imgs/FishNet.jpg"
+      ],
+      "papers":[
+        {
+          "title": "FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction",
+          "authors": "Shuyang Sun, Jiangmiao Pang, Jianping Shi, Shuai Yi, Wanli Ouyang",
+          "conference": "NuerIPS. (Previously called NIPS), 2018"
         }
       ]
     }
