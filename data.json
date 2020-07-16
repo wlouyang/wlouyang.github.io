@@ -4,157 +4,168 @@
       "title": "Progressive Cross-stream Cooperation in Spatial and Temporal Domain for Action Localization",
       "image": "https://wlouyang.github.io/imgs/progressive_cross-stream_cooperation_in_spatial_and_temporal_domain_for_action_localization.png",
       "authors": "Rui Su, Dong Xu, Luping Zhou, and Ouyang Wanli",
-      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, May, 2020"
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, May, 2020"
     }, {
       "title": "An End-to-End Learning Framework for Video Compression",
       "image": "https://wlouyang.github.io/imgs/An_End-to-End%20Learning_Framework_for_Video_Compression.png",
       "authors": "Guo Lu, Xiaoyun Zhang, W. Ouyang, Li Chen, Zhiyong Gao, Dong Xu",
-      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Apr, 2020"
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Apr, 2020"
     }, {
       "title": "Image Captioning with End-to-end Attribute Detection and Subsequent Attributes Prediction",
       "image": "https://wlouyang.github.io/imgs/Image_Captioning_with_End-to-end_Attribute_Detection_and_Subsequent_Attributes_Prediction.png",
       "authors": "Yiqing Huang, Jiansheng Chen, W. Ouyang, Weitao Wan, Youze Xue",
-      "journal": "IEEE Trans. Image Process. (TIP) , accepted, Jan, 2020"
+      "publisher": "IEEE Trans. Image Process. (TIP) , accepted, Jan, 2020"
     }, {
       "title": "Person Search by Separated Modeling and A Mask-Guided Two-Stream CNN Model",
       "image": "https://wlouyang.github.io/imgs/Person_Search_by_Separated_Modeling_and_A_Mask-Guided_Two-Stream_CNN_Model.png",
       "authors": "D. Chen, S. Zhang, W. Ouyang, J. Yang, Y. Tai",
-      "journal": "Image Process. (TIP) , 29: 4669-4682, 2020"
+      "publisher": "Image Process. (TIP) , 29: 4669-4682, 2020"
     }, {
       "title": "Person Search by Separated Modeling and A Mask-Guided Two-Stream CNN Model",
       "image": "https://wlouyang.github.io/imgs/Self-Paced_Collaborative_and_Adversarial_Network_for_Unsupervised_Domain_Adaptation.png",
       "authors": "D. Chen, S. Zhang, W. Ouyang, J. Yang, Y. Tai",
-      "journal": "IEEE Trans. Image Process. (TIP) , 29: 4669-4682, 2020"
+      "publisher": "IEEE Trans. Image Process. (TIP) , 29: 4669-4682, 2020"
     }, {
       "title": "Self-Paced Collaborative and Adversarial Network for Unsupervised Domain Adaptation",
       "image": "https://wlouyang.github.io/imgs/Self-Paced_Collaborative_and_Adversarial_Network_for_Unsupervised_Domain_Adaptation.png",
       "authors": "Weichen Zhang, Dong Xu, Wanli Ouyang, W. Li",
-      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Sept. 2019"
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Sept. 2019"
     }, {
       "title": "Deep learning for generic object detection: A survey",
       "image": "https://wlouyang.github.io/imgs/Det_Survey_2019.JPG",
       "authors": "Liu, Li, Wanli Ouyang, Xiaogang Wang, Paul Fieguth, Jie Chen, Xinwang Liu, and Matti Pietikäinen",
-      "journal": "IJCV, accepted, Sept. 2019"
+      "publisher": "IJCV, accepted, Sept. 2019"
     }, {
       "title": "Deep Non-local Kalman Network for Video Compression Artifact Reduction",
       "image": "https://wlouyang.github.io/imgs/DeepNonLocal.png",
       "authors": "Guo Lu, Xiaoyun Zhang, Wanli Ouyang, Dong Xu, Li Chen, and Zhiyong Gao",
-      "journal": "TIP, accepted, Sept. 2019"
+      "publisher": "TIP, accepted, Sept. 2019"
     }, {
       "title": "Contextualized Spatial-Temporal Network for Taxi Origin-Destination Demand Prediction",
       "image": "https://wlouyang.github.io/imgs/ContextualSpatial.png",
       "authors": "Lingbo Liu, Zhilin Qiu, Guanbin Li, Qing Wang, Wanli Ouyang, Liang Lin",
-      "journal": "IEEE Transactions on Intelligent Transportation Systems (TITS), accepted Apr., 2019"
+      "publisher": "IEEE Transactions on Intelligent Transportation Systems (TITS), accepted Apr., 2019"
     }, {
       "title": "Zoom out-and-in network with map attention decision for region proposal and object detection",
       "image": "https://wlouyang.github.io/imgs/ZoomNet.jpg",
       "authors": "Hongyang Li, Yu Liu, Wanli Ouyang, Xiaogang Wang",
-      "journal": "International Journal of Computer Vision, (IJCV), Accepted Jun., 2018"
+      "publisher": "International Journal of Computer Vision, (IJCV), Accepted Jun., 2018"
     }, {
       "title": "Monocular Depth Estimation using Multi-Scale Continuous CRFs as Sequential Deep Networks",
       "image": "https://wlouyang.github.io/imgs/TPAMI18_Depth.jpg",
       "authors": "Dan Xu, Elisa Ricci, Wanli Ouyang, Xiaogang Wang, Nicu Sebe",
-      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), Accepted Apr., 2018"
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), Accepted Apr., 2018"
     }, {
       "title": "Deep Continuous Conditional Random Fields with Asymmetric Inter-object Constraints for Online Multi-object Tracking",
       "image": "https://wlouyang.github.io/imgs/DCCRF.jpg",
       "authors": "Hui Zhou, Wanli Ouyang, Jian Cheng, Xiaogang Wang, and Hongsheng Li",
-      "journal": "IEEE Trans. Circuits and System for Video Technology (CSVT), Accepted Apr., 2018"
+      "publisher": "IEEE Trans. Circuits and System for Video Technology (CSVT), Accepted Apr., 2018"
     }, {
       "title": "Jointly learning deep features, deformable parts, occlusion and classification for pedestrian detection",
       "image": "https://wlouyang.github.io/imgs/PedCNN_TPAMI.jpg",
       "authors": "Wanli Ouyang, Hui Zhou, Hongsheng Li, Quanquan Li, Junjie Yan, Xiaogang Wang",
-      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), 40(8):1874-1887, 2018"
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), 40(8):1874-1887, 2018"
     }, {
       "title": "Crafting GBD-Net for Object Detection",
       "image": "https://wlouyang.github.io/imgs/GBD_TPAMI.jpg",
       "authors": "Xingyu Zeng (equal contribution), Wanli Ouyang (equal contribution), Junjie Yan, Hongsheng Li, Tong Xiao, Kun Wang, Yu Liu, Yucong Zhou, Bin Yang, Zhe Wang, Hui Zhou, Xiaogang Wang",
-      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2017"
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2017"
     }, {
       "title": "T-CNN: Tubelets with Convolutional Neural Networks for Object Detection from Videos",
       "image": "https://wlouyang.github.io/imgs/TCNN.png",
       "authors": "K. Kang, H. Li, J. Yan, X. Zeng, B. Yang, T. Xiao, C. Zhang, Z. Wang, R. Wang, X. Wang, W. Ouyang",
-      "journal": "IEEE Transactions on Circuits and Systems for Video Technology (CSVT), accepted, 2017"
+      "publisher": "IEEE Transactions on Circuits and Systems for Video Technology (CSVT), accepted, 2017"
     }, {
       "title": "DeepID-Net: Object Detection with Deformable Part Based Convolutional Neural Networks",
       "image": "",
       "authors": "Wanli Ouyang, Xingyu Zeng, Xiaogang Wang, et al",
-      "journal": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2016"
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2016"
     }, {
       "title": "Fast Full-Search Equivalent Pattern Matching Using Asymmetric Haar Wavelet Packets",
       "image": "https://wlouyang.github.io/imgs/FastFull.png",
       "authors": "Wanli Ouyang, Tianle Zhao, Wai-Kuen Cham, Liying Wei",
-      "journal": "IEEE Trans. Circuits and System for Video Technology (CSVT), accepted, 2016"
+      "publisher": "IEEE Trans. Circuits and System for Video Technology (CSVT), accepted, 2016"
     }, {
       "title": "Learning Mutual Visibility Relationship for Pedestrian Detection with a Deep Model",
       "image": "",
       "authors": "Wanli Ouyang, Xingyu Zeng and Xiaogang Wang",
-      "journal": "International Journal of Computer Vision (IJCV), accepted, 2016"
+      "publisher": "International Journal of Computer Vision (IJCV), accepted, 2016"
     }, {
       "title": "Person Re-identification by saliency Learning",
       "image": "",
       "authors": "Rui Zhao, Wanli Ouyang and Xiaogang Wang",
-      "journal": "IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI), accepted, 2016"
+      "publisher": "IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI), accepted, 2016"
     }, {
       "title": "Partial Occlusion Handling in Pedestrian Detection with a Deep Model",
       "image": "",
       "authors": "Wanli Ouyang, Xingyu Zeng and Xiaogang Wang",
-      "journal": "IEEE Trans. Circuits and System for Video Technology (TCSVT), accepted, 2015"
+      "publisher": "IEEE Trans. Circuits and System for Video Technology (TCSVT), accepted, 2015"
     }, {
       "title": "Single-Pedestrian Detection Aided by Two-Pedestrian Detection",
       "image": "",
       "authors": "Wanli Ouyang, Xingyu Zeng and Xiaogang Wang",
-      "journal": "IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI), 37(9), 1875-1889, 2015"
+      "publisher": "IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI), 37(9), 1875-1889, 2015"
     }, {
       "title": "Segmented Gray-Code Kernels for Fast Pattern Matching",
       "image": "https://wlouyang.github.io/mainpa1.jpg",
       "authors": "Wanli Ouyang, Renqi Zhang and Wai-Kuen Cham",
-      "journal": "IEEE Trans. Image Processing(TIP), 22(4):1512-1525, Apr. 2013"
+      "publisher": "IEEE Trans. Image Processing(TIP), 22(4):1512-1525, Apr. 2013"
     }, {
       "title": "Performance Evaluation of Full Search Equivalent Pattern Matching Algorithms",
       "image": "",
       "authors": "Wanli Ouyang, Federico Tombari, Stefano Mattoccia, Luigi Di Stefano and Wai-Kuen Cham",
-      "journal": "IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI), 34(1):127 - 143, Jan. 2012"
+      "publisher": "IEEE Trans. Pattern Analysis and machine Intelligence(TPAMI), 34(1):127 - 143, Jan. 2012"
     }, {
       "title": "Adaptive Low Resolution Pruning for Fast Full-Search Equivalent Pattern Matching",
       "image": "",
       "authors": "F. Tombari, Wanli Ouyang, L. Di Stefano, W.K. Cham",
-      "journal": "Pattern Recognition Letters (JPRL), 32(15), pp 2119-2127, November 2011"
+      "publisher": "Pattern Recognition Letters (JPRL), 32(15), pp 2119-2127, November 2011"
     }, {
       "title": "Fast algorithm for Walsh Hadamard transform on sliding windows",
       "image": "",
       "authors": "Wanli Ouyang and Wai-Kuen Cham",
-      "journal": "IEEE Trans. Pattern Analysis and machine Intelligence (TPAMI), 32(1):165-171, Jan. 2010"
+      "publisher": "IEEE Trans. Pattern Analysis and machine Intelligence (TPAMI), 32(1):165-171, Jan. 2010"
     }, {
       "title": "Improved Boundary Equilibrium Generative Adversarial Networks",
       "image": "",
       "authors": "Y. Li, N. Xiao, W. Ouyang",
-      "journal": "IEEE Access, Accepted, Jan., 2018"
+      "publisher": "IEEE Access, Accepted, Jan., 2018"
     }, {
       "title": "Improved Generative Adversarial Networks with Reconstruction Loss",
       "image": "https://wlouyang.github.io/imgs/ImprovedGenerative.png",
       "authors": "Y. Li, N. Xiao, W. Ouyang",
-      "journal": "Neurocomputing, Accepted, Oct., 2018"
+      "publisher": "Neurocomputing, Accepted, Oct., 2018"
     }, {
       "title": "Part-Aligned Pose-Guided Recurrent Network for Action Recognition",
       "image": "https://wlouyang.github.io/imgs/PartAligned.png",
       "authors": "L. Huang, Y. Huang, Wanli Ouyang, L. Wang",
-      "journal": "Pattern Recognition (PR), accepted Mar., 2019"
+      "publisher": "Pattern Recognition (PR), accepted Mar., 2019"
     }, {
       "title": "Perceptual Image Enhancement by Relativistic Discriminant Learning With Cross-Scale Aggregated Representation",
       "image": "https://wlouyang.github.io/imgs/PerceptualImage.png",
       "authors": "Yukai Shi, Jinghui Qin, Pengxu Wei, Wanli Ouyang, Liang Lin",
-      "journal": "IEEE Access, accepted Mar., 2019"
+      "publisher": "IEEE Access, accepted Mar., 2019"
     }, {
       "title": "Show, Tell and Summarize: Dense Video Captioning Using Visual Cue Aided Sentence Summarization",
       "image": "https://wlouyang.github.io/imgs/ShowTell.png",
       "authors": "Zhiwang Zhang, Dong Xu, Wanli Ouyang, Chuanqi Tan",
-      "journal": "IEEE Trans. Circuits Syst. Video Technol. (CSVT), accepted Aug., 2019"
+      "publisher": "IEEE Trans. Circuits Syst. Video Technol. (CSVT), accepted Aug., 2019"
     }
   ],
 
   "conferences":[
     {
+      "conference_name": "ICLR 2020",
+      "main_images": [],
+      "papers":[
+        {
+          "title": "Computation Reallocation for Object Detection",
+          "authors": "Liang F, Lin C, Guo R, Sun M, Wu W, Yan J, Ouyang W.",
+          "publisher": "In Proc. ICLR, 2020."
+        }
+      ]
+    }, {
+      "conference_name": "CVPR 2020",
       "main_images": [
         "https://wlouyang.github.io/imgs/ecoNAS.jpg"
       ],
@@ -162,55 +173,57 @@
         {
           "title": "EcoNAS: Finding Proxies for Economical Neural Architecture Search",
           "authors": "Dongzhan Zhou, Xinchi Zhou, Wenwei Zhang, Chen Change Loy, Shuai Yi, Xuesen Zhang, Wanli Ouyang",
-          "conference": "Proc. CVPR, 2020"
+          "publisher": "Proc. CVPR, 2020"
         }, {
           "title": "Unifying Spatial-Temporal Graph Convolutions with Disentangled Multi-Scale Aggregators for Skeleton-Based Action Recognition",
           "authors": "Ziyu Liu, Hongwen Zhang, Zhenghao Chen, Zhiyong Wang, W. Ouyang",
-          "conference": "CVPR, 2020, accepted (Oral)"
+          "publisher": "CVPR, 2020, accepted (Oral)"
         }, {
           "title": "Multi-Dimensional Pruning: A Uniﬁed Framework for Model Compression",
           "authors": "Jinyang Guo, W. Ouyang, Dong Xu",
-          "conference": "CVPR, 2020, accepted (Oral)"
+          "publisher": "CVPR, 2020, accepted (Oral)"
         }, {
           "title": "Improving One-shot NAS by Suppressing the Posterior Fading",
           "authors": "Xiang Li, Chen Lin, Chuming Li, Ming SUn, Wei Wu, Junjie Yan, W. Ouyang",
-          "conference": "CVPR, 2020, accepted"
+          "publisher": "CVPR, 2020, accepted"
         }, {
           "title": "Equalization Loss for Long-Tailed Object Recognition",
           "authors": "Jingru Tan, Changbao Wang, Buyu Li, Quanquan Li, W. Ouyang, Changqing Yin, Junjie Yan",
-          "conference": "CVPR, 2020, accepted"
+          "publisher": "CVPR, 2020, accepted"
         }, {
           "title": "3D Human Mesh Regression with Dense Correspondence",
           "authors": "Wang Zeng, Wei Yang, W. Ouyang, Ping Luo, Wentao Liu, Xiaogang Wang",
-          "conference": "CVPR, 2020, accepted"
+          "publisher": "CVPR, 2020, accepted"
         }
       ]
     }, {
+      "conference_name": "AAAI 2020",
       "main_images": [],
       "papers":[
         {
           "title": "Channel Pruning Guided by Classiﬁcation Loss and Feature Importance",
           "authors": "Jinyang Guo, Wanli Ouyang, Dong Xu",
-          "conference": "Proc. AAAI, 2020"
+          "publisher": "Proc. AAAI, 2020"
         }, {
           "title": "Relational Prototypical Network for Weakly Supervised Temporal Action Localization",
           "authors": "Linjiang Huang, Yan Huang, Wanli Ouyang, Liang Wang",
-          "conference": "Proc. AAAI, 2020, (Oral)"
+          "publisher": "Proc. AAAI, 2020, (Oral)"
         }, {
           "title": "Part-Level Graph Convolutional Network for Skeleton-Based Action Recognition",
           "authors": "Linjiang Huang, Yan Huang, Wanli Ouyang, Liang Wang",
-          "conference": "Proc. AAAI, 2020, (Oral)"
+          "publisher": "Proc. AAAI, 2020, (Oral)"
         }, {
           "title": "Hierarchical Online Instance Matching for Person Search",
           "authors": "Di Chen, Shanshan Zhang, Wanli Ouyang, Jian Yang, Bernt Schiele",
-          "conference": "Proc. AAAI, 2020, accepted (Oral)"
+          "publisher": "Proc. AAAI, 2020, accepted (Oral)"
         }, {
           "title": "DASOT: A Uniﬁed Framework Integrating Data Association and Single Object Tracking for Online Multi-Object Tracking",
           "authors": "Qi Chu, Wanli Ouyang, Bin Liu, Feng Zhu, Nenghai Yu",
-          "conference": "Proc. AAAI, 2020, accepted"
+          "publisher": "Proc. AAAI, 2020, accepted"
         }
       ]
     }, {
+      "conference_name": "ICCV 2019",
       "main_images": [
         "https://wlouyang.github.io/imgs/GradNet.png",
         "https://wlouyang.github.io/imgs/CrowdCounting.png"
@@ -219,42 +232,43 @@
         {
           "title": "GradNet: Gradient-Guided Network for Visual Object Tracking",
           "authors": "Peixia Li, Boyu Chen, W. Ouyang, Dong Wang, Xiaoyun Yang, Huchuan Lu",
-          "conference": "Proc. ICCV, 2019. (Oral)"
+          "publisher": "Proc. ICCV, 2019. (Oral)"
         }, {
           "title": "TRB: A Novel Triplet Representation for Understanding 2D Human Body",
           "authors": "Haodong Duan, Kwan-Yee Lin, Sheng Jin, Wentao Liu, Chen Qian, W. Ouyang",
-          "conference": "Proc. ICCV, 2019. (Oral)"
+          "publisher": "Proc. ICCV, 2019. (Oral)"
         }, {
           "title": "Crowd Counting with Deep Structured Scale Integration Network",
           "authors": "Lingbo Liu, Zhilin Qiu , Guanbin Li, Shufan Liu, W. Ouyang, Liang Lin",
-          "conference": "Proc. ICCV, 2019"
+          "publisher": "Proc. ICCV, 2019"
         }, {
           "title": "Unsupervised Collaborative Learning of Keyframe Detection and Visual Odometry towards Monocular Deep SLAM",
           "authors": "Lu Sheng, Dan Xu, W. Ouyang, Xiaogang Wang",
-          "conference": "Proc. ICCV, 2019"
+          "publisher": "Proc. ICCV, 2019"
         }, {
           "title": "Online Hyper-parameter Learning for Auto-Augmentation Strategy",
           "authors": "Chen Lin, Minghao Guo, Chuming Li, Xin Yuan, Wei Wu, Junjie Yan, Dahua Lin, W. Ouyang",
-          "conference": "Proc. ICCV, 2019"
+          "publisher": "Proc. ICCV, 2019"
         }, {
           "title": "Accurate Monocular Object Detection via Color-Embedded 3D Reconstruction for Autonomous Driving",
           "authors": "Xinzhu Ma, Zhihui Wang, Haojie Li, Pengbo Zhang, W. Ouyang, Xin Fan",
-          "conference": "Proc. ICCV, 2019"
+          "publisher": "Proc. ICCV, 2019"
         }, {
           "title": "LAP-Net: Level-Aware Progressive Network for Image Dehazing",
           "authors": "Yunan Li, Qiguang Miao, W. Ouyang, Zhenxin Ma, Huijuan Fang, Chao Dong, Yining Quan",
-          "conference": "Proc. ICCV, 2019"
+          "publisher": "Proc. ICCV, 2019"
         }, {
           "title": "AM-LFS: AutoML for Loss Function Search",
           "authors": "Chuming Li, Xin Yuan, Chen Lin, Minghao Guo, Wei Wu, Junjie Yan, W. Ouyang",
-          "conference": "Proc. ICCV, 2019"
+          "publisher": "Proc. ICCV, 2019"
         }, {
           "title": "Structured Modeling of Joint Deep Feature and Prediction Reﬁnement for Salient Object Detection",
           "authors": "Yingyue Xu, Dan Xu, Xiaopeng Hong, W. Ouyang, Rongrong Ji, Min Xu, Guoying Zhao",
-          "conference": "Proc. ICCV, 2019"
+          "publisher": "Proc. ICCV, 2019"
         }
       ]
     }, {
+      "conference_name": "ACM Multimedia 2019",
       "main_images": [
         "https://wlouyang.github.io/imgs/DaNet.png",
         "https://wlouyang.github.io/imgs/IntersectGAN.png"
@@ -263,14 +277,15 @@
         {
           "title": "DaNet: Decomposeand-aggregate Network for 3D Human Shape and Pose Estimation",
           "authors": "H. Zhang, Jie Cao, Guo Lu, W. Ouyang, Zhenan Sun",
-          "conference": "Proc. ACM Multimedia, 2019"
+          "publisher": "Proc. ACM Multimedia, 2019"
         }, {
           "title": "IntersectGAN: Learning Domain Intersection for Generating Images with Multiple Attributes",
           "authors": "Z. Yao, B. Zhang, Z. Wang W. Ouyang, D. Xu, D. Feng",
-          "conference": "Proc. ACM Multimedia, 2019"
+          "publisher": "Proc. ACM Multimedia, 2019"
         }
       ]
     }, {
+      "conference_name": "CVPR 2019",
       "main_images": [
         "https://wlouyang.github.io/imgs/DVC.JPG",
         "https://wlouyang.github.io/imgs/HybridTaskCascade.JPG"
@@ -279,38 +294,39 @@
         {
           "title": "DVC: An End-to-end Deep Video Compression Framework",
           "authors": "Guo Lu, Wanli Ouyang, Dong Xu, Chunlei Cai, Xiaoyun Zhang, Zhiyong Gao",
-          "conference": "Proc. CVPR, 2019, Accepted. (Oral)"
+          "publisher": "Proc. CVPR, 2019, Accepted. (Oral)"
         }, {
           "title": "Kai Chen, Jiangmiao Pang, Jiaqi Wang, Yu Xiong, Xiaoxiao Li, Shuyang Sun, Wansen Feng, Ziwei Liu, Jianping Shi, Wanli Ouyang,Chen Change Loy, Dahua Lin",
           "authors": "Hybrid Task Cascade for Instance Segmentation",
-          "conference": "Proc. CVPR, 2019, Accepted"
+          "publisher": "Proc. CVPR, 2019, Accepted"
         }, {
           "title": "GS3D: An Efficient 3D Object Detection Framework for Autonomous Driving",
           "authors": "Buyu Li, Wanli Ouyang, Lu Sheng, et. al.",
-          "conference": "Proc. CVPR, 2019, Accepted"
+          "publisher": "Proc. CVPR, 2019, Accepted"
         }, {
           "title": "Libra R-CNN: Balanced Learning for Object Detection",
           "authors": "Jiangmiao Pang, Kai. Chen, Jianping Shi, Wanli Ouyang, et. al.",
-          "conference": "Proc. CVPR, 2019, Accepted"
+          "publisher": "Proc. CVPR, 2019, Accepted"
         }, {
           "title": "Box-driven Class-wise Region Masking and Filling Rate Guided Loss for Weakly Supervised Semantic Segmentation",
           "authors": "Chunfeng Song, Yan Huang, Wanli Ouyang, Liang Wang",
-          "conference": "Proc. CVPR, 2019, Accepted"
+          "publisher": "Proc. CVPR, 2019, Accepted"
         }, {
           "title": "Multi-person Articulated Tracking with Spatial and Temporal Embeddings",
           "authors": "Sheng Jin, Wentao Liu, Wanli Ouyang, Chen Qian",
-          "conference": "Proc. CVPR, 2019, Accepted"
+          "publisher": "Proc. CVPR, 2019, Accepted"
         }, {
           "title": "Improving Action Localization by Progressive Cross-stream Cooperation",
           "authors": "Rui Su, Wanli Ouyang, Luping Zhou, Dong Xu",
-          "conference": "Proc. CVPR, 2019, Accepted"
+          "publisher": "Proc. CVPR, 2019, Accepted"
         }, {
           "title": "SR-LSTM: State Refinement for LSTM towards Pedestrian Trajectory Prediction",
           "authors": "Pu Zhang, Wanli Ouyang, Pengfei Zhang, Jianru Xue, Nanning Zheng",
-          "conference": "Proc. CVPR, 2019, Accepted"
+          "publisher": "Proc. CVPR, 2019, Accepted"
         }
       ]
     }, {
+      "conference_name": "ICLR 2019",
       "main_images": [
         "https://wlouyang.github.io/imgs/Intertwiner.JPG"
       ],
@@ -318,10 +334,11 @@
         {
           "title": "Feature Intertwiner for Object Detection",
           "authors": "Li, Hongyang, Bo Dai, Shaoshuai Shi, Wanli Ouyang, and Xiaogang Wang",
-          "conference": "ICLR, 2019"
+          "publisher": "ICLR, 2019"
         }
       ]
     }, {
+      "conference_name": "NIPS 2018",
       "main_images": [
         "https://wlouyang.github.io/imgs/FishNet.jpg"
       ],
@@ -329,10 +346,11 @@
         {
           "title": "FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction",
           "authors": "Shuyang Sun, Jiangmiao Pang, Jianping Shi, Shuai Yi, Wanli Ouyang",
-          "conference": "NuerIPS. (Previously called NIPS), 2018"
+          "publisher": "NuerIPS. (Previously called NIPS), 2018"
         }
       ]
     }, {
+      "conference_name": "ECCV 2018",
       "main_images": [
         "https://wlouyang.github.io/imgs/Encapsule.jpg",
         "https://wlouyang.github.io/imgs/FactorizableNet.jpg"
@@ -341,30 +359,31 @@
         {
           "title": "Neural Network Encapsulation",
           "authors": "Hongyang Li, Bo Dai, Wanli Ouyang, Xiaoyang Guo, Xiaogang Wang",
-          "conference": "Proc. ECCV, 2018"
+          "publisher": "Proc. ECCV, 2018"
         }, {
           "title": "Quantization Mimic: Towards Very Tiny CNN for Object Detection",
           "authors": "Yi Wei, Xinyu Pan, Hongwei Qin, Junjie Yan, Wanli Ouyang",
-          "conference": "Proc. ECCV, 2018"
+          "publisher": "Proc. ECCV, 2018"
         }, {
           "title": "Factorizable Net: An Efficient Subgraph-based Framework for Scene Graph Generation",
           "authors": "Yikang Li, Wanli Ouyang, Bolei Zhou, Yanwen Cui, Jianping Shi, Chao Zhang, Xiaogang Wang",
-          "conference": "Proc. ECCV, 2018"
+          "publisher": "Proc. ECCV, 2018"
         }, {
           "title": "Deep Kalman Filtering Network for Video Compression Artifact Reduction",
           "authors": "Guo Lu, Wanli Ouyang, Dong Xu, Xiaoyun Zhang, Zhiyong Gao, Ming-Ting Sun",
-          "conference": "Proc. ECCV, 2018"
+          "publisher": "Proc. ECCV, 2018"
         }, {
           "title": "Dividing and Aggregating Network for Multi-view Action Recognition",
           "authors": "Dongang Wang, Wanli Ouyang, Wen Li, Dong Xu",
-          "conference": "Proc. ECCV, 2018"
+          "publisher": "Proc. ECCV, 2018"
         }, {
           "title": "Person Search via A Mask-guided Two-stream CNN Model",
           "authors": "Di Chen, Shanshan Zhang, Wanli Ouyang, Jian Yang, Ying Tai",
-          "conference": "Proc. ECCV, 2018"
+          "publisher": "Proc. ECCV, 2018"
         }
       ]
     }, {
+      "conference_name": "CVPR 2018",
       "main_images": [
         "https://wlouyang.github.io/imgs/OFF.jpg"
       ],
@@ -372,51 +391,53 @@
         {
           "title": "Style Aggregated Network for Facial Landmark Detection",
           "authors": "Xuanyi Dong, Yan Yan, Wanli Ouyang , Yi Yang",
-          "conference": "Proc. CVPR, 2018"
+          "publisher": "Proc. CVPR, 2018"
         }, {
           "title": "Visual Question Generation as Dual Task of Visual Question Answering",
           "authors": "Yikang Li, Nan Duan, Bolei Zhou, Xiao Chu, Wanli Ouyang, Xiaogang Wang",
-          "conference": "Proc. CVPR, 2018 (spotlight)"
+          "publisher": "Proc. CVPR, 2018 (spotlight)"
         }, {
           "title": "Attention-aware Compositional Network for Person Re-Identification",
           "authors": "Jing Xu, Rui Zhao, Feng Zhu, Huaming Wang, Wanli Ouyang",
-          "conference": "Proc. CVPR, 2018"
+          "publisher": "Proc. CVPR, 2018"
         }, {
           "title": "Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning",
           "authors": "Yu Wu, Yutian Lin, Xuanyi Dong, Yan Yan, Wanli Ouyang, Yi Yang",
-          "conference": "Proc. CVPR, 2018"
+          "publisher": "Proc. CVPR, 2018"
         }, {
           "title": "3D Human Pose Estimation in the Wild by Adversarial Learning",
           "authors": "Wei Yang, Wanli Ouyang, Xiaolong Wang, Xiaogang Wang",
-          "conference": "Proc. CVPR, 2018"
+          "publisher": "Proc. CVPR, 2018"
         }, {
           "title": "Collaborative and Adversarial Network for Unsupervised domain adaptation",
           "authors": "Weichen Zhang, Wanli Ouyang, Dong Xu, Wen Li",
-          "conference": "Proc. CVPR, 2018 (spotlight)"
+          "publisher": "Proc. CVPR, 2018 (spotlight)"
         }, {
           "title": "Optical Flow Guided Feature: A Motion Representation for Video Action Recognition",
           "authors": "Shuyang Sun, Zhanghui Kuang, Lu Sheng, Wanli Ouyang, Wei Zhang",
-          "conference": "Proc. CVPR, 2018"
+          "publisher": "Proc. CVPR, 2018"
         }, {
           "title": "PAD-Net: Multi-Tasks Guided Prediciton-and-Distillation Network for Simultaneous Depth Estimation and Scene Parsing",
           "authors": "Dan Xu, Wanli Ouyang, Xiaogang Wang, Nicu Sebe",
-          "conference": "Proc. CVPR, 2018"
+          "publisher": "Proc. CVPR, 2018"
         }, {
           "title": "Mask-guided Contrastive Attention Model for Person Re-Identification",
           "authors": "Chunfeng Song, Yan Huang, Liang Wang, Wanli Ouyang",
-          "conference": "Proc. CVPR, 2018"
+          "publisher": "Proc. CVPR, 2018"
         }
       ]
     }, {
+      "conference_name": "IJCAI 2018",
       "main_images": [],
       "papers":[
         {
           "title": "Crowd Counting using Deep Recurrent Spatial-Aware Network",
           "authors": "Lingbo Liu, HongjunWang, Guanbin Li, Wanli Ouyang, Liang Lin",
-          "conference": "Proc. IJCAI, 2018"
+          "publisher": "Proc. IJCAI, 2018"
         }
       ]
     }, {
+      "conference_name": "ICCV 2017",
       "main_images": [
         "https://wlouyang.github.io/images/ChainCNN.JPG"
       ],
@@ -424,31 +445,33 @@
         {
           "title": "Chained Cascade Network for Object Detection",
           "authors": "Wanli Ouyang, Kun Wang, Xin Zhu, Xiaogang Wang",
-          "conference": "Proc. ICCV, 2017"
+          "publisher": "Proc. ICCV, 2017"
         }, {
           "title": "Learning Feature Pyramids for Human Pose Estimation",
           "authors": "Wei Yang, Shuang Li, Wanli Ouyang, Hongsheng Li, XiaogangWang",
-          "conference": "Proc. ICCV, 2017"
+          "publisher": "Proc. ICCV, 2017"
         }, {
           "title": "Scene Graph Generation from Objects, Phrases and Region Captions",
           "authors": "Yikang Li, Wanli Ouyang, Bolei Zhou, Kun Wang, Xiaogang Wang",
-          "conference": "Proc. ICCV, 2017"
+          "publisher": "Proc. ICCV, 2017"
         }, {
           "title": "Online Multi-Object Tracking Using CNN-based Single Object Tracker with Spatial-Temporal Attention Mechanism",
           "authors": "Qi Chu, Wanli Ouyang, Hongsheng Li, Xiaogang Wang, Bin Liu, Nenghai Yu",
-          "conference": "Proc. ICCV, 2017"
+          "publisher": "Proc. ICCV, 2017"
         }
       ]
     }, {
+      "conference_name": "NIPS 2017",
       "main_images": [],
       "papers":[
         {
           "title": "Learning Deep Structured Multi-Scale Features using Attention-Gated CRFs for Contour Prediction",
           "authors": "Dan Xu, Wanli Ouyang, Xavier Alameda-Pineda, Elisa Ricci, Xiaogang Wang, Nicu Sebe",
-          "conference": "Proc. NIPS, 2017"
+          "publisher": "Proc. NIPS, 2017"
         }
       ]
     }, {
+      "conference_name": "CVPR 2017",
       "main_images": [
         "https://wlouyang.github.io/images/vip-cnn.jpg"
       ],
@@ -456,34 +479,35 @@
         {
           "title": "Object Detection in Vidoes with Tubelet Proposal Networks",
           "authors": "Kai Kang, Hongsheng Li, W. Ouyang , Junjie Yan, Xihui Liu, Tong Xiao, Xiaogang Wang",
-          "conference": "Proc. CVPR , 2017"
+          "publisher": "Proc. CVPR , 2017"
         }, {
           "title": "Learning Spatial Regularization with Image-level Supervisions for Multi-label Image Classification",
           "authors": "Feng Zhu, Hongsheng Li, W. Ouyang , Nenghai Yu, Xiaogang Wang",
-          "conference": "Proc. CVPR , 2017"
+          "publisher": "Proc. CVPR , 2017"
         }, {
           "title": "Quality Aware Network for Set to Set Recognition",
           "authors": "Yu Liu, Junjie Yan, W. Ouyang",
-          "conference": "Proc. CVPR , 2017"
+          "publisher": "Proc. CVPR , 2017"
         }, {
           "title": "ViP-CNN: A Visual Phrase Reasoning Convolutional Neural Network for Visual Relationship Detection",
           "authors": "Yikang LI , W. Ouyang , Xiaogang Wang",
-          "conference": "Proc. CVPR , 2017"
+          "publisher": "Proc. CVPR , 2017"
         }, {
           "title": "Multi-Context Attention for Human Pose Estimation",
           "authors": "Xiao Chu, Wei Yang, W. Ouyang , Xiaogang Wang, Alan Yuille",
-          "conference": "Proc. CVPR , 2017"
+          "publisher": "Proc. CVPR , 2017"
         }, {
           "title": "Multi-Scale Continuous CRFs as Sequential Deep Networks for Monocular Depth Estimation",
           "authors": "Dan Xu, Elisa Ricci, W. Ouyang , Xiaogang Wang, Nicu Sebe",
-          "conference": "Proc. CVPR , 2017"
+          "publisher": "Proc. CVPR , 2017"
         }, {
           "title": "Learning Cross-Modal Deep Representations for Robust Pedestrian Detection",
           "authors": "Dan Xu, W. Ouyang , Elisa Ricci, Xiaogang Wang, Nicu Sebe",
-          "conference": "Proc. CVPR , 2017"
+          "publisher": "Proc. CVPR , 2017"
         }
       ]
     }, {
+      "conference_name": "NIPS 2016",
       "main_images": [
         "https://wlouyang.github.io/images/CRF_CNN.jpg"
       ],
@@ -491,10 +515,11 @@
         {
           "title": "CRF-CNN: Modeling Structured Information in Human Pose Estimation",
           "authors": "X. Chu, W. Ouyang , H. Li, X. Wang",
-          "conference": "Advances In Neural Information Processing Systems (NIPS), 2016"
+          "publisher": "Advances In Neural Information Processing Systems (NIPS), 2016"
         }
       ]
     }, {
+      "conference_name": "ECCV 2016",
       "main_images": [
         "https://wlouyang.github.io/projects/GBD/images/motivation.jpg"
       ],
@@ -502,14 +527,15 @@
         {
           "title": "Gated Bidirectional CNN for Object Detection",
           "authors": "Xingyu Zeng, Wanli Ouyang, Bin Yang, Junjie Yan, Xiaogang",
-          "conference": "In Proc. ECCV 2016"
+          "publisher": "In Proc. ECCV 2016"
         }, {
           "title": "Learnable Histogram: Statistical Context Features for Deep Neural Networks",
           "authors": "Z. Wang, H. Li, W. Ouyang , X. Wang Wanli",
-          "conference": "In Proc. ECCV 2016"
+          "publisher": "In Proc. ECCV 2016"
         }
       ]
     }, {
+      "conference_name": "CVPR 2016",
       "main_images": [
         "https://wlouyang.github.io/imgs/ImageNetFactors.jpg"
       ],
@@ -517,39 +543,41 @@
         {
           "title": "Factors in finetuning deep model for object detection with long-tail distribution",
           "authors": "Wanli Ouyang, X. Wang, C. Zhang, and X. Yang",
-          "conference": "In Proc. CVPR 2016"
+          "publisher": "In Proc. CVPR 2016"
         }, {
           "title": "End-to-End Learning of Deformable Mixture of Parts and Deep Convolutional Neural Networks for Human Pose Estimation",
           "authors": "Wei Yang, Wanli Ouyang, Hongsheng Li and Xiaogang Wang",
-          "conference": "In Proc. CVPR 2016 (Oral)"
+          "publisher": "In Proc. CVPR 2016 (Oral)"
         }, {
           "title": "STCT: Sequentially Training Convolutional Networks for Visual Tracking",
           "authors": "Lijun Wang, Wanli Ouyang, Wanli Ouyang, Xiaogang Wang, and Huchuan Lu",
-          "conference": "In Proc. CVPR 2016"
+          "publisher": "In Proc. CVPR 2016"
         }, {
           "title": "Object detection from video tubelets with convolutional neural networks",
           "authors": "K. Kang, Wanli Ouyang, H. Li, and X. Wang",
-          "conference": "In Proc. CVPR 2016"
+          "publisher": "In Proc. CVPR 2016"
         }, {
           "title": "Structured feature learning for pose estimation",
           "authors": "X. Chu, Wanli Ouyang , H. Li, and X. Wang",
-          "conference": "In Proc. CVPR 2016"
+          "publisher": "In Proc. CVPR 2016"
         }, {
           "title": "Learning Deep Feature Representations with Domain Guided Dropout for Person Re-identification",
           "authors": "Tong Xiao, Hongsheng Li, Wanli Ouyang, Xiaogang Wang",
-          "conference": "In Proc. CVPR 2016"
+          "publisher": "In Proc. CVPR 2016"
         }
       ]
     }, {
+      "conference_name": "ICML 2016",
       "main_images": [],
       "papers":[
         {
           "title": "Multiple Bias on Non-linearity Activation in Deep Neural Networks",
           "authors": "Hongyang Li, Wanli Ouyang, Xiaogang Wang",
-          "conference": "In Proc. ICML 2016"
+          "publisher": "In Proc. ICML 2016"
         }
       ]
     }, {
+      "conference_name": "ICCV 2015",
       "main_images": [
         "https://wlouyang.github.io/projects/ImageNetAttribute/dataset.png",
         "https://wlouyang.github.io/imgs/Immediacy.PNG"
@@ -558,18 +586,19 @@
         {
           "title": "Learning Deep Representation with Large-scale Attributes",
           "authors": "Wanli Ouyang, Hongyang Li, Xingyu Zeng, and Xiaogang Wang",
-          "conference": "In Proc. ICCV 2015"
+          "publisher": "In Proc. ICCV 2015"
         }, {
           "title": "Multi-task Recurrent Neural Network for Immediacy Prediction",
           "authors": "Xiao Chu, Wanli Ouyang, Wei Yang, and Xiaogang Wang",
-          "conference": "In Proc. ICCV 2015. (Oral)"
+          "publisher": "In Proc. ICCV 2015. (Oral)"
         }, {
           "title": "Visual Tracking with Fully Convolutional Networks",
           "authors": "Lijun Wang, Wanli Ouyang, Xiaogang Wang, and Huchuan Lu",
-          "conference": "In Proc. ICCV 2015"
+          "publisher": "In Proc. ICCV 2015"
         }
       ]
     }, {
+      "conference_name": "CVPR 2015",
       "main_images": [
         "https://wlouyang.github.io/imgs/overview_DeepID.png",
         "https://wlouyang.github.io/imgs/ZhaoCVPR15.JPG"
@@ -578,23 +607,25 @@
         {
           "title": "DeepID-Net: Deformable Deep Convolutional Neural Networks for Object Detection",
           "authors": "Wanli Ouyang, Xiaogang Wang, Xingyu Zeng, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Chen-Change Loy and Xiaoou Tang",
-          "conference": "In Proc. CVPR 2015"
+          "publisher": "In Proc. CVPR 2015"
         }, {
           "title": "Saliency Detection by Multi-context Deep Learning",
           "authors": "Rui Zhao, Wanli Ouyang, Hongsheng Li, and Xiaogang Wang",
-          "conference": "In Proc. CVPR 2015"
+          "publisher": "In Proc. CVPR 2015"
         }
       ]
     }, {
+      "conference_name": "ECCV 2014",
       "main_images": [],
       "papers":[
         {
           "title": "Deep Learning of Scene-Specific Classifier for Pedestrian Detection",
           "authors": "Xinyu Zeng, Wanli Ouyang, Xiaogang Wang",
-          "conference": "In Proc. ECCV 2014"
+          "publisher": "In Proc. ECCV 2014"
         }
       ]
     }, {
+      "conference_name": "CVPR 2014",
       "main_images": [
         "https://wlouyang.github.io/imgs/PoseDBN.PNG"
       ],
@@ -602,14 +633,15 @@
         {
           "title": "Multi-source Deep Learning for Human Pose Estimation",
           "authors": "Wanli Ouyang, Xiao Chu, Xiaogang Wang",
-          "conference": "In Proc. IEEE CVPR 2014"
+          "publisher": "In Proc. IEEE CVPR 2014"
         }, {
           "title": "Learning Mid-level Filters for Person Re-Identfiation",
           "authors": "Rui Zhao, Wanli Ouyang, and Xiaogang Wang",
-          "conference": "In Proc. IEEE CVPR 2014"
+          "publisher": "In Proc. IEEE CVPR 2014"
         }
       ]
     }, {
+      "conference_name": "ICCV 2013",
       "main_images": [
         "https://wlouyang.github.io/imgs/jointdeep.PNG"
       ],
@@ -617,18 +649,19 @@
         {
           "title": "Joint Deep Learning for Pedestrian Detection",
           "authors": "Wanli Ouyang, Xiaogang Wang",
-          "conference": "In Proc. IEEE ICCV 2013"
+          "publisher": "In Proc. IEEE ICCV 2013"
         }, {
           "title": "Multi-Stage Contextual Deep Learning for Pedestrian Detection",
           "authors": "Xingyu Zeng, Wanli Ouyang, Xiaogang Wang",
-          "conference": "In Proc. IEEE ICCV 2013"
+          "publisher": "In Proc. IEEE ICCV 2013"
         }, {
           "title": "Person Re-identification by Salience Matching",
           "authors": "Rui Zhao, Wanli Ouyang, Xiaogang Wang",
-          "conference": "In Proc. IEEE ICCV 2013"
+          "publisher": "In Proc. IEEE ICCV 2013"
         }
       ]
     }, {
+      "conference_name": "CVPR 2013",
       "main_images": [
         "https://wlouyang.github.io/two_pedestrian.PNG",
         "https://wlouyang.github.io/mutual_visibility.PNG"
@@ -637,27 +670,29 @@
         {
           "title": "Single-Pedestrian Detection aided by Multi-pedestrian Detection",
           "authors": "Wanli Ouyang, Xiaogang Wang",
-          "conference": "In Proc. IEEE CVPR 2013"
+          "publisher": "In Proc. IEEE CVPR 2013"
         }, {
           "title": "Modeling Mutual Visibility Relationship in Pedestrian Detection",
           "authors": "Wanli Ouyang, Xingyu Zeng and Xiaogang Wang",
-          "conference": "In Proc. IEEE CVPR 2013"
+          "publisher": "In Proc. IEEE CVPR 2013"
         }, {
           "title": "Unsupervised Salience Learning for Person Re-identification",
           "authors": "Rui Zhao Wanli Ouyang, and Xiaogang Wang",
-          "conference": "In Proc. IEEE CVPR 2013"
+          "publisher": "In Proc. IEEE CVPR 2013"
         }
       ]
     }, {
+      "conference_name": "CVPR 2012",
       "main_images": [],
       "papers":[
         {
           "title": "A Discriminative Deep Model for Pedestrian Detection with Occlusion Handling",
           "authors": "Wanli Ouyang and Xiaogang Wang",
-          "conference": "In Proc. IEEE CVPR 2012"
+          "publisher": "In Proc. IEEE CVPR 2012"
         }
       ]
     }, {
+      "conference_name": "CVPR 2010",
       "main_images": [
         "https://wlouyang.github.io/mainpa9.gif"
       ],
@@ -665,10 +700,11 @@
         {
           "title": "Fast pattern matching using orthogonal Haar transform",
           "authors": "Wanli Ouyang, Renqi Zhang and Wai-Kuen Cham",
-          "conference": "In Proc. IEEE CVPR 2010"
+          "publisher": "In Proc. IEEE CVPR 2010"
         }
       ]
     }, {
+      "conference_name": "ICASSP 2009",
       "main_images": [
         "https://wlouyang.github.io/mainpa13.jpg"
       ],
@@ -676,10 +712,11 @@
         {
           "title": "Image Deblocking using Dual Adaptive FIR Wiener Filter in the DCT Transform Domain",
           "authors": "Renqi Zhang, Wanli Ouyang and Wai-Kuen Cham",
-          "conference": "In Proc. IEEE Int. Conf. Acoustics, Speech, and Signal Processing, ICASSP 2009, Taiwan, April 19-24, 2009, pp.1181-1184"
+          "publisher": "In Proc. IEEE Int. Conf. Acoustics, Speech, and Signal Processing, ICASSP 2009, Taiwan, April 19-24, 2009, pp.1181-1184"
         }
       ]
     }, {
+      "conference_name": "ICIP 2009",
       "main_images": [
         "https://wlouyang.github.io/imgs/mainpa14.jpg",
         "https://wlouyang.github.io/imgs/mainpa15.gif",
@@ -689,29 +726,31 @@
         {
           "title": "Image Multi-scale Edge Detection using 3-D Hidden Markov Model based on the Non-decimated Wavelet",
           "authors": "Renqi Zhang, Wanli Ouyang and Wai-Kuen Cham",
-          "conference": "In Proc. 2009 IEEE International Conference on Image Processing (ICIP), Cairo, Egypt, November 7-10, 2009, pp.2173-2176"
+          "publisher": "In Proc. 2009 IEEE International Conference on Image Processing (ICIP), Cairo, Egypt, November 7-10, 2009, pp.2173-2176"
         }
       ]
     }, {
+      "conference_name": "MWCAS 2005",
       "main_images": [],
       "papers":[
         {
           "title": "The matrix decomposition representation of DCT algorithms",
           "authors": "Wanli Ouyang, D. Song, C. Xiao, and W. Ju",
-          "conference": "In IEEE midwest sym. Circuits and Syst. (MWCAS), 2005"
+          "publisher": "In IEEE midwest sym. Circuits and Syst. (MWCAS), 2005"
         }, {
           "title": "The dynamic range acquisition of DCT and IDCT algorithms",
           "authors": "Wanli Ouyang, C. Xiao, W. Ju, and D. Song",
-          "conference": "In IEEE midwest sym. Circuits and Syst. (MWCAS), 2005"
+          "publisher": "In IEEE midwest sym. Circuits and Syst. (MWCAS), 2005"
         }
       ]
     }, {
+      "conference_name": "ISP 2005",
       "main_images": [],
       "papers":[
         {
           "title": "Practical fast asymmetric DCT algorithm based on SIMD and VLIW",
           "authors": "Wanli Ouyang, C. Xiao, W. Ju, and D. Song",
-          "conference": "In IEEE Int. Sym. Intelligent Signal Processing , 2005"
+          "publisher": "In IEEE Int. Sym. Intelligent Signal Processing , 2005"
         }
       ]
     }
