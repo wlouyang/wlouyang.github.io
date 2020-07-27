@@ -170,7 +170,7 @@
     
     {
       "title": "Segmented Gray-Code Kernels for Fast Pattern Matching",
-      "image": "https://wlouyang.github.io/mainpa1.jpg",
+      "image": "https://wlouyang.github.io/imgs/mainpa1.jpg",
       "authors": "Wanli Ouyang, Renqi Zhang and Wai-Kuen Cham",
       "publisher": "IEEE Trans. Image Processing(TIP), 22(4):1512-1525, Apr. 2013",
       "full_text": "./Papers/SegGCK.pdf",
@@ -1016,8 +1016,8 @@
     {
       "conference_name": "CVPR 2013",
       "main_images": [
-        "https://wlouyang.github.io/two_pedestrian.PNG",
-        "https://wlouyang.github.io/mutual_visibility.PNG"
+        "https://wlouyang.github.io/imgs/two_pedestrian.PNG",
+        "https://wlouyang.github.io/imgs/mutual_visibility.PNG"
       ],
       "papers":[
         {
@@ -1063,7 +1063,7 @@
     {
       "conference_name": "CVPR 2010",
       "main_images": [
-        "https://wlouyang.github.io/mainpa9.gif"
+        "https://wlouyang.github.io/imgs/mainpa9.gif"
       ],
       "papers":[
         {
@@ -1079,7 +1079,7 @@
     {
       "conference_name": "ICASSP 2009",
       "main_images": [
-        "https://wlouyang.github.io/mainpa13.jpg"
+        "https://wlouyang.github.io/imgs/mainpa13.jpg"
       ],
       "papers":[
         {
