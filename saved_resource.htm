@@ -410,8 +410,9 @@ DIV.b-mobile {
       <td width="304px" style="vertical-align: middle"> MAIN_IMAGES
       </td>
 
-      <td class="pub_td_text" width="500px" style="vertical-align: middle"> 
-        PAPER_LIST                        
+      <td class="pub_td_text" width="500px" style="vertical-align: middle">
+	  <h4> CONFERENCE_NAME </h4>
+        PAPER_LIST
       </td>
       </tr>
       `
@@ -447,6 +448,7 @@ DIV.b-mobile {
 	}
 
 	obj.innerHTML = html_template
+		.replace("CONFERENCE_NAME", pubitem.conference_name)
 	    .replace("MAIN_IMAGES", image_list)
 	    .replace("PAPER_LIST", paper_list);
 
