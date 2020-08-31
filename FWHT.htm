@@ -1,19 +1,16 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+  xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
-<meta name="Microsoft Theme 2.00" content="blitz 1111 011">
-<meta http-equiv=Content-Type content="text/html; charset=gb2312">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 12">
-<meta name=Originator content="Microsoft Word 12">
-<link rel=File-List href="FWHT_files/filelist.xml">
-<link rel=Edit-Time-Data href="FWHT_files/editdata.mso">
-<!--[if !mso]>
+  <meta name="Microsoft Theme 2.00" content="blitz 1111 011">
+  <meta http-equiv=Content-Type content="text/html; charset=gb2312">
+  <meta name=ProgId content=Word.Document>
+  <meta name=Generator content="Microsoft Word 12">
+  <meta name=Originator content="Microsoft Word 12">
+  <link rel=File-List href="FWHT_files/filelist.xml">
+  <link rel=Edit-Time-Data href="FWHT_files/editdata.mso">
+  <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
 o\:* {behavior:url(#default#VML);}
@@ -21,8 +18,8 @@ w\:* {behavior:url(#default#VML);}
 .shape {behavior:url(#default#VML);}
 </style>
 <![endif]-->
-<title>Fast algorithm for Walsh Hadamard transform on sliding windows</title>
-<!--[if gte mso 9]><xml>
+  <title>Fast algorithm for Walsh Hadamard transform on sliding windows</title>
+  <!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>OUYANG Wanli</o:Author>
   <o:LastAuthor>OUYANG Wanli</o:LastAuthor>
@@ -39,9 +36,9 @@ w\:* {behavior:url(#default#VML);}
   <o:Version>12.00</o:Version>
  </o:DocumentProperties>
 </xml><![endif]-->
-<link rel=themeData href="FWHT_files/themedata.thmx">
-<link rel=colorSchemeMapping href="FWHT_files/colorschememapping.xml">
-<!--[if gte mso 9]><xml>
+  <link rel=themeData href="FWHT_files/themedata.thmx">
+  <link rel=colorSchemeMapping href="FWHT_files/colorschememapping.xml">
+  <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:SpellingState>Clean</w:SpellingState>
   <w:GrammarState>Clean</w:GrammarState>
@@ -83,7 +80,8 @@ w\:* {behavior:url(#default#VML);}
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><![endif]--><!--[if gte mso 9]><xml>
+</xml><![endif]-->
+  <!--[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
   DefSemiHidden="true" DefQFormat="false" DefPriority="99"
   LatentStyleCount="267">
@@ -340,206 +338,253 @@ w\:* {behavior:url(#default#VML);}
   <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
  </w:LatentStyles>
 </xml><![endif]-->
-<link rel=Stylesheet type="text/css" media=all href=blit1111-106.css>
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:宋体;
-	panose-1:2 1 6 0 3 1 1 1 1 1;
-	mso-font-alt:SimSun;
-	mso-font-charset:134;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:3 680460288 22 0 262145 0;}
-@font-face
-	{font-family:PMingLiU;
-	panose-1:2 2 5 0 0 0 0 0 0 0;
-	mso-font-alt:新細明體;
-	mso-font-charset:136;
-	mso-generic-font-family:roman;
-	mso-font-pitch:auto;
-	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:-536870145 1107305727 0 0 415 0;}
-@font-face
-	{font-family:CMBX10;
-	panose-1:0 0 0 0 0 0 0 0 0 0;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-format:other;
-	mso-font-pitch:auto;
-	mso-font-signature:3 0 0 0 1 0;}
-@font-face
-	{font-family:CMR10;
-	panose-1:0 0 0 0 0 0 0 0 0 0;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-format:other;
-	mso-font-pitch:auto;
-	mso-font-signature:3 0 0 0 1 0;}
-@font-face
-	{font-family:CMTI10;
-	panose-1:0 0 0 0 0 0 0 0 0 0;
-	mso-font-alt:"Times New Roman";
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-format:other;
-	mso-font-pitch:auto;
-	mso-font-signature:3 0 0 0 1 0;}
-@font-face
-	{font-family:"\@PMingLiU";
-	panose-1:2 2 5 0 0 0 0 0 0 0;
-	mso-font-charset:136;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}
-@font-face
-	{font-family:"\@宋体";
-	panose-1:2 1 6 0 3 1 1 1 1 1;
-	mso-font-charset:134;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:3 680460288 22 0 262145 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:宋体;
-	mso-bidi-font-family:宋体;
-	mso-fareast-language:ZH-CN;}
-h1
-	{mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 1 Char";
-	mso-margin-top-alt:auto;
-	margin-right:0cm;
-	mso-margin-bottom-alt:auto;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	mso-outline-level:1;
-	font-size:24.0pt;
-	font-family:宋体;
-	mso-bidi-font-family:宋体;
-	mso-fareast-language:ZH-CN;
-	font-weight:bold;}
-a:link, span.MsoHyperlink
-	{mso-style-priority:99;
-	color:blue;
-	text-decoration:underline;
-	text-underline:single;}
-a:visited, span.MsoHyperlinkFollowed
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	color:purple;
-	text-decoration:underline;
-	text-underline:single;}
-p
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-margin-top-alt:auto;
-	margin-right:0cm;
-	mso-margin-bottom-alt:auto;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:宋体;
-	mso-bidi-font-family:宋体;
-	mso-fareast-language:ZH-CN;}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-link:"Balloon Text Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:8.0pt;
-	font-family:"Cambria","serif";
-	mso-ascii-font-family:Cambria;
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:PMingLiU;
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Cambria;
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	mso-fareast-language:ZH-CN;}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 1";
-	mso-ansi-font-size:26.0pt;
-	mso-bidi-font-size:26.0pt;
-	font-family:"Cambria","serif";
-	mso-ascii-font-family:Cambria;
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:PMingLiU;
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Cambria;
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	mso-font-kerning:26.0pt;
-	mso-fareast-language:ZH-CN;
-	font-weight:bold;}
-span.BalloonTextChar
-	{mso-style-name:"Balloon Text Char";
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Balloon Text";
-	mso-ansi-font-size:8.0pt;
-	mso-bidi-font-size:8.0pt;
-	font-family:"Cambria","serif";
-	mso-ascii-font-family:Cambria;
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:PMingLiU;
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Cambria;
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	mso-fareast-language:ZH-CN;}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
-.MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-size:10.0pt;
-	mso-ansi-font-size:10.0pt;
-	mso-bidi-font-size:10.0pt;
-	mso-ascii-font-family:"Times New Roman";
-	mso-hansi-font-family:"Times New Roman";
-	mso-font-kerning:0pt;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;
-	mso-header-margin:42.55pt;
-	mso-footer-margin:49.6pt;
-	mso-paper-source:0;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
-<!--[if gte mso 10]>
+  <link rel=Stylesheet type="text/css" media=all href=blit1111-106.css>
+  <style>
+    <!--
+    /* Font Definitions */
+    @font-face {
+      font-family: 锟斤拷锟斤拷;
+      panose-1: 2 1 6 0 3 1 1 1 1 1;
+      mso-font-alt: SimSun;
+      mso-font-charset: 134;
+      mso-generic-font-family: auto;
+      mso-font-pitch: variable;
+      mso-font-signature: 3 680460288 22 0 262145 0;
+    }
+
+    @font-face {
+      font-family: PMingLiU;
+      panose-1: 2 2 5 0 0 0 0 0 0 0;
+      mso-font-alt: 锟铰硷拷锟斤拷锟絯;
+      mso-font-charset: 136;
+      mso-generic-font-family: roman;
+      mso-font-pitch: auto;
+      mso-font-signature: -1610611969 684719354 22 0 1048577 0;
+    }
+
+    @font-face {
+      font-family: "Cambria Math";
+      panose-1: 2 4 5 3 5 4 6 3 2 4;
+      mso-font-charset: 0;
+      mso-generic-font-family: roman;
+      mso-font-pitch: variable;
+      mso-font-signature: -536870145 1107305727 0 0 415 0;
+    }
+
+    @font-face {
+      font-family: CMBX10;
+      panose-1: 0 0 0 0 0 0 0 0 0 0;
+      mso-font-charset: 0;
+      mso-generic-font-family: roman;
+      mso-font-format: other;
+      mso-font-pitch: auto;
+      mso-font-signature: 3 0 0 0 1 0;
+    }
+
+    @font-face {
+      font-family: CMR10;
+      panose-1: 0 0 0 0 0 0 0 0 0 0;
+      mso-font-charset: 0;
+      mso-generic-font-family: roman;
+      mso-font-format: other;
+      mso-font-pitch: auto;
+      mso-font-signature: 3 0 0 0 1 0;
+    }
+
+    @font-face {
+      font-family: CMTI10;
+      panose-1: 0 0 0 0 0 0 0 0 0 0;
+      mso-font-alt: "Times New Roman";
+      mso-font-charset: 0;
+      mso-generic-font-family: roman;
+      mso-font-format: other;
+      mso-font-pitch: auto;
+      mso-font-signature: 3 0 0 0 1 0;
+    }
+
+    @font-face {
+      font-family: "\@PMingLiU";
+      panose-1: 2 2 5 0 0 0 0 0 0 0;
+      mso-font-charset: 136;
+      mso-generic-font-family: roman;
+      mso-font-pitch: variable;
+      mso-font-signature: -1610611969 684719354 22 0 1048577 0;
+    }
+
+    @font-face {
+      font-family: "\@锟斤拷锟斤拷";
+      panose-1: 2 1 6 0 3 1 1 1 1 1;
+      mso-font-charset: 134;
+      mso-generic-font-family: auto;
+      mso-font-pitch: variable;
+      mso-font-signature: 3 680460288 22 0 262145 0;
+    }
+
+    /* Style Definitions */
+    p.MsoNormal,
+    li.MsoNormal,
+    div.MsoNormal {
+      mso-style-unhide: no;
+      mso-style-qformat: yes;
+      mso-style-parent: "";
+      margin: 0cm;
+      margin-bottom: .0001pt;
+      mso-pagination: widow-orphan;
+      font-size: 12.0pt;
+      font-family: 锟斤拷锟斤拷;
+      mso-bidi-font-family: 锟斤拷锟斤拷;
+      mso-fareast-language: ZH-CN;
+    }
+
+    h1 {
+      mso-style-priority: 9;
+      mso-style-unhide: no;
+      mso-style-qformat: yes;
+      mso-style-link: "Heading 1 Char";
+      mso-margin-top-alt: auto;
+      margin-right: 0cm;
+      mso-margin-bottom-alt: auto;
+      margin-left: 0cm;
+      mso-pagination: widow-orphan;
+      mso-outline-level: 1;
+      font-size: 24.0pt;
+      font-family: 锟斤拷锟斤拷;
+      mso-bidi-font-family: 锟斤拷锟斤拷;
+      mso-fareast-language: ZH-CN;
+      font-weight: bold;
+    }
+
+    a:link,
+    span.MsoHyperlink {
+      mso-style-priority: 99;
+      color: blue;
+      text-decoration: underline;
+      text-underline: single;
+    }
+
+    a:visited,
+    span.MsoHyperlinkFollowed {
+      mso-style-noshow: yes;
+      mso-style-priority: 99;
+      color: purple;
+      text-decoration: underline;
+      text-underline: single;
+    }
+
+    p {
+      mso-style-noshow: yes;
+      mso-style-priority: 99;
+      mso-margin-top-alt: auto;
+      margin-right: 0cm;
+      mso-margin-bottom-alt: auto;
+      margin-left: 0cm;
+      mso-pagination: widow-orphan;
+      font-size: 12.0pt;
+      font-family: 锟斤拷锟斤拷;
+      mso-bidi-font-family: 锟斤拷锟斤拷;
+      mso-fareast-language: ZH-CN;
+    }
+
+    p.MsoAcetate,
+    li.MsoAcetate,
+    div.MsoAcetate {
+      mso-style-noshow: yes;
+      mso-style-priority: 99;
+      mso-style-link: "Balloon Text Char";
+      margin: 0cm;
+      margin-bottom: .0001pt;
+      mso-pagination: widow-orphan;
+      font-size: 8.0pt;
+      font-family: "Cambria", "serif";
+      mso-ascii-font-family: Cambria;
+      mso-ascii-theme-font: major-latin;
+      mso-fareast-font-family: PMingLiU;
+      mso-fareast-theme-font: major-fareast;
+      mso-hansi-font-family: Cambria;
+      mso-hansi-theme-font: major-latin;
+      mso-bidi-font-family: "Times New Roman";
+      mso-bidi-theme-font: major-bidi;
+      mso-fareast-language: ZH-CN;
+    }
+
+    span.Heading1Char {
+      mso-style-name: "Heading 1 Char";
+      mso-style-priority: 9;
+      mso-style-unhide: no;
+      mso-style-locked: yes;
+      mso-style-link: "Heading 1";
+      mso-ansi-font-size: 26.0pt;
+      mso-bidi-font-size: 26.0pt;
+      font-family: "Cambria", "serif";
+      mso-ascii-font-family: Cambria;
+      mso-ascii-theme-font: major-latin;
+      mso-fareast-font-family: PMingLiU;
+      mso-fareast-theme-font: major-fareast;
+      mso-hansi-font-family: Cambria;
+      mso-hansi-theme-font: major-latin;
+      mso-bidi-font-family: "Times New Roman";
+      mso-bidi-theme-font: major-bidi;
+      mso-font-kerning: 26.0pt;
+      mso-fareast-language: ZH-CN;
+      font-weight: bold;
+    }
+
+    span.BalloonTextChar {
+      mso-style-name: "Balloon Text Char";
+      mso-style-noshow: yes;
+      mso-style-priority: 99;
+      mso-style-unhide: no;
+      mso-style-locked: yes;
+      mso-style-link: "Balloon Text";
+      mso-ansi-font-size: 8.0pt;
+      mso-bidi-font-size: 8.0pt;
+      font-family: "Cambria", "serif";
+      mso-ascii-font-family: Cambria;
+      mso-ascii-theme-font: major-latin;
+      mso-fareast-font-family: PMingLiU;
+      mso-fareast-theme-font: major-fareast;
+      mso-hansi-font-family: Cambria;
+      mso-hansi-theme-font: major-latin;
+      mso-bidi-font-family: "Times New Roman";
+      mso-bidi-theme-font: major-bidi;
+      mso-fareast-language: ZH-CN;
+    }
+
+    span.SpellE {
+      mso-style-name: "";
+      mso-spl-e: yes;
+    }
+
+    span.GramE {
+      mso-style-name: "";
+      mso-gram-e: yes;
+    }
+
+    .MsoChpDefault {
+      mso-style-type: export-only;
+      mso-default-props: yes;
+      font-size: 10.0pt;
+      mso-ansi-font-size: 10.0pt;
+      mso-bidi-font-size: 10.0pt;
+      mso-ascii-font-family: "Times New Roman";
+      mso-hansi-font-family: "Times New Roman";
+      mso-font-kerning: 0pt;
+    }
+
+    @page WordSection1 {
+      size: 595.3pt 841.9pt;
+      margin: 72.0pt 90.0pt 72.0pt 90.0pt;
+      mso-header-margin: 42.55pt;
+      mso-footer-margin: 49.6pt;
+      mso-paper-source: 0;
+    }
+
+    div.WordSection1 {
+      page: WordSection1;
+    }
+    -->
+  </style>
+  <!--[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -558,10 +603,12 @@ div.WordSection1
 	font-family:"Times New Roman","serif";}
 </style>
 <![endif]-->
-<meta http-equiv=Content-Language content=zh-cn>
-<!--mstheme--><!--[if gte mso 9]><xml>
+  <meta http-equiv=Content-Language content=zh-cn>
+  <!--mstheme-->
+  <!--[if gte mso 9]><xml>
  <o:shapedefaults v:ext="edit" spidmax="2050"/>
-</xml><![endif]--><!--[if gte mso 9]><xml>
+</xml><![endif]-->
+  <!--[if gte mso 9]><xml>
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
@@ -569,450 +616,455 @@ div.WordSection1
 
 <body lang=ZH-TW link=blue vlink=purple style='tab-interval:24.0pt'>
 
-<div class=WordSection1>
+  <div class=WordSection1>
 
-<h1 align=center style='text-align:center'><span lang=EN-US style='font-family:
+    <h1 align=center style='text-align:center'><span lang=EN-US style='font-family:
 "Arial","sans-serif"'>Fast algorithm for Walsh <span class=SpellE>Hadamard</span>
-transform on sliding windows</span></h1>
+        transform on sliding windows</span></h1>
 
-<p align=center style='text-align:center'><span class=SpellE><span lang=EN-US
-style='font-family:"Arial","sans-serif"'>Wanli</span></span><span lang=EN-US
-style='font-family:"Arial","sans-serif"'> <span class=SpellE>Ouyang</span> and <span
-class=SpellE>Wai-Kuen</span> Cham</span></p>
+    <p align=center style='text-align:center'><span class=SpellE><span lang=EN-US
+          style='font-family:"Arial","sans-serif"'>Wanli</span></span><span lang=EN-US
+        style='font-family:"Arial","sans-serif"'> <span class=SpellE>Ouyang</span> and <span
+          class=SpellE>Wai-Kuen</span> Cham</span></p>
 
-<p><b><span lang=EN-US style='font-family:"Arial","sans-serif"'>Abstract</span></b><span
-lang=EN-US style='font-family:"Arial","sans-serif"'>—<span class=GramE>This</span>
-paper proposes a fast algorithm for Walsh <span class=SpellE>Hadamard</span>
-Transform on sliding windows which can be used to implement pattern matching
-most efficiently. The computational requirement of the proposed algorithm is
-about 1.5 additions per projection vector per sample, which is the lowest among
-existing fast algorithms for Walsh <span class=SpellE>Hadamard</span> Transform
-on sliding windows.<o:p></o:p></span></p>
+    <p><b><span lang=EN-US style='font-family:"Arial","sans-serif"'>Abstract</span></b><span lang=EN-US
+        style='font-family:"Arial","sans-serif"'>锟斤拷<span class=GramE>This</span>
+        paper proposes a fast algorithm for Walsh <span class=SpellE>Hadamard</span>
+        Transform on sliding windows which can be used to implement pattern matching
+        most efficiently. The computational requirement of the proposed algorithm is
+        about 1.5 additions per projection vector per sample, which is the lowest among
+        existing fast algorithms for Walsh <span class=SpellE>Hadamard</span> Transform
+        on sliding windows.<o:p></o:p></span></p>
 
-<h1 style='vertical-align:middle'><span lang=EN-US style='font-size:12.0pt;
+    <h1 style='vertical-align:middle'><span lang=EN-US style='font-size:12.0pt;
 font-family:"Arial","sans-serif";font-weight:normal'>This webpage introduces
-the fast Walsh <span class=SpellE>Hadamard</span> transform algorithm of the
-following paper:</span></h1>
+        the fast Walsh <span class=SpellE>Hadamard</span> transform algorithm of the
+        following paper:</span></h1>
 
-<p style='vertical-align:middle'><span class=SpellE><b><span lang=EN-US
-style='font-family:"Arial","sans-serif"'>Wanli</span></b></span><b><span
-lang=EN-US style='font-family:"Arial","sans-serif"'> <span class=SpellE>Ouyang</span></span></b><span
-lang=EN-US style='font-family:"Arial","sans-serif"'> and <span class=SpellE>Wai-Kuen</span>
-Cham, &quot;Fast algorithm for Walsh <span class=SpellE>Hadamard</span>
-transform on sliding windows&quot;, <i>IEEE Trans. Pattern Analysis and machine
-Intelligence</i>, 32(1):165-171, Jan. 2010. </span><span lang=EN-US
-style='font-size:10.0pt;font-family:"Arial","sans-serif"'>[<a
-href="http://www.ee.cuhk.edu.hk/~wlouyang/Papers/Manu_FWHT.pdf">Full text</a><sup>
-*</sup>] [<span class=SpellE><a
-href="http://www.ee.cuhk.edu.hk/~wlouyang/PPT/FWHT8.ppt">Powerpoint</a></span></span></p>
+    <p style='vertical-align:middle'><span class=SpellE><b><span lang=EN-US
+            style='font-family:"Arial","sans-serif"'>Wanli</span></b></span><b><span lang=EN-US
+          style='font-family:"Arial","sans-serif"'> <span class=SpellE>Ouyang</span></span></b><span lang=EN-US
+        style='font-family:"Arial","sans-serif"'> and <span class=SpellE>Wai-Kuen</span>
+        Cham, &quot;Fast algorithm for Walsh <span class=SpellE>Hadamard</span>
+        transform on sliding windows&quot;, <i>IEEE Trans. Pattern Analysis and machine
+          Intelligence</i>, 32(1):165-171, Jan. 2010. </span><span lang=EN-US
+        style='font-size:10.0pt;font-family:"Arial","sans-serif"'>[<a
+          href="http://www.ee.cuhk.edu.hk/~wlouyang/Papers/Manu_FWHT.pdf">Full text</a><sup>
+          *</sup>] [<span class=SpellE><a
+            href="http://www.ee.cuhk.edu.hk/~wlouyang/PPT/FWHT8.ppt">Powerpoint</a></span></span></p>
 
-<span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
-mso-fareast-font-family:宋体;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;
+    <span lang=EN-US style='font-size:10.0pt;font-family:"Arial","sans-serif";
+mso-fareast-font-family:锟斤拷锟斤拷;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;
 mso-bidi-language:AR-SA'>] </span>
 
-<p style='margin-top:4.5pt;margin-right:0cm;margin-bottom:4.5pt;margin-left:
+    <p style='margin-top:4.5pt;margin-right:0cm;margin-bottom:4.5pt;margin-left:
 43.5pt;text-indent:-15.0pt'><span lang=EN-US style='font-size:7.5pt;color:gray'><a
-href="http://www.ee.cuhk.edu.hk/~wlouyang/PPT/FWHT8.ppt"><span
-style='color:gray;text-decoration:none;text-underline:none'>* Personal use of
-these materials is<span class=GramE>&nbsp; permitted</span>. However,
-permission to reprint/republish this material for advertising or promotional
-purposes or for creating new collective works for resale or redistribution to
-servers or lists, or to reuse any copyrighted component of this work in other
-works must be obtained from IEEE. </span></a></span></p>
+          href="http://www.ee.cuhk.edu.hk/~wlouyang/PPT/FWHT8.ppt"><span
+            style='color:gray;text-decoration:none;text-underline:none'>* Personal use of
+            these materials is<span class=GramE>&nbsp; permitted</span>. However,
+            permission to reprint/republish this material for advertising or promotional
+            purposes or for creating new collective works for resale or redistribution to
+            servers or lists, or to reuse any copyrighted component of this work in other
+            works must be obtained from IEEE. </span></a></span></p>
 
-<p style='vertical-align:middle'><b><span lang=EN-US style='font-size:24.0pt;
-font-family:"Arial","sans-serif"'><a
-href="http://www.ee.cuhk.edu.hk/~wlouyang/PPT/FWHT8.ppt"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>Introduction
-(from <span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Walsh-Hadamard_Transform\0022 "'><u><span
-style='color:blue'>Wikipedia</span></u></span>)</span></a></span></b></p>
+    <p style='vertical-align:middle'><b><span lang=EN-US style='font-size:24.0pt;
+font-family:"Arial","sans-serif"'><a href="http://www.ee.cuhk.edu.hk/~wlouyang/PPT/FWHT8.ppt"><span
+              style='color:windowtext;text-decoration:none;text-underline:none'>Introduction
+              (from <span
+                style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Walsh-Hadamard_Transform\0022 "'><u><span
+                    style='color:blue'>Wikipedia</span></u></span>)</span></a></span></b></p>
 
-<div u1:shape="_x0000_s1026">
+    <div u1:shape="_x0000_s1026">
 
-<div style='mso-char-wrap:1;mso-kinsoku-overflow:1'>
+      <div style='mso-char-wrap:1;mso-kinsoku-overflow:1'>
 
-<div sizcache=0 sizset=0 id=content>
+        <div sizcache=0 sizset=0 id=content>
 
-<div sizcache=0 sizset=0 id=bodyContent>
+          <div sizcache=0 sizset=0 id=bodyContent>
 
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>The <b>Walsh <span
-class=SpellE>Hadamard</span> transform (WHT)</b>, also known as the <span
-class=SpellE><b>Hadamard</b></span><b> transform</b>, <span class=SpellE><b>Hadamard</b></span><b>-<span
-class=SpellE>Rademacher</span>-Walsh transform</b>, <b>Walsh transform</b>, or <b>Walsh-Fourier
-transform</b>, is an example of a generalized class of <span style='mso-field-code:
+            <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
+                  href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
+                    style='color:windowtext;text-decoration:none;text-underline:none'>The <b>Walsh <span
+                        class=SpellE>Hadamard</span> transform (WHT)</b>, also known as the <span
+                      class=SpellE><b>Hadamard</b></span><b> transform</b>, <span
+                      class=SpellE><b>Hadamard</b></span><b>-<span class=SpellE>Rademacher</span>-Walsh transform</b>,
+                    <b>Walsh transform</b>, or <b>Walsh-Fourier
+                      transform</b>, is an example of a generalized class of <span style='mso-field-code:
 " HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Fourier_transform\0022 \\o \0022Fourier transform\0022 "'><u><span
-style='color:blue'>Fourier transforms</span></u></span>. It is named for the <span
-style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/France\0022 \\o \0022France\0022 "'><u><span
-style='color:blue'>French</span></u></span> <span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Mathematician\0022 \\o \0022Mathematician\0022 "'><u><span
-style='color:blue'>mathematician</span></u></span> <span style='mso-field-code:
-" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Jacques_Solomon_Hadamard\0022 \\o \0022Jacques Solomon Hadamard\0022 "'><u><span
-style='color:blue'>Jacques Solomon Hadamard</span></u></span>, the
-German-American mathematician <span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Hans_Adolph_Rademacher\0022 \\o \0022Hans Adolph Rademacher\0022 "'><u><span
-style='color:blue'>Hans Adolph Rademacher</span></u></span>, and the American
-mathematician <span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Joseph_Leonard_Walsh\0022 \\o \0022Joseph Leonard Walsh\0022 "'><u><span
-style='color:blue'>Joseph Leonard Walsh</span></u></span>. It performs an <span
-style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Orthogonal_matrix\0022 \\o \0022Orthogonal matrix\0022 "'><u><span
-style='color:blue'>orthogonal</span></u></span>, <span style='mso-field-code:
+                          style='color:blue'>Fourier transforms</span></u></span>. It is named for the <span
+                      style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/France\0022 \\o \0022France\0022 "'><u><span
+                          style='color:blue'>French</span></u></span> <span
+                      style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Mathematician\0022 \\o \0022Mathematician\0022 "'><u><span
+                          style='color:blue'>mathematician</span></u></span> <span
+                      style='mso-field-code:
+" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Jacques_Solomon_Hadamard\0022 \\o \0022Jacques Solomon Hadamard\0022 "'><u><span style='color:blue'>Jacques Solomon
+                          Hadamard</span></u></span>, the
+                    German-American mathematician <span
+                      style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Hans_Adolph_Rademacher\0022 \\o \0022Hans Adolph Rademacher\0022 "'><u><span
+                          style='color:blue'>Hans Adolph Rademacher</span></u></span>, and the American
+                    mathematician <span
+                      style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Joseph_Leonard_Walsh\0022 \\o \0022Joseph Leonard Walsh\0022 "'><u><span
+                          style='color:blue'>Joseph Leonard Walsh</span></u></span>. It performs an <span
+                      style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Orthogonal_matrix\0022 \\o \0022Orthogonal matrix\0022 "'><u><span
+                          style='color:blue'>orthogonal</span></u></span>, <span style='mso-field-code:
 " HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Symmetric_matrix\0022 \\o \0022Symmetric matrix\0022 "'><u><span
-style='color:blue'>symmetric</span></u></span>, <span style='mso-field-code:
+                          style='color:blue'>symmetric</span></u></span>, <span
+                      style='mso-field-code:
 " HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Involution_\(mathematics\)\0022 \\o \0022Involution \(mathematics\)\0022 "'><u><span
-style='color:blue'>involutional</span></u></span>, <span style='mso-field-code:
+                          style='color:blue'>involutional</span></u></span>, <span style='mso-field-code:
 " HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Linear_operator\0022 \\o \0022Linear operator\0022 "'><u><span
-style='color:blue'>linear operation</span></u></span> on <span class=texhtml>2<i><sup>m</sup></i></span>
-<span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Real_number\0022 \\o \0022Real number\0022 "'><u><span
-style='color:blue'>real numbers</span></u></span> (or <span style='mso-field-code:
+                          style='color:blue'>linear operation</span></u></span> on <span
+                      class=texhtml>2<i><sup>m</sup></i></span>
+                    <span
+                      style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Real_number\0022 \\o \0022Real number\0022 "'><u><span
+                          style='color:blue'>real numbers</span></u></span> (or <span style='mso-field-code:
 " HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Complex_number\0022 \\o \0022Complex number\0022 "'><u><span
-style='color:blue'>complex numbers</span></u></span>, although the <span
-class=SpellE>Hadamard</span> matrices themselves are purely real).</span></a></span></p>
+                          style='color:blue'>complex numbers</span></u></span>, although the <span
+                      class=SpellE>Hadamard</span> matrices themselves are purely real).</span></a></span></p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Complex_number" title="Complex number"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>The <span
-class=SpellE>Hadamard</span> transform <i>H<sub>N</sub></i> is a 2<i><sup>m</sup></i>&nbsp;x&nbsp;2<i><sup>m</sup></i>
-matrix, the <span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Hadamard_matrix\0022 \\o \0022Hadamard matrix\0022 "'><u><span
-style='color:blue'>Hadamard matrix</span></u></span> (scaled by a normalization
-factor), that transforms <i>N</i>=2<i><sup>m</sup></i> real numbers into 2<i><sup>m</sup></i>
-real numbers.</span></a></span></p>
+            <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
+                  href="http://en.wikipedia.org/wiki/Complex_number" title="Complex number"><span
+                    style='color:windowtext;text-decoration:none;text-underline:none'>The <span
+                      class=SpellE>Hadamard</span> transform <i>H<sub>N</sub></i> is a
+                    2<i><sup>m</sup></i>&nbsp;x&nbsp;2<i><sup>m</sup></i>
+                    matrix, the <span
+                      style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Hadamard_matrix\0022 \\o \0022Hadamard matrix\0022 "'><u><span
+                          style='color:blue'>Hadamard matrix</span></u></span> (scaled by a normalization
+                    factor), that transforms <i>N</i>=2<i><sup>m</sup></i> real numbers into 2<i><sup>m</sup></i>
+                    real numbers.</span></a></span></p>
 
-</div>
+          </div>
 
-</div>
+        </div>
 
-<p align=center style='text-align:center'><span lang=EN-US><a
-href="http://en.wikipedia.org/wiki/Hadamard_matrix" title="Hadamard matrix"><span
-style='color:windowtext;mso-fareast-language:ZH-TW;mso-no-proof:yes;text-decoration:
-none;text-underline:none'><img border=0 width=431 height=273 id="_x0000_i1027"
-src=FWHT.h2.gif></span></a></span></p>
+        <p align=center style='text-align:center'><span lang=EN-US><a
+              href="http://en.wikipedia.org/wiki/Hadamard_matrix" title="Hadamard matrix"><span style='color:windowtext;mso-fareast-language:ZH-TW;mso-no-proof:yes;text-decoration:
+none;text-underline:none'><img border=0 width=431 height=273 id="_x0000_i1027" src=FWHT.h2.gif></span></a></span></p>
 
-<p align=center style='text-align:center'><span lang=EN-US><a href="FWHT.h2.gif"><span
-class=GramE><span style='color:windowtext;text-decoration:none;text-underline:
+        <p align=center style='text-align:center'><span lang=EN-US><a href="FWHT.h2.gif"><span class=GramE><span style='color:windowtext;text-decoration:none;text-underline:
 none'>Fig. 1 WHT in natural order and <span class=SpellE>sequency</span> order.</span></span></a></span></p>
 
-<p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a
-href="FWHT.h2.gif"><span style='color:windowtext;text-decoration:none;
+        <p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a href="FWHT.h2.gif"><span
+                  style='color:windowtext;text-decoration:none;
 text-underline:none'>Application of WHT</span></a></span></b></p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="FWHT.h2.gif"><span style='color:windowtext;text-decoration:none;
+        <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a href="FWHT.h2.gif"><span
+                style='color:windowtext;text-decoration:none;
 text-underline:none'>In computer vision, it is used in pattern matching,
-road/path <span class=GramE>tracking ,</span> mouth tracking , wide baseline
-image matching, scene labeling, texture synthesis and augmented reality.</span></a></span></p>
+                road/path <span class=GramE>tracking ,</span> mouth tracking , wide baseline
+                image matching, scene labeling, texture synthesis and augmented reality.</span></a></span></p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="FWHT.h2.gif"><span style='color:windowtext;text-decoration:none;
-text-underline:none'>WHT is also used in <span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Data_encryption\0022 \\o \0022Data encryption\0022 "'><u><span
-style='color:blue'>data encryption</span></u></span>, as well as many <span
-style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Signal_processing\0022 \\o \0022Signal processing\0022 "'><u><span
-style='color:blue'>signal processing</span></u></span> and <span
-style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Data_compression\0022 \\o \0022Data compression\0022 "'><u><span
-style='color:blue'>data compression</span></u></span> <span style='mso-field-code:
+        <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a href="FWHT.h2.gif"><span
+                style='color:windowtext;text-decoration:none;
+text-underline:none'>WHT is also used in <span
+                  style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Data_encryption\0022 \\o \0022Data encryption\0022 "'><u><span
+                      style='color:blue'>data encryption</span></u></span>, as well as many <span
+                  style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Signal_processing\0022 \\o \0022Signal processing\0022 "'><u><span
+                      style='color:blue'>signal processing</span></u></span> and <span
+                  style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Data_compression\0022 \\o \0022Data compression\0022 "'><u><span
+                      style='color:blue'>data compression</span></u></span> <span style='mso-field-code:
 " HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Algorithms\0022 \\o \0022Algorithms\0022 "'><u><span
-style='color:blue'>algorithms</span></u></span>, such as <span
-style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/HD_Photo\0022 \\o \0022HD Photo\0022 "'><u><span
-style='color:blue'>HD Photo</span></u></span> and <span style='mso-field-code:
-" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/H\.264\/MPEG-4_AVC\0022 \\o \0022H\.264\/MPEG-4 AVC\0022 "'><u><span
-style='color:blue'>MPEG-4 AVC</span></u></span>. In <span style='mso-field-code:
+                      style='color:blue'>algorithms</span></u></span>, such as <span
+                  style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/HD_Photo\0022 \\o \0022HD Photo\0022 "'><u><span
+                      style='color:blue'>HD Photo</span></u></span> and <span
+                  style='mso-field-code:
+" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/H\.264\/MPEG-4_AVC\0022 \\o \0022H\.264\/MPEG-4 AVC\0022 "'><u><span style='color:blue'>MPEG-4 AVC</span></u></span>. In <span
+                  style='mso-field-code:
 " HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Video_compression\0022 \\o \0022Video compression\0022 "'><u><span
-style='color:blue'>video compression</span></u></span> applications, it is
-usually used in the form of the <span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Sum_of_absolute_transformed_differences\0022 \\o \0022Sum of absolute transformed differences\0022 "'><u><span
-style='color:blue'>sum of absolute transformed differences</span></u></span>. </span></a></span></p>
+                      style='color:blue'>video compression</span></u></span> applications, it is
+                usually used in the form of the <span
+                  style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Sum_of_absolute_transformed_differences\0022 \\o \0022Sum of absolute transformed differences\0022 "'><u><span
+                      style='color:blue'>sum of absolute transformed differences</span></u></span>. </span></a></span>
+        </p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Sum_of_absolute_transformed_differences"
-title="Sum of absolute transformed differences"><span style='color:windowtext;
+        <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
+              href="http://en.wikipedia.org/wiki/Sum_of_absolute_transformed_differences"
+              title="Sum of absolute transformed differences"><span style='color:windowtext;
 text-decoration:none;text-underline:none'>WHT is used in Quantum computation.
-As pointed out in <span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Walsh-Hadamard_Transform\0022 "'><u><span
-style='color:blue'>Wikipedia</span></u></span>, many <span style='mso-field-code:
+                As pointed out in <span
+                  style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Walsh-Hadamard_Transform\0022 "'><u><span
+                      style='color:blue'>Wikipedia</span></u></span>, many <span style='mso-field-code:
 " HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Quantum_algorithm\0022 \\o \0022Quantum algorithm\0022 "'><u><span
-style='color:blue'>quantum algorithms</span></u></span> use the <span
-class=SpellE>Hadamard</span> transform as an initial step. </span></a></span></p>
+                      style='color:blue'>quantum algorithms</span></u></span> use the <span class=SpellE>Hadamard</span>
+                transform as an initial step. </span></a></span></p>
 
-<p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a
-href="http://en.wikipedia.org/wiki/Quantum_algorithm" title="Quantum algorithm"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>The </span><span
-class=SpellE><span class=GramE><i><span style='font-family:"Times New Roman","serif";
-color:windowtext;text-decoration:none;text-underline:none'>N</span></i><span
-style='font-family:"Times New Roman","serif";color:windowtext;text-decoration:
-none;text-underline:none'>log</span></span></span><span class=GramE><span
-style='font-family:"Times New Roman","serif";color:windowtext;text-decoration:
+        <p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a
+                href="http://en.wikipedia.org/wiki/Quantum_algorithm" title="Quantum algorithm"><span
+                  style='color:windowtext;text-decoration:none;text-underline:none'>The </span><span class=SpellE><span
+                    class=GramE><i><span style='font-family:"Times New Roman","serif";
+color:windowtext;text-decoration:none;text-underline:none'>N</span></i><span style='font-family:"Times New Roman","serif";color:windowtext;text-decoration:
+none;text-underline:none'>log</span></span></span><span class=GramE><span style='font-family:"Times New Roman","serif";color:windowtext;text-decoration:
 none;text-underline:none'>(</span></span><i><span style='font-family:"Times New Roman","serif";
-color:windowtext;text-decoration:none;text-underline:none'>N</span></i><span
-style='font-family:"Times New Roman","serif";color:windowtext;text-decoration:
+color:windowtext;text-decoration:none;text-underline:none'>N</span></i><span style='font-family:"Times New Roman","serif";color:windowtext;text-decoration:
 none;text-underline:none'>)</span><span style='color:windowtext;text-decoration:
 none;text-underline:none'> fast WHT algorithm</span></a></span></b></p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Quantum_algorithm" title="Quantum algorithm"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>Naive implementation
-of the WHT would have a <span style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Computational_complexity_theory\0022 \\o \0022Computational complexity theory\0022 "'><u><span
-style='color:blue'>computational complexity</span></u></span> of <span
-style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Big_O_notation\0022 \\o \0022Big O notation\0022 "'><span
-class=GramE><u><span style='color:blue'>O(</span></u></span><span
-class=texhtml><i><u><span style='color:blue'>N</span></u></i></span><span
-class=texhtml><u><sup><span style='color:blue'>2</span></sup></u></span><u><span
-style='color:blue'>)</span></u></span>. The fast WHT algorithm as show in Fig.
-2 requires only <span class=SpellE><span class=texhtml><i>N</i>log<i>N</i></span></span>
-additions or subtractions. One of these algorithms is in [a].</span></a></span></p>
+        <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
+              href="http://en.wikipedia.org/wiki/Quantum_algorithm" title="Quantum algorithm"><span
+                style='color:windowtext;text-decoration:none;text-underline:none'>Naive implementation
+                of the WHT would have a <span
+                  style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Computational_complexity_theory\0022 \\o \0022Computational complexity theory\0022 "'><u><span
+                      style='color:blue'>computational complexity</span></u></span> of <span
+                  style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Big_O_notation\0022 \\o \0022Big O notation\0022 "'><span
+                    class=GramE><u><span style='color:blue'>O(</span></u></span><span class=texhtml><i><u><span
+                          style='color:blue'>N</span></u></i></span><span class=texhtml><u><sup><span
+                          style='color:blue'>2</span></sup></u></span><u><span style='color:blue'>)</span></u></span>.
+                The fast WHT algorithm as show in Fig.
+                2 requires only <span class=SpellE><span class=texhtml><i>N</i>log<i>N</i></span></span>
+                additions or subtractions. One of these algorithms is in [a].</span></a></span></p>
 
-<p align=center style='text-align:center'><span lang=EN-US><a
-href="http://en.wikipedia.org/wiki/Big_O_notation" title="Big O notation"><span
-style='color:windowtext;mso-fareast-language:ZH-TW;mso-no-proof:yes;text-decoration:
-none;text-underline:none'><img border=0 width=526 height=400 id="_x0000_i1026"
-src=FWHT.h6.jpg></span></a></span></p>
+        <p align=center style='text-align:center'><span lang=EN-US><a href="http://en.wikipedia.org/wiki/Big_O_notation"
+              title="Big O notation"><span style='color:windowtext;mso-fareast-language:ZH-TW;mso-no-proof:yes;text-decoration:
+none;text-underline:none'><img border=0 width=526 height=400 id="_x0000_i1026" src=FWHT.h6.jpg></span></a></span></p>
 
-<p align=center style='text-align:center'><span lang=EN-US><a href="FWHT.h6.jpg"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>Fig. 2 <span
-class=GramE>The</span> fast Walsh <span class=SpellE>Hadamard</span> transform
-applied to a vector of length 8 </span><span style='font-family:"Times New Roman","serif";
+        <p align=center style='text-align:center'><span lang=EN-US><a href="FWHT.h6.jpg"><span
+                style='color:windowtext;text-decoration:none;text-underline:none'>Fig. 2 <span class=GramE>The</span>
+                fast Walsh <span class=SpellE>Hadamard</span> transform
+                applied to a vector of length 8 </span><span style='font-family:"Times New Roman","serif";
 color:windowtext;text-decoration:none;text-underline:none'>(From <span
-style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Fast_Hadamard_transform\0022 "'><u><span
-style='color:blue'>Wikipedia</span></u></span>)</span><span style='color:windowtext;
+                  style='mso-field-code:" HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Fast_Hadamard_transform\0022 "'><u><span
+                      style='color:blue'>Wikipedia</span></u></span>)</span><span style='color:windowtext;
 text-decoration:none;text-underline:none'>.</span></a></span></p>
 
-<p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a
-href="http://en.wikipedia.org/wiki/Fast_Hadamard_transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>The </span><span
-style='font-family:"Times New Roman","serif";color:windowtext;text-decoration:
+        <p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a
+                href="http://en.wikipedia.org/wiki/Fast_Hadamard_transform"><span
+                  style='color:windowtext;text-decoration:none;text-underline:none'>The </span><span style='font-family:"Times New Roman","serif";color:windowtext;text-decoration:
 none;text-underline:none'>1.5<i>N</i>-1</span><span style='color:windowtext;
 text-decoration:none;text-underline:none'> fast WHT algorithm -- This paper</span></a></span></b></p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Fast_Hadamard_transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>This paper
-proposes a fast algorithm for Walsh <span class=SpellE>Hadamard</span>
-Transform on sliding windows which can be used to implement pattern matching
-most efficiently. The computational requirement of the proposed algorithm is
-about 1.5 additions per projection vector per sample. The proposed algorithm
-requires 1.5N-1 additions for transforming <i>N</i> numbers into <i>N</i> real
-numbers. A comparison of our proposed algorithm and the algorithm in [a] is
-shown in Fig. 3.</span></a></span></p>
+        <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
+              href="http://en.wikipedia.org/wiki/Fast_Hadamard_transform"><span
+                style='color:windowtext;text-decoration:none;text-underline:none'>This paper
+                proposes a fast algorithm for Walsh <span class=SpellE>Hadamard</span>
+                Transform on sliding windows which can be used to implement pattern matching
+                most efficiently. The computational requirement of the proposed algorithm is
+                about 1.5 additions per projection vector per sample. The proposed algorithm
+                requires 1.5N-1 additions for transforming <i>N</i> numbers into <i>N</i> real
+                numbers. A comparison of our proposed algorithm and the algorithm in [a] is
+                shown in Fig. 3.</span></a></span></p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Fast_Hadamard_transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>Other famous
-WHT algorithms on sliding windows are in [b<span class=GramE>][</span>c]. In
-[d], we propose a new transform and its fast algorithm.</span></a></span></p>
+        <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
+              href="http://en.wikipedia.org/wiki/Fast_Hadamard_transform"><span
+                style='color:windowtext;text-decoration:none;text-underline:none'>Other famous
+                WHT algorithms on sliding windows are in [b<span class=GramE>][</span>c]. In
+                [d], we propose a new transform and its fast algorithm.</span></a></span></p>
 
-<p align=center style='text-align:center'><span lang=EN-US><a
-href="http://en.wikipedia.org/wiki/Fast_Hadamard_transform"><span
-style='color:windowtext;mso-fareast-language:ZH-TW;mso-no-proof:yes;text-decoration:
-none;text-underline:none'><img border=0 width=479 height=316 id="_x0000_i1025"
-src=FWHT.h5.gif></span></a></span></p>
+        <p align=center style='text-align:center'><span lang=EN-US><a
+              href="http://en.wikipedia.org/wiki/Fast_Hadamard_transform"><span style='color:windowtext;mso-fareast-language:ZH-TW;mso-no-proof:yes;text-decoration:
+none;text-underline:none'><img border=0 width=479 height=316 id="_x0000_i1025" src=FWHT.h5.gif></span></a></span></p>
 
-<p align=center style='text-align:center'><span lang=EN-US style='font-family:
+        <p align=center style='text-align:center'><span lang=EN-US style='font-family:
 "Times New Roman","serif"'><a href="FWHT.h5.gif"><span class=GramE><span
-style='color:windowtext;text-decoration:none;text-underline:none'>Fig. 3 The
-number of operations as a function of the WHT transform size <i>N</i> for the
-algorithm in [a] and our algorithm.</span></span></a></span></p>
+                  style='color:windowtext;text-decoration:none;text-underline:none'>Fig. 3 The
+                  number of operations as a function of the WHT transform size <i>N</i> for the
+                  algorithm in [a] and our algorithm.</span></span></a></span></p>
 
-<p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Times New Roman","serif"'><a
-href="FWHT.h5.gif"><span style='color:windowtext;text-decoration:none;
+        <p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Times New Roman","serif"'><a
+                href="FWHT.h5.gif"><span style='color:windowtext;text-decoration:none;
 text-underline:none'>New paper is <span style='mso-field-code:" HYPERLINK \0022SegGCK\.htm\0022 "'><u><span
-style='color:blue'>here</span></u></span> [f], about 1.33<i style='mso-bidi-font-style:
+                        style='color:blue'>here</span></u></span> [f], about 1.33<i style='mso-bidi-font-style:
 normal'>N</i> additions for WHT.<o:p></o:p></span></a></span></b></p>
 
-<p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Times New Roman","serif"'><a
-href="SegGCK.htm"><span style='color:windowtext;text-decoration:none;
+        <p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Times New Roman","serif"'><a href="SegGCK.htm"><span
+                  style='color:windowtext;text-decoration:none;
 text-underline:none'>Experimental results (where is my cup?)</span></a></span></b></p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="SegGCK.htm"><span style='color:windowtext;text-decoration:none;
+        <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a href="SegGCK.htm"><span
+                style='color:windowtext;text-decoration:none;
 text-underline:none'>The proposed fast WHT algorithm is utilized for pattern
-matching. The algorithm finds out the same result as Full search (exhaustive
-search) and significantly saves the computation required. </span></a></span></p>
+                matching. The algorithm finds out the same result as Full search (exhaustive
+                search) and significantly saves the computation required. </span></a></span></p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="SegGCK.htm"><span style='color:windowtext;text-decoration:none;
+        <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a href="SegGCK.htm"><span
+                style='color:windowtext;text-decoration:none;
 text-underline:none'>In the following video (enable ActiveX control to see the
-video), pattern matching the proposed algorithm requires <span class=SpellE>lees</span>
-than 0.1 second to locate the cup using pattern matching. The experiment
-considers image without noise and image with <span class=SpellE>Gassian</span>
-noise, Image blur and JPEG compression disturbances.&nbsp; This algorithm
-guarantees to find the global optimum in pattern matching application.</span><span
-style='font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:windowtext;
-text-decoration:none;text-underline:none'><o:p></o:p></span></a></span></p>
+                video), pattern matching the proposed algorithm requires <span class=SpellE>lees</span>
+                than 0.1 second to locate the cup using pattern matching. The experiment
+                considers image without noise and image with <span class=SpellE>Gassian</span>
+                noise, Image blur and JPEG compression disturbances.&nbsp; This algorithm
+                guarantees to find the global optimum in pattern matching application.</span><span style='font-size:12.0pt;font-family:锟斤拷锟斤拷;mso-bidi-font-family:锟斤拷锟斤拷;color:windowtext;
+text-decoration:none;text-underline:none'>
+                <o:p></o:p>
+              </span></a></span></p>
 
-<p><object width="576" height="432"><param name="movie" value="http://www.youtube.com/v/48F2Ya4x16k?hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/48F2Ya4x16k?hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object><span
-lang=ZH-CN><a href="SegGCK.htm"><span style='color:windowtext;text-decoration:
-none;text-underline:none'>　</span></a></span></p>
+        <p><object width="576" height="432">
+            <param name="movie" value="http://www.youtube.com/v/48F2Ya4x16k?hl=en&fs=1">
+            </param>
+            <param name="allowFullScreen" value="true">
+            </param>
+            <param name="allowscriptaccess" value="always">
+            </param><embed src="http://www.youtube.com/v/48F2Ya4x16k?hl=en&fs=1" type="application/x-shockwave-flash"
+              allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object><span
+            lang=ZH-CN><a href="SegGCK.htm"><span style='color:windowtext;text-decoration:
+none;text-underline:none'>锟斤拷</span></a></span></p>
 
-</div>
+      </div>
 
-</div>
+    </div>
 
-<p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a
-href="SegGCK.htm"><span style='color:windowtext;text-decoration:none;
+    <p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a href="SegGCK.htm"><span style='color:windowtext;text-decoration:none;
 text-underline:none'>ACKNOWLEDGMENTS</span></a></span></b></p>
 
-<p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a
-href="SegGCK.htm"><span style='color:windowtext;text-decoration:none;
+    <p><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'><a href="SegGCK.htm"><span style='color:windowtext;text-decoration:none;
 text-underline:none'>Many <span class=GramE>introduction</span> of WHT and fast
-WHT algorithm in this webpage are directly copied from <span style='mso-field-code:
+            WHT algorithm in this webpage are directly copied from <span style='mso-field-code:
 " HYPERLINK \0022http\:\/\/en\.wikipedia\.org\/wiki\/Walsh-Hadamard_Transform\0022 "'><u><span
-style='color:blue'>Wikipedia</span></u></span>. To avoid annoyance, we did not
-provide reference to Wikipedia for all places.</span></a></span></p>
+                  style='color:blue'>Wikipedia</span></u></span>. To avoid annoyance, we did not
+            provide reference to Wikipedia for all places.</span></a></span></p>
 
-<p><span lang=ZH-CN><a
-href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>　</span></a></span></p>
+    <p><span lang=ZH-CN><a href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
+            style='color:windowtext;text-decoration:none;text-underline:none'>锟斤拷</span></a></span></p>
 
-<p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a
-href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>Reference </span></a></span></b></p>
+    <p><b><span lang=EN-US style='font-size:24.0pt;font-family:"Arial","sans-serif"'><a
+            href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
+              style='color:windowtext;text-decoration:none;text-underline:none'>Reference </span></a></span></b></p>
 
-<p><span lang=EN-US style='font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>[<span
-class=GramE>a</span>] <span class=SpellE>Fino</span>, B.J., and <span
-class=SpellE>Algazi</span>, V.R., 1976, &quot;Unified Matrix Treatment of the
-Fast Walsh-<span class=SpellE>Hadamard</span> Transform,&quot; <i>IEEE
-Transactions on Computers</i> <b>25</b>: 1142-1146.</span></a></span></p>
+    <p><span lang=EN-US style='font-family:"Times New Roman","serif"'><a
+          href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
+            style='color:windowtext;text-decoration:none;text-underline:none'>[<span class=GramE>a</span>] <span
+              class=SpellE>Fino</span>, B.J., and <span class=SpellE>Algazi</span>, V.R., 1976, &quot;Unified Matrix
+            Treatment of the
+            Fast Walsh-<span class=SpellE>Hadamard</span> Transform,&quot; <i>IEEE
+              Transactions on Computers</i> <b>25</b>: 1142-1146.</span></a></span></p>
 
-<p><span lang=EN-US style='font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>[b] Y. Hel-Or
-and H. Hel-Or, &quot;Real Time Pattern Matching Using Projection Kernels,&quot;
-<i>IEEE Trans. Pattern Analysis and Machine Intelligence</i>, vol. 27, no. 9, pp.
-1430-1445, Sept. 2005.</span></a></span></p>
+    <p><span lang=EN-US style='font-family:"Times New Roman","serif"'><a
+          href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
+            style='color:windowtext;text-decoration:none;text-underline:none'>[b] Y. Hel-Or
+            and H. Hel-Or, &quot;Real Time Pattern Matching Using Projection Kernels,&quot;
+            <i>IEEE Trans. Pattern Analysis and Machine Intelligence</i>, vol. 27, no. 9, pp.
+            1430-1445, Sept. 2005.</span></a></span></p>
 
-<p><span lang=EN-US style='font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>[c] G. Ben-<span
-class=SpellE>Artzi</span>, H. Hel-Or, and Y. Hel-Or, &quot;The Gray-Code Filter
-Kernels,&quot; <i>IEEE Trans. Pattern Analysis and Machine Intelligence</i>,
-vol. 29, no. 3, pp. 382-393, Mar. 2007.</span></a></span></p>
+    <p><span lang=EN-US style='font-family:"Times New Roman","serif"'><a
+          href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
+            style='color:windowtext;text-decoration:none;text-underline:none'>[c] G. Ben-<span
+              class=SpellE>Artzi</span>, H. Hel-Or, and Y. Hel-Or, &quot;The Gray-Code Filter
+            Kernels,&quot; <i>IEEE Trans. Pattern Analysis and Machine Intelligence</i>,
+            vol. 29, no. 3, pp. 382-393, Mar. 2007.</span></a></span></p>
 
-<p><span lang=EN-US style='font-family:"Times New Roman","serif"'><a
-href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>[d] <span
-class=SpellE><b>Wanli</b></span><b> <span class=SpellE>Ouyang</span></b>, <span
-class=SpellE>Renqi</span> Zhang and <span class=SpellE>Wai-Kuen</span> Cham,
-&quot;Fast pattern matching using orthogonal <span class=SpellE>Haar</span>
-transform &quot;, In <i>Proc. IEEE CVPR 2010</i>, <span style='mso-field-code:
-" HYPERLINK \0022http\:\/\/www\.ee\.cuhk\.edu\.hk\/~wlouyang\/OHT\.htm\0022 "'><u><span
-style='color:blue'>Webpage and source code</span></u></span>.</span></a></span></p>
+    <p><span lang=EN-US style='font-family:"Times New Roman","serif"'><a
+          href="http://en.wikipedia.org/wiki/Walsh-Hadamard_Transform"><span
+            style='color:windowtext;text-decoration:none;text-underline:none'>[d] <span
+              class=SpellE><b>Wanli</b></span><b> <span class=SpellE>Ouyang</span></b>, <span class=SpellE>Renqi</span>
+            Zhang and <span class=SpellE>Wai-Kuen</span> Cham,
+            &quot;Fast pattern matching using orthogonal <span class=SpellE>Haar</span>
+            transform &quot;, In <i>Proc. IEEE CVPR 2010</i>, <span style='mso-field-code:
+" HYPERLINK \0022http\:\/\/www\.ee\.cuhk\.edu\.hk\/~wlouyang\/OHT\.htm\0022 "'><u><span style='color:blue'>Webpage and
+                  source code</span></u></span>.</span></a></span></p>
 
-<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+    <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
 text-autospace:none'><span lang=EN-US style='font-family:"Times New Roman","serif"'><a
-href="http://www.ee.cuhk.edu.hk/~wlouyang/OHT.htm"><span style='color:windowtext;
-text-decoration:none;text-underline:none'>[e] </span><span class=SpellE><b><span
-style='font-family:"CMBX10","serif";mso-fareast-font-family:PMingLiU;
+          href="http://www.ee.cuhk.edu.hk/~wlouyang/OHT.htm"><span style='color:windowtext;
+text-decoration:none;text-underline:none'>[e] </span><span class=SpellE><b><span style='font-family:"CMBX10","serif";mso-fareast-font-family:PMingLiU;
 mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:CMBX10;color:windowtext;
-mso-fareast-language:ZH-TW;text-decoration:none;text-underline:none'>Wanli</span></b></span><b><span
-style='font-family:"CMBX10","serif";mso-fareast-font-family:PMingLiU;
+mso-fareast-language:ZH-TW;text-decoration:none;text-underline:none'>Wanli</span></b></span><b><span style='font-family:"CMBX10","serif";mso-fareast-font-family:PMingLiU;
 mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:CMBX10;color:windowtext;
-mso-fareast-language:ZH-TW;text-decoration:none;text-underline:none'> <span
-class=SpellE>Ouyang</span></span></b><span style='font-family:"CMR10","serif";
+mso-fareast-language:ZH-TW;text-decoration:none;text-underline:none'> <span class=SpellE>Ouyang</span></span></b><span
+            style='font-family:"CMR10","serif";
 mso-fareast-font-family:PMingLiU;mso-fareast-theme-font:minor-fareast;
 mso-bidi-font-family:CMR10;color:windowtext;mso-fareast-language:ZH-TW;
 text-decoration:none;text-underline:none'>, Federico <span class=SpellE>Tombari</span>,
-Stefano <span class=SpellE>Mattoccia</span>, Luigi Di Stefano, and <span
-class=SpellE>Wai</span>- <span class=SpellE>Kuen</span> Cham, </span><span
-style='color:windowtext;text-decoration:none;text-underline:none'>&quot;</span><i><span
-style='font-family:"CMTI10","serif";mso-fareast-font-family:PMingLiU;
+            Stefano <span class=SpellE>Mattoccia</span>, Luigi Di Stefano, and <span class=SpellE>Wai</span>- <span
+              class=SpellE>Kuen</span> Cham, </span><span
+            style='color:windowtext;text-decoration:none;text-underline:none'>&quot;</span><i><span style='font-family:"CMTI10","serif";mso-fareast-font-family:PMingLiU;
 mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:CMTI10;color:windowtext;
 mso-fareast-language:ZH-TW;text-decoration:none;text-underline:none'>Performance
-Evaluation of Full Search Equivalent Pattern Matching Algorithms</span></i><span
-style='font-family:"CMR10","serif";mso-fareast-font-family:PMingLiU;mso-fareast-theme-font:
+              Evaluation of Full Search Equivalent Pattern Matching Algorithms</span></i><span style='font-family:"CMR10","serif";mso-fareast-font-family:PMingLiU;mso-fareast-theme-font:
 minor-fareast;mso-bidi-font-family:CMR10;color:windowtext;mso-fareast-language:
 ZH-TW;text-decoration:none;text-underline:none'>,</span><span style='color:
-windowtext;text-decoration:none;text-underline:none'> &quot;</span><span
-style='font-family:"CMR10","serif";mso-fareast-font-family:PMingLiU;mso-fareast-theme-font:
+windowtext;text-decoration:none;text-underline:none'> &quot;</span><span style='font-family:"CMR10","serif";mso-fareast-font-family:PMingLiU;mso-fareast-theme-font:
 minor-fareast;mso-bidi-font-family:CMR10;color:windowtext;mso-fareast-language:
 ZH-TW;text-decoration:none;text-underline:none'> IEEE Trans. Pattern Anal.
-Mach. <span class=SpellE>Intell</span>., 34(1):127-143, Jan. 2012.</span><span
-style='font-size:10.0pt;font-family:"CMR10","serif";mso-fareast-font-family:
+            Mach. <span class=SpellE>Intell</span>., 34(1):127-143, Jan. 2012.</span><span style='font-size:10.0pt;font-family:"CMR10","serif";mso-fareast-font-family:
 PMingLiU;mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:CMR10;
 color:windowtext;mso-fareast-language:ZH-TW;text-decoration:none;text-underline:
 none'> </span><span style='color:windowtext;text-decoration:none;text-underline:
-none'><span style='mso-field-code:"HYPERLINK \0022PMEval\/index\.htm\0022"'><u><span
-style='color:blue'>Webpage and source code</span></u></span><o:p></o:p></span></a></span></p>
+none'><span style='mso-field-code:"HYPERLINK \0022PMEval\/index\.htm\0022"'><u><span style='color:blue'>Webpage and
+                  source code</span></u></span>
+            <o:p></o:p>
+          </span></a></span></p>
 
-<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+    <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
 text-autospace:none'><span lang=EN-US><a href="PMEval/index.htm"><span
-style='color:windowtext;text-decoration:none;text-underline:none'><o:p>&nbsp;</o:p></span></a></span></p>
+            style='color:windowtext;text-decoration:none;text-underline:none'>
+            <o:p>&nbsp;</o:p>
+          </span></a></span></p>
 
-<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+    <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
 text-autospace:none'><span lang=EN-US style='font-family:"CMBX10","serif";
 mso-fareast-font-family:PMingLiU;mso-fareast-theme-font:minor-fareast;
 mso-bidi-font-family:CMBX10;mso-fareast-language:ZH-TW;mso-bidi-font-weight:
 bold'><a href="PMEval/index.htm"><span style='color:windowtext;text-decoration:
 none;text-underline:none'>[<span class=GramE>f</span>] <span class=SpellE><b>Wanli</b></span><b>
-<span class=SpellE>Ouyang</span> </b></span><span style='font-family:"CMR10","serif";
+              <span class=SpellE>Ouyang</span> </b></span><span style='font-family:"CMR10","serif";
 mso-bidi-font-family:CMR10;color:windowtext;mso-bidi-font-weight:normal;
 text-decoration:none;text-underline:none'>and <span class=SpellE>Wai-Kuen</span>
-Cham, </span><span style='font-family:"Times New Roman","serif";mso-fareast-font-family:
-宋体;color:windowtext;mso-fareast-language:ZH-CN;mso-bidi-font-weight:normal;
-text-decoration:none;text-underline:none'>&quot;</span><i><span
-style='font-family:"CMTI10","serif";mso-bidi-font-family:CMTI10;color:windowtext;
+            Cham, </span><span style='font-family:"Times New Roman","serif";mso-fareast-font-family:
+锟斤拷锟斤拷;color:windowtext;mso-fareast-language:ZH-CN;mso-bidi-font-weight:normal;
+text-decoration:none;text-underline:none'>&quot;</span><i><span style='font-family:"CMTI10","serif";mso-bidi-font-family:CMTI10;color:windowtext;
 mso-bidi-font-weight:normal;text-decoration:none;text-underline:none'>Segmented
-Gray-Code Kernels for Fast Pattern Matching</span></i><span style='font-family:
-"Times New Roman","serif";mso-fareast-font-family:宋体;color:windowtext;
+              Gray-Code Kernels for Fast Pattern Matching</span></i><span style='font-family:
+"Times New Roman","serif";mso-fareast-font-family:锟斤拷锟斤拷;color:windowtext;
 mso-fareast-language:ZH-CN;mso-bidi-font-weight:normal;text-decoration:none;
 text-underline:none'>&quot;</span><span style='font-family:"CMR10","serif";
 mso-bidi-font-family:CMR10;color:windowtext;mso-bidi-font-weight:normal;
 text-decoration:none;text-underline:none'>, IEEE Trans. Image Processing,
-22(4):1512-1525, Apr. 2013. </span><span style='font-family:"Times New Roman","serif";
-mso-fareast-font-family:宋体;color:windowtext;mso-fareast-language:ZH-CN;
+            22(4):1512-1525, Apr. 2013. </span><span style='font-family:"Times New Roman","serif";
+mso-fareast-font-family:锟斤拷锟斤拷;color:windowtext;mso-fareast-language:ZH-CN;
 mso-bidi-font-weight:normal;text-decoration:none;text-underline:none'><span
-style='mso-field-code:"HYPERLINK \0022SegGCK\.htm\0022"'><u><span
-style='color:blue'>Webpage and source code</span></u></span></span></a></span></p>
+              style='mso-field-code:"HYPERLINK \0022SegGCK\.htm\0022"'><u><span style='color:blue'>Webpage and source
+                  code</span></u></span></span></a></span></p>
 
-<p style='vertical-align:middle'><b><span lang=EN-US style='font-size:24.0pt;
+    <p style='vertical-align:middle'><b><span lang=EN-US style='font-size:24.0pt;
 font-family:"Arial","sans-serif"'><a href="SegGCK.htm"><span style='color:windowtext;
 text-decoration:none;text-underline:none'>Source code</span></a></span></b></p>
 
-<p style='vertical-align:middle'><span lang=EN-US><a href="SegGCK.htm"><span
-class=SpellE><span style='color:windowtext;text-decoration:none;text-underline:
+    <p style='vertical-align:middle'><span lang=EN-US><a href="SegGCK.htm"><span class=SpellE><span style='color:windowtext;text-decoration:none;text-underline:
 none'>Matlab</span></span><span style='color:windowtext;text-decoration:none;
 text-underline:none'> code is available <span style='mso-field-code:" HYPERLINK \0022Software\/FWHT\.m\0022 "'><u><span
-style='color:blue'>here</span></u></span>. The code is in C using Visual studio
-6.0 as the compiling environment. </span></a></span></p>
+                  style='color:blue'>here</span></u></span>. The code is in C using Visual studio
+            6.0 as the compiling environment. </span></a></span></p>
 
-<p style='vertical-align:middle'><span lang=EN-US><a href="Software/FWHT.m"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>Please note
-the &quot;Conditions of Use and Disclaimer&quot; below for this code.</span></a></span></p>
+    <p style='vertical-align:middle'><span lang=EN-US><a href="Software/FWHT.m"><span
+            style='color:windowtext;text-decoration:none;text-underline:none'>Please note
+            the &quot;Conditions of Use and Disclaimer&quot; below for this code.</span></a></span></p>
 
-<p style='vertical-align:middle'><sup><span lang=EN-US style='font-size:10.0pt;
+    <p style='vertical-align:middle'><sup><span lang=EN-US style='font-size:10.0pt;
 font-family:"Arial","sans-serif"'><a href="Software/FWHT.m"><span
-style='color:windowtext;text-decoration:none;text-underline:none'>&nbsp;</span><span
-style='font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:windowtext;
+              style='color:windowtext;text-decoration:none;text-underline:none'>&nbsp;</span><span style='font-size:12.0pt;font-family:锟斤拷锟斤拷;mso-bidi-font-family:锟斤拷锟斤拷;color:windowtext;
 text-decoration:none;text-underline:none;vertical-align:baseline'>Conditions of
-Use and Disclaimer<span class=GramE>:</span><br>
-<br>
-You are only granted a limited right to use this software for your<br>
-personal non-commercial use.<br>
-<br>
-This software is provided as SHAREWARE for testing and evaluating<br>
-purposes and cannot be sold or used in any commercial way, or<br>
-distributed, with or without consideration and whether on its own or<br>
-bundled with any commercial package, or by accompanying books, magazines<br>
-or any publication in any media without express written permission from<br>
-the owner.<br>
-<br>
-The owner of this software accepts no responsibility for any damages<br>
-resulting from any use relating to this software and makes no warranty<br>
-or representation, either <span class=GramE>express</span> or implied,
-including but not limited<br>
-to, any implied warranty of merchantability or fitness for a particular<br>
-purpose. This software is provided &quot;AS IS&quot;, and you, as a limited
-right<br>
-user, assume all risks when using it.<br>
-<br>
-This software is intended for personal non-commercial use only. <br>
-<br>
-For any other use of the code, whether commercial or otherwise, please make<br>
-enquiries by writing to<span class=GramE>:</span><br>
-<br>
-Technology Licensing Office<br>
-The Chinese University of Hong Kong<br>
-<span class=SpellE>Shatin</span>, N.T., Hong Kong<br>
-<br>
-Email: tech_license@cuhk.edu.hk</span></a></span></sup></p>
+              Use and Disclaimer<span class=GramE>:</span><br>
+              <br>
+              You are only granted a limited right to use this software for your<br>
+              personal non-commercial use.<br>
+              <br>
+              This software is provided as SHAREWARE for testing and evaluating<br>
+              purposes and cannot be sold or used in any commercial way, or<br>
+              distributed, with or without consideration and whether on its own or<br>
+              bundled with any commercial package, or by accompanying books, magazines<br>
+              or any publication in any media without express written permission from<br>
+              the owner.<br>
+              <br>
+              The owner of this software accepts no responsibility for any damages<br>
+              resulting from any use relating to this software and makes no warranty<br>
+              or representation, either <span class=GramE>express</span> or implied,
+              including but not limited<br>
+              to, any implied warranty of merchantability or fitness for a particular<br>
+              purpose. This software is provided &quot;AS IS&quot;, and you, as a limited
+              right<br>
+              user, assume all risks when using it.<br>
+              <br>
+              This software is intended for personal non-commercial use only. <br>
+              <br>
+              For any other use of the code, whether commercial or otherwise, please make<br>
+              enquiries by writing to<span class=GramE>:</span><br>
+              <br>
+              Technology Licensing Office<br>
+              The Chinese University of Hong Kong<br>
+              <span class=SpellE>Shatin</span>, N.T., Hong Kong<br>
+              <br>
+              Email: tech_license@cuhk.edu.hk</span></a></span></sup></p>
 
-</div>
+  </div>
 
 </body>
 
