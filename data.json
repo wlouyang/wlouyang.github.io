@@ -1,6 +1,18 @@
 {
   "journals": [
     {
+      "title": "ProbabilisticGraph Attention Network with Conditional Kernels for Pixel-Wise Prediction",
+      "image": "",
+      "authors": "D. Xu, X. Alameda-Pineda, E. Ricci, W. Ouyang, X. Wang, N. Sebe",
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Nov, 2020"
+    },
+    {
+      "title": "States Refinement LSTM for Pedestrian Trajectory Prediction",
+      "image": "",
+      "authors": "P. Zhang, W. Ouyang, P. Zhang, J. Xue, N. Zheng",
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Nov, 2020"
+    },
+    {
       "title": "Progressive Cross-stream Cooperation in Spatial and Temporal Domain for Action Localization",
       "image": "https://wlouyang.github.io/imgs/progressive_cross-stream_cooperation_in_spatial_and_temporal_domain_for_action_localization.png",
       "authors": "Rui Su, Dong Xu, Luping Zhou, and Ouyang Wanli",
@@ -215,6 +227,17 @@
   ],
   "conferences": [
     {
+      "conference_name": "NeurIPS 2020",
+      "main_images": [],
+      "papers": [
+        {
+          "title": "Improving Auto-Augment via Augmentation-Wise Weight Sharing",
+          "authors": "K. Tian, C. Lin, M. Sun, L. Zhou, J. Yan, W. Ouyang",
+          "publisher": "NuerIPS. (Previously called NIPS), 2020"
+        }
+      ]
+    },
+    {
       "conference_name": "ACM Multimedia 2020",
       "main_images": [],
       "papers": [
@@ -227,37 +250,43 @@
     },
     {
       "conference_name": "ECCV 2020",
-      "main_images": [],
+      "main_images": ["https://wlouyang.github.io/imgs/Rethinking_Pseudo-LiDAR_Representation.png"],
       "papers": [
         {
           "title": "Content Adaptive and Error Propagation Aware Deep Video Compression",
           "authors": "Guo Lu, Chunlei Cai, Xiaoyun Zhang, Li Chen, Wanli Ouyang, Dong Xu, Zhiyong Gao",
-          "publisher": "Proc. ECCV, 2020 (Oral)."
+          "publisher": "Proc. ECCV, 2020 (Oral).",
+          "full_text": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123470443.pdf"
         },
         {
           "title": "Improving Deep Video Compression by Resolution-adaptive Flow Coding",
           "authors": "Zhihao Hu, Zhenghao Chen, Dong Xu, Guo Lu, Wanli Ouyang, Shuhang Gu",
-          "publisher": "Proc. ECCV, 2020 (Oral)."
+          "publisher": "Proc. ECCV, 2020 (Oral).",
+          "full_text": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123470188.pdf"
         },
         {
           "title": "Cheaper Pre-training Lunch: An Eﬃcient Paradigm for Object Detection",
           "authors": "Dongzhan Zhou, Xinchi Zhou, Hongwen Zhang, Shuai Yi, Wanli Ouyang",
-          "publisher": "Proc. ECCV, 2020"
+          "publisher": "Proc. ECCV, 2020",
+          "full_text": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123530256.pdf"
         },
         {
           "title": "Rethinking Pseudo-LiDAR Representation",
           "authors": "Xinzhu Ma, Shinan Liu, Zhiyi Xia, Hongwen Zhang, Xingyu Zeng,Wanli Ouyang",
-          "publisher": "Proc. ECCV, 2020"
+          "publisher": "Proc. ECCV, 2020",
+          "full_text": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580307.pdf"
         },
         {
           "title": "Differentiable Hierarchical Graph Grouping for Multi-Person Pose Estimation",
           "authors": "Sheng Jin, Wentao Liu, Enze Xie, Wenhai Wang, Chen Qian, Wanli Ouyang, Ping Luo",
-          "publisher": "Proc. ECCV, 2020"
+          "publisher": "Proc. ECCV, 2020",
+          "full_text": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123520698.pdf"
         },
         {
           "title": "Whole-Body Human Pose Estimation in the Wild",
           "authors": "Sheng Jin, Lumin Xu, Jin Xu, Can Wang, Wentao Liu, Chen Qian, Wanli Ouyang, Ping Luo",
-          "publisher": "Proc. ECCV, 2020"
+          "publisher": "Proc. ECCV, 2020",
+          "full_text": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540188.pdf"
         }
       ]
     },
@@ -319,7 +348,7 @@
     },
     {
       "conference_name": "AAAI 2020",
-      "main_images": [],
+      "main_images": ["https://wlouyang.github.io/imgs/Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_Localization.png"],
       "papers": [
         {
           "title": "Channel Pruning Guided by Classiﬁcation Loss and Feature Importance",
