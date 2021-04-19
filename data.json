@@ -1,6 +1,42 @@
 {
   "journals": [
     {
+      "title": "Towards Balanced Learning for Instance Recognition",
+      "image": "",
+      "authors": "J. Pang, K. Chen, Q. Li, Z. Xu, H. Feng, J. Shi, W. Ouyang, D. Lin",
+      "publisher": "International Journal of Computer Vision (IJCV), accepted, 2021"
+    },
+    {
+      "title": "Modality Cooperation for Multi-Modality Domain Adaptation",
+      "image": "",
+      "authors": "W. Zhang, D. Xu, J. Zhang, W. Ouyang",
+      "publisher": "IEEE Trans. Image Process. (TIP) , accepted, 2021"
+    },
+    {
+      "title": "Social-aware pedestrian trajectory prediction via states refinement LSTM",
+      "image": "",
+      "authors": "P. Zhang, J. Xue, P. Zhang, N. Zheng, W. Ouyang",
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2020"
+    },
+    {
+      "title": "A Shape Transformation-based Dataset Augmentation Framework for Pedestrian Detection",
+      "image": "",
+      "authors": "Z. Chen, W. Ouyang, T. Liu, D. Tao",
+      "publisher": "International Journal of Computer Vision (IJCV), accepted, 2019"
+    },
+    {
+      "title": "Dense Video Captioning using Graph-based Sentence Summarization",
+      "image": "",
+      "authors": "Z. Zhang, D. Xu, W. Ouyang, L. Zhou",
+      "publisher": "IEEE Transactions on Multimedia"
+    },
+    {
+      "title": "Learning 3D Human Shape and Pose from Dense Body Parts",
+      "image": "",
+      "authors": "H. Zhang, J. Cao, G. Lu, W. Ouyang, Z. Sun",
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2020"
+    },
+    {
       "title": "ProbabilisticGraph Attention Network with Conditional Kernels for Pixel-Wise Prediction",
       "image": "",
       "authors": "D. Xu, X. Alameda-Pineda, E. Ricci, W. Ouyang, X. Wang, N. Sebe",
@@ -226,6 +262,53 @@
     }
   ],
   "conferences": [
+    {
+      "conference_name": "AAAI 2021",
+      "main_images": [],
+      "papers": [
+        {
+          "title": "Gradient Regularized Contrastive Learning for Continual Domain Adaptation",
+          "authors": "S. Tang, P. Su, D. Chen, W. Ouyang",
+          "publisher": "Proc. AAAI, 2021"
+        },
+        {
+          "title": "Dynamic Position-aware Network for Fine-grained Image Recognition",
+          "authors": "S. Wang, H. Li, Z. Wang, W. Ouyang",
+          "publisher": "Proc. AAAI, 2021"
+        }
+      ]
+    },
+    {
+      "conference_name": "CVPR 2021",
+      "main_images": [],
+      "papers": [
+        {
+          "title": "Mutual CRF-GNN Network for Few-shot Learning",
+          "authors": "S. Tang, D. Chen, L. Bai, K. Liu, Y. Ge, W. Ouyang",
+          "publisher": "Proc. CVPR 2021"
+        },
+        {
+          "title": "Layerwise Optimization by Gradient Decomposition for Continual Learning",
+          "authors": "S. Tang, D. Chen. J. Zhu, S. Yu, W. Ouyang",
+          "publisher": "Proc. CVPR 2021"
+        },
+        {
+          "title": "ViPNAS: Ecient Video Pose Estimation via Neural Architecture Search",
+          "authors": "L. XU, Y. Guan, S. Jin, W. Liu, C. Qian, P. Luo, W. Ouyang, X.Wang",
+          "publisher": "Proc. CVPR 2021"
+        },
+        {
+          "title": "Delving into Localization Errors for Monocular 3D Object Detection",
+          "authors": "X. Ma, Y. Zhang, D. Xu, D. Zhou, S. Yi, H. Li, W. Ouyang",
+          "publisher": "Proc. CVPR 2021"
+        },
+        {
+          "title": "Inception Convolution with Ecient Dilation Search",
+          "authors": "J. Liu, C. Li, F. Liang, C. Lin, M. Sun, J. Yan, W. Ouyang, D. Xu",
+          "publisher": "Proc. CVPR 2021. (Oral)"
+        }
+      ]
+    },
     {
       "conference_name": "NeurIPS 2020",
       "main_images": [],
