@@ -34,7 +34,8 @@
       "title": "Learning 3D Human Shape and Pose from Dense Body Parts",
       "image": "",
       "authors": "H. Zhang, J. Cao, G. Lu, W. Ouyang, Z. Sun",
-      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2020"
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2020",
+      "source_code": "https://github.com/HongwenZhang/DaNet-3DHumanReconstruction"
     },
     {
       "title": "ProbabilisticGraph Attention Network with Conditional Kernels for Pixel-Wise Prediction",
@@ -82,7 +83,8 @@
       "title": "Self-Paced Collaborative and Adversarial Network for Unsupervised Domain Adaptation",
       "image": "https://wlouyang.github.io/imgs/Self-Paced_Collaborative_and_Adversarial_Network_for_Unsupervised_Domain_Adaptation.png",
       "authors": "Weichen Zhang, Dong Xu, Wanli Ouyang, W. Li",
-      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Sept. 2019"
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Sept. 2019",
+      "source_code": "https://github.com/zhangweichen2006/SPCAN"
     },
     {
       "title": "Deep learning for generic object detection: A survey",
@@ -103,7 +105,8 @@
       "image": "https://wlouyang.github.io/imgs/ContextualSpatial.png",
       "authors": "Lingbo Liu, Zhilin Qiu, Guanbin Li, Qing Wang, Wanli Ouyang, Liang Lin",
       "publisher": "IEEE Transactions on Intelligent Transportation Systems (TITS), accepted Apr., 2019",
-      "full_text": "https://arxiv.org/abs/1905.06335"
+      "full_text": "https://arxiv.org/abs/1905.06335",
+      "source_code": "https://github.com/liulingbo918/CSTN"
     },
     {
       "title": "Zoom out-and-in network with map attention decision for region proposal and object detection",
@@ -295,7 +298,8 @@
         {
           "title": "ViPNAS: E cient Video Pose Estimation via Neural Architecture Search",
           "authors": "L. XU, Y. Guan, S. Jin, W. Liu, C. Qian, P. Luo, W. Ouyang, X.Wang",
-          "publisher": "Proc. CVPR 2021"
+          "publisher": "Proc. CVPR 2021",
+          "source_code": "https://github.com/luminxu/ViPNAS"
         },
         {
           "title": "Delving into Localization Errors for Monocular 3D Object Detection",
@@ -305,7 +309,8 @@
         {
           "title": "Inception Convolution with E cient Dilation Search",
           "authors": "J. Liu, C. Li, F. Liang, C. Lin, M. Sun, J. Yan, W. Ouyang, D. Xu",
-          "publisher": "Proc. CVPR 2021. (Oral)"
+          "publisher": "Proc. CVPR 2021. (Oral)",
+          "source_code": "https://github.com/yifan123/IC-Conv/"
         }
       ]
     },
@@ -316,7 +321,8 @@
         {
           "title": "Improving Auto-Augment via Augmentation-Wise Weight Sharing",
           "authors": "K. Tian, C. Lin, M. Sun, L. Zhou, J. Yan, W. Ouyang",
-          "publisher": "NuerIPS. (Previously called NIPS), 2020"
+          "publisher": "NuerIPS. (Previously called NIPS), 2020",
+          "source_code": "https://github.com/Awesome-AutoAug-Algorithms/AWS-OHL-AutoAug"
         }
       ]
     },
@@ -369,7 +375,8 @@
           "title": "Whole-Body Human Pose Estimation in the Wild",
           "authors": "Sheng Jin, Lumin Xu, Jin Xu, Can Wang, Wentao Liu, Chen Qian, Wanli Ouyang, Ping Luo",
           "publisher": "Proc. ECCV, 2020",
-          "full_text": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540188.pdf"
+          "full_text": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540188.pdf",
+          "source_code": "https://github.com/jin-s13/COCO-WholeBody"
         }
       ]
     },
@@ -401,7 +408,8 @@
           "title": "Unifying Spatial-Temporal Graph Convolutions with Disentangled Multi-Scale Aggregators for Skeleton-Based Action Recognition",
           "authors": "Ziyu Liu, Hongwen Zhang, Zhenghao Chen, Zhiyong Wang, W. Ouyang",
           "publisher": "CVPR, 2020, accepted (Oral)",
-          "full_text": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_Disentangling_and_Unifying_Graph_Convolutions_for_Skeleton-Based_Action_Recognition_CVPR_2020_paper.pdf"
+          "full_text": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_Disentangling_and_Unifying_Graph_Convolutions_for_Skeleton-Based_Action_Recognition_CVPR_2020_paper.pdf",
+          "source_code": "https://github.com/kenziyuliu/ms-g3d"
         },
         {
           "title": "Multi-Dimensional Pruning: A Uniﬁed Framework for Model Compression",
@@ -419,13 +427,15 @@
           "title": "Equalization Loss for Long-Tailed Object Recognition",
           "authors": "Jingru Tan, Changbao Wang, Buyu Li, Quanquan Li, W. Ouyang, Changqing Yin, Junjie Yan",
           "publisher": "CVPR, 2020, accepted",
-          "full_text": "https://arxiv.org/pdf/2003.05176"
+          "full_text": "https://arxiv.org/pdf/2003.05176",
+          "source_code": "https://github.com/tztztztztz/eql.detectron2"
         },
         {
           "title": "3D Human Mesh Regression with Dense Correspondence",
           "authors": "Wang Zeng, Wei Yang, W. Ouyang, Ping Luo, Wentao Liu, Xiaogang Wang",
           "publisher": "CVPR, 2020, accepted",
-          "full_text": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Zeng_3D_Human_Mesh_Regression_With_Dense_Correspondence_CVPR_2020_paper.pdf"
+          "full_text": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Zeng_3D_Human_Mesh_Regression_With_Dense_Correspondence_CVPR_2020_paper.pdf",
+          "source_code": "https://github.com/zengwang430521/DecoMR"
         }
       ]
     },
@@ -488,7 +498,8 @@
           "title": "Crowd Counting with Deep Structured Scale Integration Network",
           "authors": "Lingbo Liu, Zhilin Qiu , Guanbin Li, Shufan Liu, W. Ouyang, Liang Lin",
           "publisher": "Proc. ICCV, 2019",
-          "full_text": "http://openaccess.thecvf.com/content_ICCV_2019/papers/Liu_Crowd_Counting_With_Deep_Structured_Scale_Integration_Network_ICCV_2019_paper.pdf"
+          "full_text": "http://openaccess.thecvf.com/content_ICCV_2019/papers/Liu_Crowd_Counting_With_Deep_Structured_Scale_Integration_Network_ICCV_2019_paper.pdf",
+          "source_code": "https://github.com/Legion56/Counting-ICCV-DSSINet"
         },
         {
           "title": "Unsupervised Collaborative Learning of Keyframe Detection and Visual Odometry towards Monocular Deep SLAM",
@@ -512,7 +523,8 @@
           "title": "LAP-Net: Level-Aware Progressive Network for Image Dehazing",
           "authors": "Yunan Li, Qiguang Miao, W. Ouyang, Zhenxin Ma, Huijuan Fang, Chao Dong, Yining Quan",
           "publisher": "Proc. ICCV, 2019",
-          "full_text": "http://openaccess.thecvf.com/content_ICCV_2019/supplemental/Li_LAP-Net_Level-Aware_Progressive_ICCV_2019_supplemental.pdf"
+          "full_text": "http://openaccess.thecvf.com/content_ICCV_2019/supplemental/Li_LAP-Net_Level-Aware_Progressive_ICCV_2019_supplemental.pdf",
+          "source_code": "https://sites.google.com/view/lapnet/"
         },
         {
           "title": "AM-LFS: AutoML for Loss Function Search",
@@ -603,7 +615,8 @@
           "title": "SR-LSTM: State Refinement for LSTM towards Pedestrian Trajectory Prediction",
           "authors": "Pu Zhang, Wanli Ouyang, Pengfei Zhang, Jianru Xue, Nanning Zheng",
           "publisher": "Proc. CVPR, 2019, Accepted",
-          "full_text": "http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_SR-LSTM_State_Refinement_for_LSTM_Towards_Pedestrian_Trajectory_Prediction_CVPR_2019_paper.pdf"
+          "full_text": "http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_SR-LSTM_State_Refinement_for_LSTM_Towards_Pedestrian_Trajectory_Prediction_CVPR_2019_paper.pdf",
+          "source_code": "https://github.com/zhangpur/SR-LSTM"
         }
       ]
     },
@@ -726,7 +739,8 @@
           "title": "Collaborative and Adversarial Network for Unsupervised domain adaptation",
           "authors": "Weichen Zhang, Wanli Ouyang, Dong Xu, Wen Li",
           "publisher": "Proc. CVPR, 2018 (spotlight)",
-          "full_text": "http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_Collaborative_and_Adversarial_CVPR_2018_paper.pdf"
+          "full_text": "http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_Collaborative_and_Adversarial_CVPR_2018_paper.pdf",
+          "source_code": "https://github.com/zhangweichen2006/iCAN"
         },
         {
           "title": "Optical Flow Guided Feature: A Motion Representation for Video Action Recognition",
