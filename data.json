@@ -272,12 +272,14 @@
         {
           "title": "Gradient Regularized Contrastive Learning for Continual Domain Adaptation",
           "authors": "S. Tang, P. Su, D. Chen, W. Ouyang",
-          "publisher": "Proc. AAAI, 2021"
+          "publisher": "Proc. AAAI, 2021",
+          "full_text": "https://arxiv.org/pdf/2007.12942.pdf"
         },
         {
           "title": "Dynamic Position-aware Network for Fine-grained Image Recognition",
           "authors": "S. Wang, H. Li, Z. Wang, W. Ouyang",
-          "publisher": "Proc. AAAI, 2021"
+          "publisher": "Proc. AAAI, 2021",
+          "full_text": "https://ojs.aaai.org/index.php/AAAI/article/view/16384"
         }
       ]
     },
@@ -293,7 +295,8 @@
         {
           "title": "Layerwise Optimization by Gradient Decomposition for Continual Learning",
           "authors": "S. Tang, D. Chen. J. Zhu, S. Yu, W. Ouyang",
-          "publisher": "Proc. CVPR 2021"
+          "publisher": "Proc. CVPR 2021",
+          "full_text": "https://arxiv.org/pdf/2105.10154.pdf"
         },
         {
           "title": "ViPNAS: E cient Video Pose Estimation via Neural Architecture Search",
@@ -304,12 +307,14 @@
         {
           "title": "Delving into Localization Errors for Monocular 3D Object Detection",
           "authors": "X. Ma, Y. Zhang, D. Xu, D. Zhou, S. Yi, H. Li, W. Ouyang",
-          "publisher": "Proc. CVPR 2021"
+          "publisher": "Proc. CVPR 2021",
+          "full_text": "https://arxiv.org/pdf/2103.16237.pdf"
         },
         {
           "title": "Inception Convolution with E cient Dilation Search",
           "authors": "J. Liu, C. Li, F. Liang, C. Lin, M. Sun, J. Yan, W. Ouyang, D. Xu",
           "publisher": "Proc. CVPR 2021. (Oral)",
+          "full_text": "https://arxiv.org/pdf/2012.13587.pdf",
           "source_code": "https://github.com/yifan123/IC-Conv/"
         }
       ]
@@ -322,6 +327,7 @@
           "title": "Improving Auto-Augment via Augmentation-Wise Weight Sharing",
           "authors": "K. Tian, C. Lin, M. Sun, L. Zhou, J. Yan, W. Ouyang",
           "publisher": "NuerIPS. (Previously called NIPS), 2020",
+          "full_text": "https://arxiv.org/pdf/2009.14737.pdf",
           "source_code": "https://github.com/Awesome-AutoAug-Algorithms/AWS-OHL-AutoAug"
         }
       ]
