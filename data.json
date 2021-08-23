@@ -268,8 +268,8 @@
     {
       "conference_name": "ICCV 2021",
       "main_images": [
-        "https://wlouyang.github.io/images/Evolving_Search_Space_for_Neural_Architecture_Search.jpg",
-        "https://wlouyang.github.io/images/GLiT.jpg"
+        "https://wlouyang.github.io/imgs/Evolving_Search_Space_for_Neural_Architecture_Search.jpg",
+        "https://wlouyang.github.io/imgs/GLiT.jpg"
       ],
       "papers": [
         {
@@ -326,7 +326,7 @@
     },
     {
       "conference_name": "AAAI 2021",
-      "main_images": ["https://wlouyang.github.io/images/Dynamic_Position-aware_Network_for_Fine-grained_Image_Recognition.jpg"],
+      "main_images": ["https://wlouyang.github.io/imgs/Dynamic_Position-aware_Network_for_Fine-grained_Image_Recognition.jpg"],
       "papers": [
         {
           "title": "Gradient Regularized Contrastive Learning for Continual Domain Adaptation",
