@@ -13,6 +13,25 @@
       "publisher": "IEEE Trans. Image Process. (TIP) , accepted, 2021"
     },
     {
+      "title": "Learning 3D Human Shape and Pose from Dense Body Parts",
+      "image": "https://wlouyang.github.io/imgs/Learning_3D_Human_Shape_and_Pose_from_Dense_Body_Parts.jpg",
+      "authors": "H. Zhang, J. Cao, G. Lu, W. Ouyang, Z. Sun",
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2020",
+      "source_code": "https://github.com/HongwenZhang/DaNet-3DHumanReconstruction"
+    },
+    {
+      "title": "ProbabilisticGraph Attention Network with Conditional Kernels for Pixel-Wise Prediction",
+      "image": "https://wlouyang.github.io/imgs/Probabilistic_Graph_Attention_Network_with_Conditional_Kernels_for_Pixel-Wise_Prediction.jpg",
+      "authors": "D. Xu, X. Alameda-Pineda, E. Ricci, W. Ouyang, X. Wang, N. Sebe",
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Nov, 2020"
+    },
+    {
+      "title": "States Refinement LSTM for Pedestrian Trajectory Prediction",
+      "image": "https://wlouyang.github.io/imgs/SR-LSTM-State_Refinement_for_LSTM_towards_Pedestrian_Trajectory_Prediction.jpg",
+      "authors": "P. Zhang, W. Ouyang, P. Zhang, J. Xue, N. Zheng",
+      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Nov, 2020"
+    },
+    {
       "title": "Social-aware pedestrian trajectory prediction via states refinement LSTM",
       "image": "",
       "authors": "P. Zhang, J. Xue, P. Zhang, N. Zheng, W. Ouyang",
@@ -20,7 +39,7 @@
     },
     {
       "title": "A Shape Transformation-based Dataset Augmentation Framework for Pedestrian Detection",
-      "image": "",
+      "image": "https://wlouyang.github.io/imgs/A_Shape_Transformation-based_Dataset_Augmentation_Framework_for_Pedestrian_Detection.jpg",
       "authors": "Z. Chen, W. Ouyang, T. Liu, D. Tao",
       "publisher": "International Journal of Computer Vision (IJCV), accepted, 2019"
     },
@@ -29,25 +48,6 @@
       "image": "",
       "authors": "Z. Zhang, D. Xu, W. Ouyang, L. Zhou",
       "publisher": "IEEE Transactions on Multimedia"
-    },
-    {
-      "title": "Learning 3D Human Shape and Pose from Dense Body Parts",
-      "image": "",
-      "authors": "H. Zhang, J. Cao, G. Lu, W. Ouyang, Z. Sun",
-      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, 2020",
-      "source_code": "https://github.com/HongwenZhang/DaNet-3DHumanReconstruction"
-    },
-    {
-      "title": "ProbabilisticGraph Attention Network with Conditional Kernels for Pixel-Wise Prediction",
-      "image": "",
-      "authors": "D. Xu, X. Alameda-Pineda, E. Ricci, W. Ouyang, X. Wang, N. Sebe",
-      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Nov, 2020"
-    },
-    {
-      "title": "States Refinement LSTM for Pedestrian Trajectory Prediction",
-      "image": "",
-      "authors": "P. Zhang, W. Ouyang, P. Zhang, J. Xue, N. Zheng",
-      "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), accepted, Nov, 2020"
     },
     {
       "title": "Progressive Cross-stream Cooperation in Spatial and Temporal Domain for Action Localization",
@@ -266,8 +266,67 @@
   ],
   "conferences": [
     {
+      "conference_name": "ICCV 2021",
+      "main_images": [
+        "https://wlouyang.github.io/images/Evolving_Search_Space_for_Neural_Architecture_Search.jpg",
+        "https://wlouyang.github.io/images/GLiT.jpg"
+      ],
+      "papers": [
+        {
+          "title": "Evolving Search Space for Neural Architecture Search",
+          "authors": "Y. Ci, C. Lin, M. Sun, B. Chen, H. Zhang, W. Ouyang",
+          "publisher": "Proc. ICCV 2021",
+          "full_text": "https://arxiv.org/pdf/2011.10904.pdf"
+        },
+        {
+          "title": "BN-NAS: Neural Architecture Search with Batch Normalization",
+          "authors": "B. Chen, P. Li, B. Li, C. Lin, C. Li, M. Sun, J. Yan, W. Ouyang",
+          "publisher": "Proc. ICCV 2021",
+          "full_text": "https://arxiv.org/pdf/2108.07375.pdf"
+        },
+        {
+          "title": "Geometry Uncertainty Projection Network for Monocular 3D Object Detection",
+          "authors": "Y. Lu, X. Ma, L. Yang, T. Zhang, Y. Liu, Q. Chu, J. Yan, W. Ouyang",
+          "publisher": "Proc. ICCV 2021",
+          "full_text": "https://arxiv.org/pdf/2107.13774.pdf"
+        },
+        {
+          "title": "Leveraging Auxiliary Tasks with Affinity Learning for Weakly Supervised Semantic Segmentation",
+          "authors": "L. Xu, W. Ouyang, M. Bennamoun, F. Boussaid, F. Sohel, D. Xu",
+          "publisher": "Proc. ICCV 2021",
+          "full_text": "https://arxiv.org/pdf/2107.11787.pdf"
+        },
+        {
+          "title": "GLiT: Neural Architecture Search for Global and Local Image Transformer",
+          "authors": "B. Chen, P. Li, C. Li, B. Li, L. Bai, C. Lin, M. Sun, J. yan, W. Ouyang",
+          "publisher": "Proc. ICCV 2021",
+          "full_text": "https://arxiv.org/pdf/2107.02960.pdf"
+        },
+        {
+          "title": "PyMAF: 3D Human Pose and Shape Regression with Pyramidal Mesh Alignment Feedback Loop",
+          "authors": "H. Zhang, Y. Tian, X. Zhou, W. Ouyang, Y. Liu, L. Wang, Z. Sun",
+          "publisher": "Proc. ICCV 2021. (Oral)",
+          "full_text": "https://arxiv.org/pdf/2103.16507.pdf",
+          "source_code": "https://hongwenzhang.github.io/pymaf"
+        }
+      ]
+    },
+    {
+      "conference_name": "ICML 2021",
+      "main_images": [
+      ],
+      "papers": [
+        {
+          "title": "AutoSampling: Search for Effective Data Sampling Schedules",
+          "authors": "M. Sun, H. Dou, B. Li, L. Cui, J. Yan, W. Ouyang",
+          "publisher": "Proc. ICML 2021",
+          "full_text": "https://arxiv.org/pdf/2105.13695.pdf"
+        }
+      ]
+    },
+    {
       "conference_name": "AAAI 2021",
-      "main_images": [],
+      "main_images": ["https://wlouyang.github.io/images/Dynamic_Position-aware_Network_for_Fine-grained_Image_Recognition.jpg"],
       "papers": [
         {
           "title": "Gradient Regularized Contrastive Learning for Continual Domain Adaptation",
@@ -285,18 +344,22 @@
     },
     {
       "conference_name": "CVPR 2021",
-      "main_images": [],
+      "main_images": [
+        "https://wlouyang.github.io/imgs/Mutual_CRF-GNN_for_Few-shot_Learning.jpg",
+        "https://wlouyang.github.io/images/ChainCNN.JPG"
+      ],
       "papers": [
         {
           "title": "Mutual CRF-GNN Network for Few-shot Learning",
           "authors": "S. Tang, D. Chen, L. Bai, K. Liu, Y. Ge, W. Ouyang",
-          "publisher": "Proc. CVPR 2021"
+          "publisher": "Proc. CVPR 2021",
+          "full_text": "https://openaccess.thecvf.com/content/CVPR2021/papers/Tang_Mutual_CRF-GNN_for_Few-Shot_Learning_CVPR_2021_paper.pdf"
         },
         {
           "title": "Layerwise Optimization by Gradient Decomposition for Continual Learning",
           "authors": "S. Tang, D. Chen. J. Zhu, S. Yu, W. Ouyang",
           "publisher": "Proc. CVPR 2021",
-          "full_text": "https://arxiv.org/pdf/2105.10154.pdf"
+          "full_text": "https://arxiv.org/pdf/2105.07561.pdf"
         },
         {
           "title": "ViPNAS: E cient Video Pose Estimation via Neural Architecture Search",
@@ -308,7 +371,8 @@
           "title": "Delving into Localization Errors for Monocular 3D Object Detection",
           "authors": "X. Ma, Y. Zhang, D. Xu, D. Zhou, S. Yi, H. Li, W. Ouyang",
           "publisher": "Proc. CVPR 2021",
-          "full_text": "https://arxiv.org/pdf/2103.16237.pdf"
+          "full_text": "https://arxiv.org/pdf/2103.16237.pdf",
+          "source_code": "https://github.com/xinzhuma/monodle/"
         },
         {
           "title": "Inception Convolution with E cient Dilation Search",
