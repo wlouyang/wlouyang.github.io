@@ -2,28 +2,33 @@
   "journals": [
     {
       "title": "Temporal-Channel Transformer for 3D Lidar-Based Video Object Detection in Autonomous Driving",
+      "image": "https://wlouyang.github.io/imgs/Temporal-Channel_Transformer_for_3D_Lidar-Based_Video_Object_Detection_in_Autonomous_Driving.jpg",
       "authors": "Z. Yuan, X. Song, L. Bai, Z. Wang, W. Ouyang",
-      "publisher": "IEEE Trans. Circuits and System for Video Technology (CSVT), Accepted May, 2021"
+      "publisher": "IEEE Trans. Circuits and System for Video Technology (CSVT), Accepted May, 2021",
+      "full_text": "https://arxiv.org/pdf/2011.13628.pdf"
     },
     {
       "title": "Modeling Sub-Actions for Weakly Supervised Temporal Action Localization",
+      "image": "https://wlouyang.github.io/imgs/Modeling_Sub-Actions_for_Weakly_Supervised_Temporal_Action_Localization.jpg",
       "authors": "L. Huang, Y. Huang, W. Ouyang, and L. Wang",
       "publisher": "IEEE Trans. Image Process. (TIP), 2021"
     },
     {
       "title": "Two-Branch Relational Prototypical Network for Weakly Supervised Temporal Action Localization",
+      "image": "https://wlouyang.github.io/imgs/Two-Branch_Relational_Prototypical_Network_for_Weakly_Supervised_Temporal_Action_Localization",
       "authors": "L. Huang, Y. Huang, W. Ouyang, and L. Wang",
       "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), Accepted, Apr, 2021"
     },
     {
       "title": "Towards Balanced Learning for Instance Recognition",
-      "image": "",
+      "image": "https://wlouyang.github.io/imgs/Towards_Balanced_Learning_for_Instance_Recognition.png",
       "authors": "J. Pang, K. Chen, Q. Li, Z. Xu, H. Feng, J. Shi, W. Ouyang, D. Lin",
-      "publisher": "International Journal of Computer Vision (IJCV), Accepted, 2021"
+      "publisher": "International Journal of Computer Vision (IJCV), Accepted, 2021",
+      "full_text": "https://arxiv.org/pdf/2108.10175.pdf"
     },
     {
       "title": "Progressive Modality Cooperation for Multi-Modality Domain Adaptation",
-      "image": "",
+      "image": "https://wlouyang.github.io/imgs/Progressive_Modality_Cooperation_for_Multi-Modality_Domain_Adaptation",
       "authors": "W. Zhang, D. Xu, J. Zhang, W. Ouyang",
       "publisher": "IEEE Trans. Image Process. (TIP) , Accepted, 2021"
     },
