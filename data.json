@@ -314,7 +314,8 @@
           "title": "Geometry Uncertainty Projection Network for Monocular 3D Object Detection",
           "authors": "Y. Lu, X. Ma, L. Yang, T. Zhang, Y. Liu, Q. Chu, J. Yan, W. Ouyang",
           "publisher": "Proc. ICCV 2021",
-          "full_text": "https://arxiv.org/pdf/2107.13774.pdf"
+          "full_text": "https://arxiv.org/pdf/2107.13774.pdf",
+          "source_code": "https://github.com/SuperMHP/GUPNet"
         },
         {
           "title": "Leveraging Auxiliary Tasks with Affinity Learning for Weakly Supervised Semantic Segmentation",
