@@ -1,6 +1,18 @@
 {
   "journals": [
     {
+      "title": "AutoPedestrian: an Automatic Data Augmentation and Loss Function Search Scheme for Pedestrian Detection",
+      "image": "",
+      "authors": "Y. Tang, B. Li, M. Liu, B. Chen, Y. Wang, W. Ouyang.",
+      "publisher": "IEEE Trans. Image Process. (TIP), accepted Jul., 2021."
+    },
+    {
+      "title": "Improving weakly supervised temporal action localization by exploiting multi-resolution information in temporal domain",
+      "image": "",
+      "authors": "R. Su, D. Xu, L. Zhou, W. Ouyang. ",
+      "publisher": "IEEE Trans. Image Process. (TIP), 30:6659-6672, 2021."
+    },
+    {
       "title": "Temporal-Channel Transformer for 3D Lidar-Based Video Object Detection in Autonomous Driving",
       "image": "https://wlouyang.github.io/imgs/Temporal-Channel_Transformer_for_3D_Lidar-Based_Video_Object_Detection_in_Autonomous_Driving.jpg",
       "authors": "Z. Yuan, X. Song, L. Bai, Z. Wang, W. Ouyang",
@@ -291,6 +303,19 @@
     }
   ],
   "conferences": [
+    {
+      "conference_name": "NeurIPS 2021",
+      "main_images": [],
+      "papers": [
+        {
+          "title": "A Continuous Mapping For Augmentation Design",
+          "authors": "K. Tian, C. Lin, S. Lim, W. Ouyang, P. K. Dokania, P. Torr",
+          "publisher": "NuerIPS. (Previously called NIPS), 2021",
+          "full_text": "https://openreview.net/attachment?id=gB4hvxTzQLQ&name=supplementary_material",
+          "source_code": "https://github.com/Awesome-AutoAug-Algorithms/MCMC-Aug"
+        }
+      ]
+    },
     {
       "conference_name": "ICCV 2021",
       "main_images": [
