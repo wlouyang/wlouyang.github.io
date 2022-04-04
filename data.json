@@ -304,6 +304,102 @@
   ],
   "conferences": [
     {
+      "conference_name": "ICLR 2022",
+      "main_images": [],
+      "papers": [
+        {
+          "title": "MonoDistill: Learning Spatial Features for Monocular 3D Object Detection",
+          "authors": "Z. Chong, X. Ma, H. Zhang, Y. Yue, H. Li, Z. Wang, W. Ouyang",
+          "publisher": "Proc. ICLR, 2022",
+          "full_text": "https://arxiv.org/pdf/2201.10830.pdf",
+          "source_code": "https://github.com/monster-ghost/monodistill"
+        },
+        {
+          "title": "Pseudo-Labeled Auto-Curriculum Learning for Semi-Supervised Keypoint Localization",
+          "authors": "C. Wang, S. Jin, Y. Guan, W. Liu, C. Qian, P. Luo, W. Ouyang",
+          "publisher": "Proc. ICLR, 2022",
+          "full_text": "https://arxiv.org/pdf/2201.08613.pdf"
+        },
+        {
+          "title": "Supervision Exists Everywhere: A Data Efficient Contrastive Language-Image Pre-training Paradigm",
+          "authors": "Y. Li, F. Liang, L. Zhao, Y. Cui, W. Ouyang, J. Shao, F. Yu, J. Yan",
+          "publisher": "Proc. ICLR, 2022",
+          "full_text": "https://arxiv.org/pdf/2110.05208.pdf",
+          "source_code": "https://github.com/sense-gvt/declip"
+        }
+      ]
+    },
+    {
+      "conference_name": "CVPR 2022",
+      "main_images": ["https://wlouyang.github.io/imgs/Beta_Decay.png"],
+      "papers": [
+        {
+          "title": "Beta-Decay Regularization for Differentiable Architecture Search",
+          "authors": "P. Ye, B. Li, Y. Li, T. Chen, J. Fan, W. Ouyang",
+          "publisher": "Proc. CVPR, 2022 (Oral)",
+          "full_text": "https://arxiv.org/pdf/2203.01665.pdf",
+          "source_code": "https://github.com/Sunshine-Ye/Beta-DARTS"
+        },
+        {
+          "title": "Revisiting the Transferability of Supervised Pretraining: an MLP Perspective",
+          "authors": "Z. Wang, S. Tang, F. Zhu, L. Bai, R. Zhao, D. Qi, W. Ouyang",
+          "publisher": "Proc. CVPR, 2022",
+          "full_text": "https://arxiv.org/pdf/2112.00496.pdf"
+        },
+        {
+          "title": "Unsupervised Learning of Accurate Siamese Tracking",
+          "authors": "Q. Shen, L. Qiao, J. Guo, P. Li, X. Li, B. Li, W. Feng, W. Gan, W. Wu, W. Ouyang",
+          "publisher": "Proc. CVPR, 2022 (Oral)",
+          "full_text": "https://arxiv.org/pdf/1904.01828.pdf",
+          "source_code": "https://github.com/594422814/UDT"
+        },
+        {
+          "title": "Multi-class Token Transformer for Weakly Supervised Semantic Segmentation",
+          "authors": "X. Xu, W. Ouyang, M. Bennamoun, F. Boussaid, D. Xu",
+          "publisher": "Proc. CVPR, 2022",
+          "full_text": "https://arxiv.org/pdf/2203.02891.pdf",
+          "source_code": "https://github.com/xulianuwa/mctformer"
+        },
+        {
+          "title": "DR.VIC: Decomposition and Reasoning for Video Individual Counting",
+          "authors": "T. Han, L. Bai, J. Gao, Q. Wang, W. Ouyang",
+          "publisher": "Proc. CVPR, 2022",
+          "full_text": "https://arxiv.org/pdf/2203.12335.pdf",
+          "source_code": "https://github.com/taohan10200/drnet"
+        },
+        {
+          "title": "Accelerating Neural Network Optimization Through an Automated Control Theory Lens",
+          "authors": "J. Wang, B. Wu, R. Su, M. Cao, S. Shi, W. Ouyang, Y. Yang",
+          "publisher": "Proc. CVPR, 2022",
+          "full_text": "https://arxiv.org/pdf/2104.05588.pdf"
+        },
+        {
+          "title": "Not All Tokens Are Equal: Human-centric Visual Analysis via Token Clustering Transformer",
+          "authors": "W. Zeng, S. Jin, W. Liu, C. Qian, P. Luo, W. Ouyang, X. Wang",
+          "publisher": "Proc. CVPR, 2022 (Oral)",
+          "full_text": "https://arxiv.org/pdf/2104.05588.pdf",
+          "source_code": "https://github.com/zengwang430521/TCFormer"
+        }
+      ]
+    },
+    {
+      "conference_name": "AAAI 2022",
+      "main_images": [],
+      "papers": [
+        {
+          "title": "SepFusion: Finding Optimal Fusion Structures for Visual Sound Separation",
+          "authors": "D. Zhou, X. Zhou, D. Hu, H. Zhou L. Bai Z. Liu, W. Ouyang",
+          "publisher": "Proc. AAAI, 2022",
+          "full_text": "https://www.aaai.org/AAAI22Papers/AAAI-11517.ZhouD.pdf"
+        },
+        {
+          "title": "Category-specific Nuance Exploration Network for Fine-grained Object Retrieval",
+          "authors": "S. Wang, Z. Wang, H. Li, W. Ouyang",
+          "publisher": "Proc. AAAI, 2022"
+        }
+      ]
+    },
+    {
       "conference_name": "NeurIPS 2021",
       "main_images": [],
       "papers": [
