@@ -305,7 +305,7 @@
   "conferences": [
     {
       "conference_name": "ICLR 2022",
-      "main_images": [],
+      "main_images": ["https://wlouyang.github.io/imgs/monodistill.png"],
       "papers": [
         {
           "title": "MonoDistill: Learning Spatial Features for Monocular 3D Object Detection",
