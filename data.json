@@ -187,7 +187,9 @@
       "image": "https://wlouyang.github.io/imgs/TCNN.png",
       "authors": "K. Kang, H. Li, J. Yan, X. Zeng, B. Yang, T. Xiao, C. Zhang, Z. Wang, R. Wang, X. Wang, W. Ouyang",
       "publisher": "IEEE Transactions on Circuits and Systems for Video Technology (CSVT), Accepted, 2017",
-      "full_text": "https://arxiv.org/abs/1604.02532"
+      "full_text": "https://arxiv.org/abs/1604.02532",
+      "youtube": "https://www.youtube.com/watch?v=pYwZgB5pfnE",
+      "bilibili": "https://www.bilibili.com/video/BV1Zb4y1m7WB?spm_id_from=333.999.0.0"
     },
     {
       "title": "DeepID-Net: Object Detection with Deformable Part Based Convolutional Neural Networks",
@@ -436,7 +438,9 @@
           "authors": "Y. Lu, X. Ma, L. Yang, T. Zhang, Y. Liu, Q. Chu, J. Yan, W. Ouyang",
           "publisher": "Proc. ICCV 2021",
           "full_text": "https://arxiv.org/pdf/2107.13774.pdf",
-          "source_code": "https://github.com/SuperMHP/GUPNet"
+          "source_code": "https://github.com/SuperMHP/GUPNet",
+          "youtube": "https://www.youtube.com/watch?v=k_67RGn3KqA",
+          "bilibili": "https://www.bilibili.com/video/BV1j3411B7JV?from=search&seid=4559454447348962054&spm_id_from=333.337.0.0"
         },
         {
           "title": "Leveraging Auxiliary Tasks with Affinity Learning for Weakly Supervised Semantic Segmentation",
@@ -448,7 +452,9 @@
           "title": "GLiT: Neural Architecture Search for Global and Local Image Transformer",
           "authors": "B. Chen, P. Li, C. Li, B. Li, L. Bai, C. Lin, M. Sun, J. yan, W. Ouyang",
           "publisher": "Proc. ICCV 2021",
-          "full_text": "https://arxiv.org/pdf/2107.02960.pdf"
+          "full_text": "https://arxiv.org/pdf/2107.02960.pdf",
+          "youtube": "https://www.youtube.com/watch?v=Nl6OJRfVHOw&t=2s",
+          "bilibili": "https://www.bilibili.com/video/BV1nP4y1s7UK?spm_id_from=333.999.0.0"
         },
         {
           "title": "Towards High Performance Extremely Low-bit Neural Networks",
@@ -807,7 +813,9 @@
           "authors": "Guo Lu, Wanli Ouyang, Dong Xu, Chunlei Cai, Xiaoyun Zhang, Zhiyong Gao",
           "publisher": "Proc. CVPR, 2019, Accepted. (Oral)",
           "full_text": "http://openaccess.thecvf.com/content_CVPR_2019/papers/Lu_DVC_An_End-To-End_Deep_Video_Compression_Framework_CVPR_2019_paper.pdf",
-          "source_code": "https://github.com/GuoLusjtu/DVC"
+          "source_code": "https://github.com/GuoLusjtu/DVC",
+          "youtube": "https://www.youtube.com/watch?v=qM0fYCfhvMg",
+          "bilibili": "https://www.bilibili.com/video/BV1ih411W7DM?spm_id_from=333.999.0.0"
         },
         {
           "title": "Hybrid Task Cascade for Instance Segmentation",
@@ -881,7 +889,9 @@
           "authors": "Shuyang Sun, Jiangmiao Pang, Jianping Shi, Shuai Yi, Wanli Ouyang",
           "publisher": "NuerIPS. (Previously called NIPS), 2018",
           "full_text": "http://papers.nips.cc/paper/7356-fishnet-a-versatile-backbone-for-image-region-and-pixel-level-prediction.pdf",
-          "source_code": "https://github.com/kevin-ssy/FishNet"
+          "source_code": "https://github.com/kevin-ssy/FishNet",
+          "youtube": "https://www.youtube.com/watch?v=ZXlCYH-ZX_0",
+          "bilibili": "https://www.bilibili.com/video/BV1FL41187KL?spm_id_from=333.999.0.0"
         }
       ]
     },
@@ -1135,7 +1145,9 @@
           "title": "Gated Bidirectional CNN for Object Detection",
           "authors": "Xingyu Zeng, Wanli Ouyang, Bin Yang, Junjie Yan, Xiaogang",
           "publisher": "In Proc. ECCV 2016",
-          "full_text": "./Papers/GBD.pdf"
+          "full_text": "./Papers/GBD.pdf",
+          "youtube": "https://www.youtube.com/watch?v=Dywwj21uM5g",
+          "bilibili": "https://www.bilibili.com/video/BV1Jh411W7S8?spm_id_from=333.999.0.0"
         },
         {
           "title": "Learnable Histogram: Statistical Context Features for Deep Neural Networks",
@@ -1248,7 +1260,9 @@
           "authors": "Wanli Ouyang, Xiaogang Wang, Xingyu Zeng, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Chen-Change Loy and Xiaoou Tang",
           "publisher": "In Proc. CVPR 2015",
           "full_text": "./Papers/DeepIDNet_CVPR15.pdf",
-          "project_page": "./projects/ImageNet/index.html"
+          "project_page": "./projects/ImageNet/index.html",
+          "youtube": "https://www.youtube.com/watch?v=TojM1myy9Tk",
+          "bilibili": "https://www.bilibili.com/video/BV1AU4y177rP?spm_id_from=333.999.0.0"
         },
         {
           "title": "Saliency Detection by Multi-context Deep Learning",
