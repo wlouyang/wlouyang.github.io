@@ -357,7 +357,7 @@
         },
         {
           "title": "Multi-class Token Transformer for Weakly Supervised Semantic Segmentation",
-          "authors": "X. Xu, W. Ouyang, M. Bennamoun, F. Boussaid, D. Xu",
+          "authors": "L. Xu, W. Ouyang, M. Bennamoun, F. Boussaid, D. Xu",
           "publisher": "Proc. CVPR, 2022",
           "full_text": "https://arxiv.org/pdf/2203.02891.pdf",
           "source_code": "https://github.com/xulianuwa/mctformer"
