@@ -306,6 +306,48 @@
   ],
   "conferences": [
     {
+      "conference_name": "ECCV 2022",
+      "main_images": ["https://wlouyang.github.io/imgs/SimTrack.png"],
+      "papers": [
+        {
+          "title": "Unifying Vision Unsupervised Contrastive Learning from a Graph Perspective",
+          "authors": "S. Tang, F. Zhu, L. Bai, R. Zhao, C. Wang, W. Ouyang,",
+          "publisher": "ECCV 2022"
+        },
+        {
+          "title": "Relative Contrastive Loss for Unsupervised Representation Learning",
+          "authors": "S. Tang, F. Zhu, L. Bai, R. Zhao, C. Wang, W. Ouyang,",
+          "publisher": "ECCV 2022"
+        },
+        {
+          "title": "Backbone is All Your Need: A Simplified Architecture for Visual Object Tracking",
+          "authors": "B Chen, P Li, L Bai, L Qiao, Q Shen, B Li, W Gan, W. Wu, W. Ouyang",
+          "publisher": "ECCV 2022",
+          "full_text": "https://arxiv.org/pdf/2203.05328.pdf"
+        },
+        {
+          "title": "Fast-MoCo: Boost Momentum-based Contrastive Learning with Combinatorial Patches",
+          "authors": "Y. Ci, C. Lin, L. Bai, W. Ouyang",
+          "publisher": "ECCV 2022"
+        },
+        {
+          "title": "3D Interacting Hand Pose Estimation by Hand De-occlusion and Removal",
+          "authors": "H. Yang, M. Chen, Y. Wang, S. Tang, F. Zhu, L. Bai, R. Zhao, W. Ouyang",
+          "publisher": "ECCV 2022"
+        },
+        {
+          "title": "Pose for Everything: Towards Category-Agnostic Pose Estimation",
+          "authors": "S. Jin, L. XU, W. ZENG, W. Liu, C. Qian, W. Ouyang, P. Luo, X. Wang",
+          "publisher": "ECCV 2022"
+        },
+        {
+          "title": "NSNet: Non-saliency Suppression Sampler for Efficient Video Recognition",
+          "authors": "B. Xia, W. Wu, H. Wang, R. SU, D. He, H. Yang, X. Fan, W. Ouyang",
+          "publisher": "ECCV 2022"
+        }
+      ]
+    },
+    {
       "conference_name": "ICLR 2022",
       "main_images": ["https://wlouyang.github.io/imgs/monodistill.png"],
       "papers": [
