@@ -180,7 +180,8 @@
       "authors": "Xingyu Zeng (equal contribution), Wanli Ouyang (equal contribution), Junjie Yan, Hongsheng Li, Tong Xiao, Kun Wang, Yu Liu, Yucong Zhou, Bin Yang, Zhe Wang, Hui Zhou, Xiaogang Wang",
       "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), Accepted, 2017",
       "full_text": "./Papers/Zeng2017_GBD_PAMI.pdf",
-      "source_code": "./projects/GBD/index.html"
+      "source_code": "./projects/GBD/index.html",
+      "video": "https://www.youtube.com/watch?v=ltrf04_NhHw&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz&index=2"
     },
     {
       "title": "T-CNN: Tubelets with Convolutional Neural Networks for Object Detection from Videos",
@@ -197,7 +198,8 @@
       "authors": "Wanli Ouyang, Xingyu Zeng, Xiaogang Wang, et al",
       "publisher": "IEEE Trans. Pattern Anal. Mach. Intell. (PAMI), Accepted, 2016",
       "full_text": "./Papers/DeepID-Net.pdf",
-      "source_code": "./projects/ImageNet/index.html"
+      "source_code": "./projects/ImageNet/index.html",
+      "video": "https://www.youtube.com/watch?v=Rxl2KBlJdnE&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz&index=13"
     },
     {
       "title": "Fast Full-Search Equivalent Pattern Matching Using Asymmetric Haar Wavelet Packets",
@@ -584,7 +586,8 @@
           "authors": "X. Ma, Y. Zhang, D. Xu, D. Zhou, S. Yi, H. Li, W. Ouyang",
           "publisher": "Proc. CVPR 2021",
           "full_text": "https://arxiv.org/pdf/2103.16237.pdf",
-          "source_code": "https://github.com/xinzhuma/monodle/"
+          "source_code": "https://github.com/xinzhuma/monodle/",
+          "video": "https://www.youtube.com/watch?v=-JCNebXPRWQ&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz"
         },
         {
           "title": "Inception Convolution with E cient Dilation Search",
@@ -691,19 +694,22 @@
           "authors": "Ziyu Liu, Hongwen Zhang, Zhenghao Chen, Zhiyong Wang, W. Ouyang",
           "publisher": "CVPR, 2020, Accepted (Oral)",
           "full_text": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_Disentangling_and_Unifying_Graph_Convolutions_for_Skeleton-Based_Action_Recognition_CVPR_2020_paper.pdf",
-          "source_code": "https://github.com/kenziyuliu/ms-g3d"
+          "source_code": "https://github.com/kenziyuliu/ms-g3d",
+          "video": "https://www.youtube.com/watch?v=Vm024c-tYIE&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz&index=15"
         },
         {
           "title": "Multi-Dimensional Pruning: A Uniﬁed Framework for Model Compression",
           "authors": "Jinyang Guo, W. Ouyang, Dong Xu",
           "publisher": "CVPR, 2020, Accepted (Oral)",
-          "full_text": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_Multi-Dimensional_Pruning_A_Unified_Framework_for_Model_Compression_CVPR_2020_paper.pdf"
+          "full_text": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_Multi-Dimensional_Pruning_A_Unified_Framework_for_Model_Compression_CVPR_2020_paper.pdf",
+          "video": "https://www.youtube.com/watch?v=-cZtiOJwZuo&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz&index=16"
         },
         {
           "title": "Improving One-shot NAS by Suppressing the Posterior Fading",
           "authors": "Xiang Li, Chen Lin, Chuming Li, Ming SUn, Wei Wu, Junjie Yan, W. Ouyang",
           "publisher": "CVPR, 2020, Accepted",
-          "full_text": "https://openreview.net/pdf?id=HJgJNCEKPr"
+          "full_text": "https://openreview.net/pdf?id=HJgJNCEKPr",
+          "video": "https://www.youtube.com/watch?v=2EUtWeMYbJQ&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz&index=14"
         },
         {
           "title": "Equalization Loss for Long-Tailed Object Recognition",
@@ -1337,7 +1343,8 @@
           "title": "Multi-source Deep Learning for Human Pose Estimation",
           "authors": "Wanli Ouyang, Xiao Chu, Xiaogang Wang",
           "publisher": "In Proc. IEEE CVPR 2014",
-          "full_text": "http://www.ee.cuhk.edu.hk/~xgwang/papers/ouyangCWcvpr14.pdf"
+          "full_text": "http://www.ee.cuhk.edu.hk/~xgwang/papers/ouyangCWcvpr14.pdf",
+          "video": "https://www.youtube.com/watch?v=qNd0X5YvYaQ&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz&index=17"
         },
         {
           "title": "Learning Mid-level Filters for Person Re-Identfiation",
@@ -1360,7 +1367,8 @@
           "authors": "Wanli Ouyang, Xiaogang Wang",
           "publisher": "In Proc. IEEE ICCV 2013",
           "full_text": "http://www.ee.cuhk.edu.hk/~xgwang/papers/ouyangWiccv13.pdf",
-          "project_page": "./projects/ouyangWiccv13Joint/index.html"
+          "project_page": "./projects/ouyangWiccv13Joint/index.html",
+          "video": "https://www.youtube.com/watch?v=WR_lkPrptLQ&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz&index=6"
         },
         {
           "title": "Multi-Stage Contextual Deep Learning for Pedestrian Detection",
@@ -1388,7 +1396,8 @@
           "authors": "Wanli Ouyang, Xiaogang Wang",
           "publisher": "In Proc. IEEE CVPR 2013",
           "full_text": "./Papers/Ouyang2013MultiPed.pdf",
-          "project_page": "./projects/ouyangWcvpr13MultiPed/index.html"
+          "project_page": "./projects/ouyangWcvpr13MultiPed/index.html",
+          "video": "https://www.youtube.com/watch?v=0JTg93ur52A&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz&index=18"
         },
         {
           "title": "Modeling Mutual Visibility Relationship in Pedestrian Detection",
@@ -1415,7 +1424,8 @@
           "authors": "Wanli Ouyang and Xiaogang Wang",
           "publisher": "In Proc. IEEE CVPR 2012",
           "full_text": "./Papers/CDBN-Ped12.pdf",
-          "project_page": "./projects/ouyangWcvpr12Occ/index.html"
+          "project_page": "./projects/ouyangWcvpr12Occ/index.html",
+          "video": "https://www.youtube.com/watch?v=aHxs7JlXCkw&list=PLIs7kb0Y7jMDpyGgX_eTRmCXzgScTiyjz&index=19"
         }
       ]
     },
